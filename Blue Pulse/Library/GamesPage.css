@@ -1,0 +1,533 @@
+
+
+/* Removal of Unneccessary Gap for Game Page, 1px height kept for clarity */
+.RGNMWtyj73_-WdhflrmuY ._2CmrnGY-Amtd83ScJkFvx2 {
+    min-height: 0px;
+    height: 1px;
+    background: #000000;
+    box-shadow: inset rgba(61, 68, 80, .75) 1px 0px 0px 0px, inset rgba(61, 68, 80, .25) -1px -1px 0px 0px;
+}
+
+/* Library Game List BG */
+
+._3x1HklzyDs4TEjACrRO2tB {
+    background-image: linear-gradient(to bottom, var(--List1) 0%, var(--List2) 46%, var(--List3) 82%);
+    border-right: 0.5px solid black;
+}
+
+/* Games List "Top" Bar */
+._2TKEazUUS3TlniZfpc8OOe {
+    padding: 4px 6px 2px 6px;
+    background-image: linear-gradient(to bottom, var(--Bar1) 0%, var(--Bar2) 46%, var(--Bar3) 82%);
+}
+
+/* whats new area*/
+._17uEBe5Ri8TMsnfELvs8-N {
+    box-sizing: border-box;
+    padding-top: 16px;
+    padding-bottom: 0px;
+    padding-inline-start: 24px;
+    padding-inline-end: 16px;
+    position: relative;
+    height: auto;
+    overflow: hidden;
+    background: var(--List1);
+    background-image: pink; /* no impact */
+}
+
+/* home button stuff */
+._3pSPluBgf0NeR1kkCLWMhR {
+	background: var(--GListButton);
+	color: white;
+}
+
+._3pSPluBgf0NeR1kkCLWMhR:hover {
+	background: var(--GListButtonH);
+	color: white;
+}
+
+._3pSPluBgf0NeR1kkCLWMhR:active {
+	background: var(--GListButtonH);
+	color: white;
+}
+
+._3pSPluBgf0NeR1kkCLWMhR:disabled {
+	background: red;
+	color: white;
+}
+
+._3pSPluBgf0NeR1kkCLWMhR.eNLOx4LVceeMwRvTVWh3 {
+    background-color: var(--GListButton);
+    background-repeat: no-repeat;
+	color: white;
+}
+
+._3pSPluBgf0NeR1kkCLWMhR.eNLOx4LVceeMwRvTVWh3:hover {
+    background-color: var(--GListButtonH);
+    background-repeat: no-repeat;
+	color: white;
+}
+
+/* Category Button "IMG" colour */
+.nC-pL16iUnIRcaj1UVnwq ._2tyaVs9BpqcW068aaOrO56 {
+    width: 100%;
+    height: 100%;
+    background: #ffffff3b;
+}
+
+/* List Page Left BG */
+._2gSXCB6PbOlMxslr8hm6dm {
+    height: 100%;
+    position: relative;
+    background-image: linear-gradient(to bottom, var(--List1) 0%, var(--List2) 33%, var(--List3) 60%);
+}
+
+/* List Page Right */
+
+._3FmxxjyWNHU1PrBGnBe6tm._2l416KfEtI4CL0mCUEmOBw {
+    background: var(--List3);
+    background-image: linear-gradient(to bottom, var(--Bar2) 0%, var(--List2) 68%, var(--List3) 89%) !important;
+}
+
+/* List Page Bar */
+._38t1mljBjmJfqjpVzMT1CG {
+    background: var(--GamesBar);
+}
+
+/* Games Page Home */
+
+._3Sb2o_mQ30IDRh0C72QUUu {
+
+    background-image: linear-gradient(to bottom, var(--Bar2) 0%, var(--List2) 0.5%, var(--List3) 22%) !important;
+}
+
+/* Game Selected fixes */
+._1_cYNJSvS6IXs9vLTEYjy5 {
+    transform-style: flat;
+    background: var(--List3);
+    background-image: linear-gradient(to bottom, var(--List2) 0%, var(--List2) 68%, var(--List3) 89%) !important;;
+}
+
+/* No Extra Blur and extra gradient */
+._2OOzYVWIHaKXm6_7sscT9i .Jbe--NUNw7sxbxGsMSjVa {
+    box-sizing: border-box;
+    display: block;
+    height: 450px;
+    width: 100%;
+    backdrop-filter: none;
+    background: none;
+    z-index: 0;
+}
+
+/* Game Link Bar Overall Area */
+._3-V8vjmrwuJM6Ws3tsjFJj {
+    background: var(--GamesPanel);
+    box-shadow: none !important;
+}
+
+/* Games Link Bar Contents override */
+._31ptFGGMZrSQc5BCX1e5lm._3KfxIwlXEvum7FCD_AM2_t.Panel {
+    background: none !important;
+}
+
+/* Scroll Down Games Bar */
+._39RheXihcN6H2k2muQTjkI ._3DeO92O5aVkcdwEBCJDjWm {
+    backdrop-filter: none;
+    background-color: #fff;
+    background: var(--GamesBar);
+    margin-top: -15px;
+    padding-top: 10px;
+}
+
+/* Right Side Panels for Selected Games */
+._31ptFGGMZrSQc5BCX1e5lm._3KfxIwlXEvum7FCD_AM2_t {
+    border-image-source: none;
+    background: var(--GamesPanel) !important;
+    box-shadow: none;
+}
+
+/* Achieved Panel */
+.UVeN0kaD3zv1feMj_mMw5 .NEMXhMlqXOCJwfgWlHXhT {
+    background: none;
+
+}
+
+/* To Top Button */
+.uE7Pj4tb2n3_Bx4vjEX0a.rkfSfuCLRt8sqpkXJqxYo.Focusable {
+    background: none;
+    background-color: #ffffff00;
+}
+
+.uE7Pj4tb2n3_Bx4vjEX0a .SVGIcon_Arrow {
+    box-sizing: border-box;
+    width: 32px;
+    height: 32px;
+    padding: 8px;
+    background-color: linear-gradient(to bottom, var(--Bar1) 0%, var(--Bar2) 46%, var(--Bar3) 100%);
+	background:linear-gradient(to bottom, var(--Bar1) 0%, var(--Bar2) 46%, var(--Bar3) 100%);
+    border: solid 0.2px black;
+    opacity: 0.8;
+    flex: 0;
+    transition-property: background-color;
+    transition-duration: .2s;
+    transition-timing-function: ease-in-out;
+    border-radius: 4px;
+}
+
+.uE7Pj4tb2n3_Bx4vjEX0a:hover .SVGIcon_Arrow {
+    background-color: #ffffff00;
+}
+
+/* Panel BG left side*/
+.UVeN0kaD3zv1feMj_mMw5{
+    background: var(--GamesPanel);
+	border-radius: 2px;
+
+}
+
+/* Buttons? */
+._3qDWQGB0rtwM3qpXTb11Q- {
+    box-sizing: border-box;
+    margin-inline-end: 10px;
+    width: 32px;
+    height: 32px;
+    padding: 7px;
+    border-radius: 4px;
+    /* background-color: rgba(172, 178, 201, .1411764706); */
+    background: linear-gradient(to bottom, var(--Bar1) 0%, var(--Bar2) 46%, var(--Bar3) 100%) !important;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    transition: background-color .12s ease;
+}
+/* Recommend Gap before Activity */
+._27RcNu8aXKBpYkHcNNrt-X ._11kuVRYZvWXn-3rBJ_6yL8>div:last-child {
+    margin-bottom: 6px;
+}
+
+/* Positioning fix for text in Recommend */
+._2SAb6geDpe6toA1GaP0GjH ._2aeAnRfwltWfd9Hb9M_1uE .qX4kNo6O0M-mYntdErKSJ {
+    color: var(--Online);
+    margin-top: -2px;
+}
+
+._2SAb6geDpe6toA1GaP0GjH .My1beniJXh9pXud8rxYLK {
+    color: #fff;
+    margin-top: -2px;
+}
+
+/* Recommend Hours played bar bg */
+._3LE-6w1ItIAB4CKJFCa3Od {
+    box-sizing: border-box;
+    width: calc(100% - 8px);
+    padding-inline-start: 8px;
+    padding-inline-end: 10px;
+    background-color: none;
+    background-image: linear-gradient(to bottom, var(--Bar1) 0%, var(--Bar2) 48%, var(--Bar2) 92%, var(--Bar3) 100%) ;
+    color: #969696;
+    font-size: 13px;
+    font-weight: 200;
+	padding-left: 2px;
+	border-radius: 4px;
+} 
+
+/* Recommend bg for Hours played segment (For some reason can't be none so duplicating above background image) */
+._2SAb6geDpe6toA1GaP0GjH {
+    background-color: none ;
+    background-image: linear-gradient(to bottom, var(--Bar1) 0%, var(--Bar2) 48%, var(--Bar2) 92%, var(--Bar3) 100%) ;
+    padding: 6px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px;
+    
+    
+}
+
+
+._2SAb6geDpe6toA1GaP0GjH ._1E6Ivnp3A4apXqQYtlQHEc {
+    background-color: none;
+    flex-shrink: 0;
+    justify-content: right;
+    padding-left: 10px ;
+}
+
+/* fix to make buttons right orient for Recommend */
+._3LE-6w1ItIAB4CKJFCa3Od ._2z8Na_s9JosX48wHF4HPiA {
+    width: 102.2%;
+    height: auto;
+    flex-direction: row;
+}
+
+/* Buttons in Hours played   */
+._1kCN0pAntrcGCSmcc-vYdk {
+    padding: 8px 22px;
+    background: var(--DButtons);
+    color: white;
+    text-decoration: none !important;
+    margin: 0 3px;
+    position: relative;
+    border: none;
+    cursor: pointer;
+    font-size: 13px;
+    outline: none;
+    border-radius: 2px;
+}
+
+
+/* Buttons in Hours played Hover */
+._1kCN0pAntrcGCSmcc-vYdk:not(.Z3L6KGVxi4ZjGUzbYUjBC):hover {
+    text-decoration: none !important;
+    color: #fff !important;
+    background: var(--PulseHover);
+    background: var(--PulseHover);
+   
+}
+
+/* What's New Popup Window */
+._1I-uT20jYsj5wUT4VIGjW8 {
+    padding: 4px;
+    padding-left: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* What's New Popup bg */
+._2JKpGzeAiwmBdY73bfRXz- {
+    background: var(--List3);
+    background-image: linear-gradient(to bottom, var(--List1) 0%, var(--List2) 33%, var(--List3) 60%);
+    user-select: none;
+}
+
+ /* Game List Selected Bg and dunno */ 
+Hover._1UBpAXP408Ez_L_mXhW5Q9._2-O4ZG0KrnSrzISHBKctFQ:hover, ._1UBpAXP408Ez_L_mXhW5Q9._2-O4ZG0KrnSrzISHBKctFQ._3cMVyOc-9F9Jvp3uKF7_xj, ._1UBpAXP408Ez_L_mXhW5Q9._2-O4ZG0KrnSrzISHBKctFQ :hover, ._1UBpAXP408Ez_L_mXhW5Q9 ._2-O4ZG0KrnSrzISHBKctFQ:hover, ._1UBpAXP408Ez_L_mXhW5Q9 ._2-O4ZG0KrnSrzISHBKctFQ._3cMVyOc-9F9Jvp3uKF7_xj, ._1UBpAXP408Ez_L_mXhW5Q9 ._2-O4ZG0KrnSrzISHBKctFQ :hover {
+    background-color: var(--Bar2);
+}
+
+/* Selected */
+
+._1UBpAXP408Ez_L_mXhW5Q9._2-O4ZG0KrnSrzISHBKctFQ, ._1UBpAXP408Ez_L_mXhW5Q9 ._2-O4ZG0KrnSrzISHBKctFQ {
+    box-sizing: border-box;
+    background-color: var(--Bar2);
+    box-shadow: 0 0px 2px 0px rgba(0, 0, 0, .3333333333), 0 0px 16px 0px rgba(0, 0, 0, .2666666667);
+}
+
+._2-O4ZG0KrnSrzISHBKctFQ:hover, ._2-O4ZG0KrnSrzISHBKctFQ._3cMVyOc-9F9Jvp3uKF7_xj {
+    color: #fff !important;
+    background-color: var(--Bar2) !important;
+}
+
+/* Selected Hover not Selected */
+._2-O4ZG0KrnSrzISHBKctFQ._1UBpAXP408Ez_L_mXhW5Q9._5YTBr7WwIfzVU_3nUtAph, ._1UBpAXP408Ez_L_mXhW5Q9 ._2-O4ZG0KrnSrzISHBKctFQ._5YTBr7WwIfzVU_3nUtAph {
+    color: white;
+}
+
+._2sYIghGVXJr6tsQVvcryy8.ehAsUVkW87U5OHZJohB5N:focusable {
+    background: var(--Bar2);
+}
+
+
+/* Games List Categories Header */
+._2sYIghGVXJr6tsQVvcryy8 {
+    border: 1px solid black;
+    border-right: none;
+    border-radius: 4px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    background: linear-gradient(to bottom, var(--Bar2) 0%, var(--Bar3) 16%, var(--Bar3) 95%, var(--PulseHover) 100%);
+    box-shadow: 0px -2px 3px 0px rgba(0,0,0,.05),4px -1px 1px 0px rgba(0,0,0,.05)
+    opacity: 1;
+}
+
+/* Gameslist Cat Head Selected :Active */
+._2sYIghGVXJr6tsQVvcryy8.sXMOsx8OIRalBMxO9yFY5 {
+    background: linear-gradient(to bottom, var(--Bar2) 0%, var(--Bar3) 16%, var(--Bar3) 95%, var(--PulseHover) 100%);
+    box-shadow: 0px -2px 3px 0px rgba(0,0,0,.05),4px -1px 1px 0px rgba(0,0,0,.05)
+}
+
+/* Games List Categories Header Hover */
+._2sYIghGVXJr6tsQVvcryy8:hover {
+
+    background: linear-gradient(to bottom, var(--Bar1) 0%, var(--Bar1) 50%, var(--Bar2) 100%);
+}
+
+/* Cat Header Number Var */
+._29uten9Yy8q-n7woDEOXVF {
+    font-size: 12px;
+    height: 12px;
+    margin: 0px 4px 3px;
+    color: #fff;
+}
+
+/* Activity Post BG Panel (post emoti) */
+._3x31AgESSlUqX3D4MTHv2m ._37e7DrDNmf1FmsMGA5y0A0._1_KMhJX-BZ-bohjsJ7i3w3 {
+    max-height: 50px;
+    margin-top: 4px;
+    padding-bottom: 14px;
+    margin-bottom: -6px;
+    margin-right: 2px;
+    background: none;
+}
+
+._3x31AgESSlUqX3D4MTHv2m ._1JlC29Ic6L-QvL-39X_d-X{
+    outline: none;
+    background: var(--Bar2);
+    box-shadow: inset 1px 1px 6px rgba(0, 0, 0, .4);
+    color: #fff
+}
+
+._3x31AgESSlUqX3D4MTHv2m ._1JlC29Ic6L-QvL-39X_d-X:focus {
+    outline: none;
+    background: var(--Bar2);
+    box-shadow: inset 1px 1px 6px rgba(0, 0, 0, .4);
+}
+
+/* Disabled Button */ 
+._3x31AgESSlUqX3D4MTHv2m ._37e7DrDNmf1FmsMGA5y0A0 ._2JSyABqFEh-v_dwaTnBydR {
+    background-color: var(--Bar2);
+    border: none;
+    border-radius: 2px;
+    padding: 10px 18px;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    width: 120px;
+    margin-left: 8px;
+    opacity: 0.39;
+}
+
+/* Activity Post Button active */
+._3x31AgESSlUqX3D4MTHv2m ._37e7DrDNmf1FmsMGA5y0A0 ._2JSyABqFEh-v_dwaTnBydR.bGfjajFo4DI-ULSQxw1KY {
+    background: linear-gradient(to bottom, var(--Bar1) 0%, var(--Bar2) 46%, var(--Bar3) 100%) !important;
+    background-position: 0%;
+    background-size: 330% 100%;
+    color: #fff;
+    cursor: pointer;
+    opacity: 1;
+}
+
+/* Activity Post Button Hover */
+._3x31AgESSlUqX3D4MTHv2m ._37e7DrDNmf1FmsMGA5y0A0 ._2JSyABqFEh-v_dwaTnBydR.bGfjajFo4DI-ULSQxw1KY:hover {
+    background: linear-gradient(to bottom, var(--Bar2) 0%, var(--Bar3) 100%) !important;
+    background-position: 0%;
+    background-size: 330% 100%;
+    color: #fff;
+    cursor: pointer;
+    opacity: 1;
+}
+
+/* Dropdown Menu aka Games, Soundtract etc */
+._1ZS_xta5HMXzR8JgxDH6n7 ._2PF_m-I5yte3WnQhpcz8RC {
+    outline: none;
+    box-sizing: border-box;
+    color: #aeaeaf;
+    display: flex;
+    flex-direction: row;
+    width: 0;
+    font-size: 13px;
+    cursor: pointer;
+    padding: 3px 8px;
+    padding-inline-end: 5px;
+    background-color: var(--PulseHover);
+    transition-property: color, background-color;
+    transition-duration: .12s;
+    transition-timing-function: ease-in-out;
+    align-items: center;
+    height: 32px;
+    border-radius: 3px;
+    flex: 1;
+}
+/* Search Window for Games List */
+._20QAC4WMXm8qFE8waUT5oo {
+    display: flex;
+    flex-grow: 0;
+    user-select: none;
+    color: #fff;
+    font-size: 12px;
+    outline: none;
+    position: relative;
+    margin: 6px 6px 10px 6px;
+    background-color: var(--PulseHover);
+    border-radius: 4px;
+}
+
+._20QAC4WMXm8qFE8waUT5oo:hover {
+
+    background-color: var(--PulseHover);
+ 
+}
+/* Search bottom border fix*/
+._20QAC4WMXm8qFE8waUT5oo ._12vo5L1hsNGdao6_ssuirS .DialogTextInputBase {
+
+    border-bottom: 1px solid var(--Bar1);
+
+}
+
+/* Search Hover fix */
+._20QAC4WMXm8qFE8waUT5oo ._12vo5L1hsNGdao6_ssuirS .DialogTextInputBase:hover {
+    background-color: var(--PulseHover);
+    box-shadow: inset 1px 2px 4px 1px rgba(15, 15, 15, .6509803922);
+}
+/* Search Results Fix Hover */
+._1ZS_xta5HMXzR8JgxDH6n7 ._2PF_m-I5yte3WnQhpcz8RC:hover {
+    color: #fff;
+    background-color: var(--PulseHover);
+}
+
+/* cat button active bg */
+._20QAC4WMXm8qFE8waUT5oo .vCCmYvn9yQ_V8CpKupllU._1Gjk27xaRIzt2zOSwOSP0N {
+    background-color: var(--PulseHover);
+}
+
+._20QAC4WMXm8qFE8waUT5oo .vCCmYvn9yQ_V8CpKupllU._31r1_h2SmzwQtP9ZLLyA0I, ._20QAC4WMXm8qFE8waUT5oo .vCCmYvn9yQ_V8CpKupllU:not(._1Gjk27xaRIzt2zOSwOSP0N):hover {
+    background-color: linear-gradient(to bottom, var(--Bar2) 0%, var(--Bar3) 100%);
+}
+
+/* cat Hover lines */
+._20QAC4WMXm8qFE8waUT5oo .vCCmYvn9yQ_V8CpKupllU._31r1_h2SmzwQtP9ZLLyA0I ._1TxHdzOt3OD9ikR3xIseKe svg path, ._20QAC4WMXm8qFE8waUT5oo .vCCmYvn9yQ_V8CpKupllU:not(._1Gjk27xaRIzt2zOSwOSP0N):hover ._1TxHdzOt3OD9ikR3xIseKe svg path {
+    fill: var(--ButtonHover);
+}
+
+/* to move to another section I think Library? or is it patch notes in download area, to check */
+/* Update News Popup Window top Bar */
+._3_SEiDNs-lzwV7cTF6gcgt ._3z2NYCkFizMu4fMvWTIBUG {
+    padding: 16px 24px 12px 24px;
+    background: );
+    background: linear-gradient(190deg, var(--Bar2), var(--Bar3));
+}
+
+/* Update News BG */
+._1KsYSVzmvIfRivBTcx-_GE {
+    max-width: 848px;
+    overflow: hidden;
+    margin-top: 56px;
+    margin-bottom: 16px;
+    margin-inline: auto;
+    position: relative;
+    background-color: #25282e;
+    border-radius: 4px;
+    background-image: linear-gradient(190deg, var(--List1), var(--List2));
+    box-shadow: 0 0 32px #000;
+    pointer-events: initial;
+    border: 1px solid rgba(0, 0, 0, 0);
+    font-weight: 300;
+}
+
+/* Size image to window fix */
+
+.A_A2B6fTn_MPLlGCmsLtd img {
+    width: calc(100% + 14px);
+}
+
+/* Slimming Patch note Popup Window */
+._32mHvRSmD7AVK9OIOPlaFu {
+    padding: 6px; /* Prior 32px */
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    min-height: 300px;
+}
+/* above commented area not download page */

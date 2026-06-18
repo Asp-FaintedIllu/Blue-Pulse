@@ -1,0 +1,240 @@
+
+/* Specifically active for chat window */
+._2XZq-_f6npaQdAgeRzKIkz.Yd-DsWkYiFiYwpci--Yk_ {
+    background:radial-gradient(ellipse farthest-corner at 50% 30%, var(--Bar1) 0%, var(--Bar2) 50%, var(--Bar2) 100%);border:1px solid var(--Divider2);border-bottom:none;box-shadow:inset 1px 1px 0px rgba(71,71,71,.3)
+}
+
+._2XZq-_f6npaQdAgeRzKIkz:hover:not(.Yd-DsWkYiFiYwpci--Yk_) {
+    background:radial-gradient(ellipse farthest-corner at 50% 30%, var(--Bar1) 0%, var(--Bar2) 50%, var(--Bar2) 100%);border:1px solid var(--Divider2);border-bottom:none;box-shadow:inset 1px 1px 0px rgba(71,71,71,.3)
+}
+
+ /* Ingame name BGColour in chats it will not work without !important, currently color #0a3300  */ 
+.speakerName._1KPraihJAKiBwLJWmOlju2 {
+    background: #0a3300 !important;
+}
+
+/* icon color for emoticon and attach */
+.RVIs84dAE6wHcjH9tkinc._3zOBeq5W4cNK3lRz_7aroW svg, .RVIs84dAE6wHcjH9tkinc.Aupswi7-c-w3XwNO5cp2i svg {
+    width: 24px;
+    height: 24px;
+    color: #ffffff;
+}
+
+/* Emoticon and Chat Button BG actual background */
+._2WfNoLBdfKwyutA6ho4aSH {
+    padding: 2px;
+    box-shadow: #000 0px 0px 4px inset;
+    background: var(--Bar1);
+    margin-left: 8px;
+}
+
+/* Bg background !important to apply to all 3 (Send,Emo,Attach) */
+.RVIs84dAE6wHcjH9tkinc, .VoiceToggle  {
+   background: linear-gradient(to bottom, var(--Bar1) 0%, var(--Bar2) 46%, var(--Bar3) 100%) !important;
+}
+
+/* Bg background !important to apply to all 3 (Send,Emo,Attach) :hover */
+
+.RVIs84dAE6wHcjH9tkinc:hover, .VoiceToggle:hover {
+   background: linear-gradient(to bottom, var(--Bar2) 0%, var(--Bar3) 100%) !important;
+}
+
+
+/* Submit plane colour */
+.RVIs84dAE6wHcjH9tkinc .SVGIcon_Submit path {
+    fill: #ffffff;
+    stroke-width: 2px;
+}
+
+/* Fix for hover in Library "friendslist" */
+.ChatRoomListGroupItem:hover .ChatRoomListGroupItem_header {
+    background-color: var(--PulseHover);
+}
+
+/* fix for button in update news */
+._6Tfttc004NhLDjbTDS9PC ._20PKe9KJTJC5SAbLi4Dy-Y ._1ddC4grHqe7uggEE2cihEv ._2T5KnJO7YB00MG9YIyfImx {
+    background: linear-gradient(to bottom, var(--Bar1) 0%, var(--Bar2) 46%, var(--Bar3) 100%));
+}
+
+._6Tfttc004NhLDjbTDS9PC ._20PKe9KJTJC5SAbLi4Dy-Y ._1ddC4grHqe7uggEE2cihEv ._2T5KnJO7YB00MG9YIyfImx:hover {
+    background: linear-gradient(to bottom, var(--Bar1) 0%, var(--Bar2) 46%, var(--Bar3) 100%));
+}
+
+
+/* Correcting Recording and screenshots */
+._2p9h7sf5EGrEVlsWxtvUPH {
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+    flex: 1;
+    gap: 0px;
+    margin-top: -32px;
+}
+
+/* Recording layout fixes */
+
+._1f9_BgoyE1cjqyeKD8dh9u .YzIcpcz4oFx-nndxro5jE {
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    position: absolute;
+    width: calc(100vw - 18px); 
+    padding: 0 0px;
+    padding-top: 10px !important;
+    background: #000c35;
+    backdrop-filter: none !important;
+    height: var(--stickyHeaderHeight);
+    border: none;
+    border-image-slice: 1;
+    border-image-source: none;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, .25);
+    z-index: 1;
+}
+
+/* Bottom of Screenshots window */
+._1f9_BgoyE1cjqyeKD8dh9u ._162CJAH8jPwIYGGg5Q2YIc {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 24px;
+    background: none;
+    backdrop-filter: none;
+    border-top: none;
+    border-image-slice: 1;
+    border-image-source: none;
+    shadow: 0px 4px 4px 0px rgba(0, 0, 0, .25);
+    z-index: 1;
+}
+
+/* middle of screenshots window */
+._3nWSY9HJwc9HWeByKWggV6 {
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 16px);
+    overflow: hidden;
+}
+
+/* Active Emoticon reaction */
+.UA15KlVbtDSJkqSpIAMIN {
+    display: flex;
+    flex-direction: row;
+    border-radius: 4px;
+    background-color: #002880;
+    margin-right: 5px;
+    padding: 2px 3px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.UA15KlVbtDSJkqSpIAMIN:hover {
+
+    background-color: var(--PulseHover);
+}
+
+/* Tab Bar New Message Highlight */
+._2ve8VIOIUS5rjAzmJvjVS- {
+    position: relative;
+    pointer-events: none;
+    width: 100px;
+    height: 43px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: radial-gradient(ellipse farthest-corner at 98% 90%, rgb(0 88 255 / 80%) 0%, rgb(35 36 233 / 20%) 48%, rgba(233, 154, 35, 0) 70%);
+}
+
+/* Tab Bar New Message Dot */
+.jMumuBBbjOf_v5JU9RpmZ {
+    position: absolute;
+    bottom: 4px;
+    right: 4px;
+    width: 4px;
+    height: 4px;
+    background-color: #0095ff;
+    border: 0.5px black;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+/* User Chat Colour */
+.MultiUserChat .isCurrentUser .msgText {
+    color: #4085ff;
+}
+
+/* Game Share Suggested */
+._1JZstfJ6jCBChXx0ZDwfpR, ._2_QSE1Nit6wrabY5ZgDZOz {
+    max-width: 640px;
+    color: #000;
+    cursor: default;
+    padding: 8px;
+    margin: 8px 0px 8px 0px;
+    background: var(--PulseHover);
+    color: silver;
+    font-family: "Motiva Sans", Helvetica, Arial, sans-serif;
+    border-radius: 8px;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, .1);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+    height: auto;
+}
+
+/* Bottom bar */
+._113iuw_HlE_qSgt9cGWCSv {
+    resize: none;
+    margin-right: 4px;
+    height: 42px;
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0);
+    outline: none;
+    color: #4085ff;
+    border: 0px solid rgba(0, 0, 0, 0);
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Motiva Sans", Arial, Helvetica, sans-serif;
+    padding: 4px 4px 4px 8px;
+    flex-shrink: 1;
+    width: 100%;
+}
+
+.EuFePPYFGrcf99uLXmBYN ._2l4z-U60lABvd9XWArGjAf {
+    box-sizing: border-box;
+    height: 28px;
+    background-color: var(--PulseHover);
+}
+
+/* Steam "celebratopms effects panel bg */
+._1XsAtfmtiaoZzdStrvgJj9 {
+    background: none; 
+    box-shadow: 0 6px 14px 1px rgba(0, 0, 0, 0);
+    display: flex;
+    align-items: center;
+    color: white;
+    opacity: 
+}
+
+/* Steam "celebrations effects panel bg :hover */
+._1XsAtfmtiaoZzdStrvgJj9:hover {
+    background: none;
+    box-shadow: 0 6px 14px 1px rgba(0, 0, 0, 0);
+    display: flex;
+    align-items: center;
+}
+
+/* Chat Avatar Fix*/
+
+.ChatRoomSpeaker .speaker .speakerAvatar, .ChatMsgSlashEmote .speaker .speakerAvatar {
+    width: 24px;
+    height: 24px;
+    margin-inline-end: 0px;
+}
+
+.ChatRoomSpeaker .speaker .speakerAvatar.hasAvatarFrame, .ChatMsgSlashEmote .speaker .speakerAvatar.hasAvatarFrame {
+    margin-inline-end: 1px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+

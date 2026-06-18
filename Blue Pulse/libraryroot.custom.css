@@ -1,0 +1,2555 @@
+@import url(include.css);
+
+/* Popup Windows */
+.DialogContent,.DialogContentTransition{background:radial-gradient(circle at top left, var(--BG2) 0%, var(--BG3) 60%),var(--BG1);user-select:none}
+
+/* Buttons */
+
+button.DialogButton{
+-webkit-box-sizing:content-box;
+-moz-box-sizing:content-box;
+box-sizing:content-box;
+border:0;
+font:inherit;overflow:visible;padding:0;margin:2px 0;user-select:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;display:block;line-height:32px;
+color:#fff;
+font-size:14px;
+text-align:center;
+border-radius:3px;cursor:pointer;width:100%;transition-property:opacity,background,color,box-shadow;transition-duration:.2s;transition-timing-function:ease-out;background:var(--Button1);background-position:99% 1%;background-size:300% 300%;position:relative}
+
+/* Button Hover */
+button.DialogButton:hover,button.DialogButton.gpfocus{background:var(--ButtonHover);color:#fff}
+
+/* Button Click */
+button.DialogButton:enabled:active,button.DialogButton:enabled:active:hover,button.DialogButton:enabled:active.gpfocus{background:var(--ButtonClick);box-shadow:0 1px 4px 0 rgba(0,0,0,.6);transition-duration:.04s}
+
+button.DialogButton.Primary:enabled:active, button.DialogButton.Primary:enabled:hover:active, button.DialogButton.Primary:enabled:active.gpfocus {
+    background:var(--ButtonClick);
+    background-position: 40%;
+    transition-duration: .04s;
+}
+
+/* Check Boxes */
+.DialogCheckbox{width:22px;height:22px;background-color:var(--CheckBoxes);padding:0;box-shadow:inset 1px .5px 3px rgba(1,1,1,.4);cursor:pointer;border-radius:2px}
+
+/* Check Box Hover */
+.DialogCheckbox_Container:hover .DialogCheckbox:not(.Disabled),.DialogCheckbox:hover:not(.Disabled),.DialogCheckbox_Container:focus .DialogCheckbox:not(.Disabled),.DialogCheckbox:focus:not(.Disabled){background-color:var(--CheckBoxHover)}
+
+/* Content Text? */
+.ModalPosition_Content{box-shadow:0px 8px 38px 5px rgba(0,0,0,.75);margin:auto;font-weight:300;color:#ffffff;font-size:16px;position:relative;display:flex;flex-direction:column}
+
+/* Dialog Labels Caps? */
+.DialogLabel,.DialogLabelStrong{font-weight:300;color:#fcfcfc;text-transform:uppercase;line-height:19px;font-size:13px;margin-bottom:4px;user-select:none;letter-spacing:initial}.DialogLabelStrong .DialogLabel,.DialogLabel.DialogLabelStrong{text-transform:none;color:#dedede}
+
+/* Dialog Text */
+.DialogBodyText{color:#ffffff;font-size:16px;line-height:19px;font-weight:300;margin-bottom:0px;user-select:none}
+
+/* Text Input Stuff */
+
+/* Non Selected State */
+.DialogTextInputBase,._DialogInputContainer{background:var(--InputBase);color:#dfe3e6;font-size:14px;font-family:"Motiva Sans",Arial,Helvetica,sans-serif;font-weight:300;margin:0;border:none;border-radius:3px;box-shadow:inset 0px 0px 0px #0000}
+
+/* Hover */
+.DialogTextInputBase:not(:disabled):hover{background:var(--InputHover)}
+
+/* Active State */
+.DesktopUI .DialogTextInputBase:focus,.DialogTextInputBase:focus-within{background:var(--InputFocus);box-shadow:inset 1px 1px 4px #000a;padding-left:11px}
+
+/* Active State v2 */
+.DialogTextInputBase:focus,.DialogTextInputBase:focus-within{background:rgba(0,90,239,.6);box-shadow:inset 1px 1px 8px #000a;padding-left:11px}
+
+/* Other Stuff */
+.DialogInput{border:0px;display:block;line-height:22px;padding:10px}
+
+/* Test */
+.messagelist_CarouselBar_O7VJK{margin-bottom: 10px;background: #00325e;}
+/* Sadly Doesn't seem to work */
+
+/* Steam Settings Page*/
+__________________________
+
+/* Left / List */
+
+/* Needs to be above BG Color*/
+.pagedsettings_PagedSettingsDialog_PageListColumn_RTicB.DesktopUI,.DesktopUI .pagedsettings_PagedSettingsDialog_PageListColumn_RTicB{padding-left:0px;min-width:160px}.pagedsettings_NewNoteButton_sc_I7{margin:0px 4px 4px 4px}
+
+/* BG Color */
+.pagedsettings_PagedSettingsDialog_PageListColumn_RTicB{background:radial-gradient(farthest-corner at 0px 0px, var(--GraphBG1) 0%, var(--GraphBG2) 90%);flex:1;min-width:140px;max-width:220px;padding-top:36px;display:flex;flex-direction:column;position:relative}
+
+
+/* Menu Selection Items */
+
+/* Active Selection */
+.pagedsettings_PagedSettingsDialog_PageListItem_bkfjn.pagedsettings_Active_Myra7{color:var(--SettingsLabels);background-color:var(--SettingsTabActive)}
+
+/* Active Icon */
+.pagedsettings_PagedSettingsDialog_PageListItem_bkfjn.pagedsettings_Active_Myra7 .pagedsettings_PageListItem_Icon_U6HcK{color:var(--SettingsLabels)}
+
+/* Menu Hover */
+.pagedsettings_PagedSettingsDialog_PageListItem_bkfjn:not(.pagedsettings_Active_Myra7):hover{color:var(--SettingsLabels);background-color:var(--SettingsTabActive)}
+
+/* Menu Icon Hover */
+.pagedsettings_PagedSettingsDialog_PageListItem_bkfjn:not(.pagedsettings_Active_Myra7):hover .pagedsettings_PageListItem_Icon_U6HcK{color:var(--SettingsLabels)}
+
+/* Menu Items */
+.pagedsettings_PagedSettingsDialog_PageListItem_bkfjn{display:flex;align-items:center;white-space:normal;max-width:180px;text-overflow:ellipsis;padding:10px 16px 10px 24px;font-size:14px;font-weight:400;color:var(--SettingsLabels);text-transform:none;cursor:pointer;user-select:none}
+
+/* Menu Icons */
+.pagedsettings_PagedSettingsDialog_PageListItem_bkfjn .pagedsettings_PageListItem_Icon_U6HcK.DesktopUI,.DesktopUI .pagedsettings_PagedSettingsDialog_PageListItem_bkfjn .pagedsettings_PageListItem_Icon_U6HcK{color:var(--SettingsLabels)}
+
+/* Menu Divider */
+.pagedsettings_PageListSeparator_1UEEm{height:1px;background:#3d445000;margin-bottom:14px;margin-right:24px;flex-shrink:0}
+
+/* Left / List End */
+/*________________*/
+
+/* Right Section */
+
+/* Right BG Color */
+.pagedsettings_PagedSettingsDialog_PageContent_1I3Ni.DesktopUI,.DesktopUI .pagedsettings_PagedSettingsDialog_PageContent_1I3Ni{padding:24px 0px 0px 24px;background:radial-gradient(ellipse farthest-corner at 50% 30%, var(--List1) 0%, var(--List2) 50%, var(--List2) 100%)}
+
+/* Buttons are done in chunk....aaf7.css */
+
+/* Line Seperator */
+.gamepaddialog_Field_S-_La.gamepaddialog_WithBottomSeparatorStandard_3s1Rk::after{content:"";position:absolute;bottom:-0.5px;left:0;right:0;height:1px;background:var(--SettingsLineSeperator)}
+
+/* Labels */
+.gamepaddialog_FieldLabel_3b0U-{font-size:16px;line-height:20px;color:var(--SettingsLabels);flex-grow:1;display:flex;flex-direction:row;max-width:100%;word-break:break-word}
+
+/* Text is done in chunk....aaf7.css */
+
+/* Desktop Tray Right Click Menu BG + Add Game Button Menu*/
+.DesktopUI .contextmenu_contextMenu_LQkrb,.contextmenu_ForceDesktop_7K1n9 .contextmenu_contextMenu_LQkrb{box-shadow:0 10px 32px 0px #000000ab;background:radial-gradient(ellipse farthest-corner at 50% 0%, var(--MenuBG1) 0%, var(--BG1) 50%, var(--BG2) 100%)}
+
+/* Desktop Tray Right Click Menu BG + Add Game Button Menu Hover*/
+.DesktopUI .contextmenu_contextMenuItem_pFo3k:hover,.DesktopUI .contextmenu_contextMenuItem_pFo3k.contextmenu_active_1KPWU,.contextmenu_ForceDesktop_7K1n9 .contextmenu_contextMenuItem_pFo3k:hover,.contextmenu_ForceDesktop_7K1n9 .contextmenu_contextMenuItem_pFo3k.contextmenu_active_1KPWU{background:var(--PulseHover);color:cyan}
+
+/* Desktop Tray Line Seperator */
+.contextmenu_ContextMenuSeparator_1F2Ec.contextmenu_ContextMenuSeparator_1F2Ec+.contextmenu_contextMenuItem_pFo3k{border-top:1px solid var(--SettingsLineSeperator)}
+
+/* Menu Labels */
+.DesktopUI .contextmenu_contextMenuItem_pFo3k,.contextmenu_ForceDesktop_7K1n9 .contextmenu_contextMenuItem_pFo3k{padding:8px 18px;font-size:13px;color:var(--SettingsLabels);cursor:pointer;position:relative;min-width:fit-content;display:flex;align-items:center;flex-direction:row;border-top:none;border-bottom:none}
+
+/* Hover Tool Tips */
+.tooltip_TextToolTip_29b2a{box-sizing:border-box;font-size:13px;background-color:var(--SettingsTabActive);border-radius:2px;color:var(--SettingsLabels);padding:6px 8px;box-shadow:1px 1px 8px #0005,2px 2px 16px 1px #0005;max-width:300px;user-select:none;overflow:hidden;text-overflow:ellipsis}
+
+.tooltip_ToolTipCustom_3Dt__{box-sizing:border-box;font-size:13px;background-color:var(--SettingsTabActive);border-radius:2px;color:#e0e1e6;padding:6px 8px;box-shadow:1px 1px 8px #0005,2px 2px 16px 1px #0005;max-width:300px;user-select:none}
+
+.tooltip_ToolTipCustom_3Dt__ .tooltip_ToolTipTitle_3YNfm{color:var(--SettingsLabels)}
+
+.tooltip_ToolTipCustom_3Dt__ .tooltip_ToolTipTitle_3YNfm.tooltip_Center_2-PU0{text-align:center}
+
+.tooltip_ToolTipCustom_3Dt__ .tooltip_ToolTipInsetContent_1nxOn{color:var(--SettingsLabels);margin:6px 4px}
+
+/* Popup Window X position Fix for Chat Popups to be 14px top margin, */
+.friendsui-container .title-area .title-bar-actions,.DesktopUI .title-area .title-bar-actions{margin-right:0px;margin-top:0px}
+
+.DialogContent {
+    padding: 8px;
+    margin-top: 0px;
+    display: flex;
+    overflow: visible;
+    position: relative;
+}
+
+.ModalDialogPopup .DialogContent_InnerWidth {
+    max-width: none;
+    padding-top: 2px;
+}
+
+
+/* Games On Special Popup */
+
+.DialogContent._DialogLayout.marketingmessagesdialog_MarketingMessagesDialog_31Kke {
+    background: linear-gradient( rgb(16 26 97) 30px, rgb(0 9 35) 31px,#00031b 93.5%, #001e8a 93.6%, #001e61 100% );
+}
+
+/* __________________ */
+
+/* background of window located library.css */
+
+.DialogContent, .DialogContentTransition {
+    background: linear-gradient(180deg, #000c35, #000510);
+    user-select: none;
+}
+
+/* header reposistion located  library.css */
+.DesktopUI .DialogHeader, .friendsui-container .DialogHeader {
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: unset;
+    text-transform: unset;
+    margin-bottom: 4px;
+    margin-left: 0px;
+    margin-top: 6px;
+    line-height: 28px;
+}
+
+
+
+/* Rest Located Library.css */
+.DesktopUI .DialogFooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 0px;
+    padding-top: 16px;
+    background: transparent;
+}
+
+.DialogFooter .DialogTwoColLayout._DialogColLayout {
+    gap: 12px;
+    padding: 2px;
+    margin-bottom: 0px;
+    /* margin-right: 8px; */
+}
+
+button.DialogButton.Primary {
+    background: transparent;
+    background: #0d41b5e8;
+    background-position: 25%;
+    background-size: 100% 100%;
+}
+
+button.DialogButton.Primary:hover, button.DialogButton.Primary.gpfocus {
+    background: #1240c3;
+    background-position: 0%;
+    background-size: 100% 100%;
+    color: #fff;
+}
+
+button.DialogButton {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    border: 0;
+    font: inherit;
+    overflow: visible;
+    padding: 0;
+    margin: 2px 0;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    display: block;
+    line-height: 32px;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 3px;
+    cursor: pointer;
+    min-width: 50px;
+    transition-property: opacity,background,color,box-shadow;
+    transition-duration: .2s;
+    transition-timing-function: ease-out;
+    background: #0d41b5e8;
+    background-position: 99% 1%;
+    background-size: 100% 100%;
+    position: relative;
+}
+
+/* Fix for BG to add bottom bar */
+
+.DialogContent, .DialogContentTransition {
+    background: linear-gradient(180deg, #000c35, #000510 calc(100% - 52px), var(--Bar2 calc(100% - 50px), var(--Bar3));
+    user-select: none;
+}
+
+
+/* fix for smaller areas .DialogContent, .DialogContentTransition {
+    background: linear-gradient(180deg, #000c35, #000510 calc(100% - 28px), var(--Bar2) calc(100% - 22px), var(--Bar3));
+    user-select: none;
+}
+*/
+
+button.DialogButton:disabled, button.DialogButton:disabled:hover, button.DialogButton.Disabled, button.DialogButton.Disabled:hover {
+    background: rgba(0,0,37,.20);
+    color: white;
+    box-shadow: none;
+    cursor: default;
+    pointer-events: none;
+}
+
+
+.DialogContent._DialogLayout.GenericConfirmDialog._DialogCenterVertically .DialogBodyText {
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 300;
+    margin-bottom: 8px;
+    user-select: none;
+    padding-bottom: 0px;
+}
+
+/* Top Popup Bar */
+div.ModalPosition_TopBar {
+    min-height: 30px;
+    min-width: initial;
+    flex-grow: initial;
+    flex-shrink: initial;
+    background: linear-gradient(180deg, var(--Bar1), var(--Bar2));
+}
+
+/* Top Popup Bar X */
+div.ModalPosition_Dismiss {
+    min-width: initial;
+    min-height: initial;
+    flex-grow: initial;
+    flex-shrink: initial;
+    position: absolute;
+    right: 4px;
+    top: 0px;
+    z-index: 1;
+}
+
+.ModalPosition_Dismiss .closeButton {
+    width: 16px;
+    height: 16px;
+    padding: 4px;
+    background-size: cover;
+    cursor: pointer;
+    background-image: none;
+    border-radius: 4px;
+}
+
+.ModalPosition_Dismiss .closeButton .SVGIcon_X_Line line {
+    stroke: #ffffff;
+    stroke-width: 24px;
+}
+
+.pagedsettings_PagedSettingsDialog_PageListColumn_RTicB {
+    background: linear-gradient (180deg, var(--MenuBG1) 0%, var(--MenuBG2) 90%);
+    flex: 1;
+    min-width: 140px;
+    max-width: 220px;
+    padding-top: 36px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border-right: 1px solid var(--BG2);
+}
+
+.pagedsettings_PagedSettingsDialog_Title_3qEgQ {
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    margin-top: 4px;
+    padding-left: 4%;
+    color: #0e58ff;
+    font-weight: 700;
+    text-shadow: 1px 1px #001d61;
+    font-size: 17px;
+    user-select: none;
+}
+
+.pagedsettings_HidePageListButton_3i4Ep {
+    position: absolute;
+    left: 24px;
+    top: 38px;
+    z-index: 5;
+    width: 32px;
+    height: 24px;
+    background-color: #1144b8;
+    border-radius: 2px;
+    transition-property: background-color,color;
+    transition-duration: .2s;
+    transition-timing-function: ease-out;
+    -webkit-app-region: no-drag;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.pagedsettings_HidePageListButton_3i4Ep svg {
+    width: 16px;
+    height: 16px;
+    margin-top: 4px;
+    margin-left: 7px;
+    color: white;
+    border-radius: 3px;
+}
+
+.pagedsettings_HidePageListButton_3i4Ep:hover {
+    color: #fff;
+    background: var(--ButtonMidBlueHover);
+    border-radius: 3px;
+}
+
+/* Scroll Bars */
+
+
+
+/* Individual Hover Fixes */
+
+.htmlpopupdialog_HTMLPopupDialog_oHNgI .htmlpopupdialog_BrowserViewHost_Hfu72::-webkit-scrollbar-thumb:hover{background-color:var(--Sbar2);background-clip:padding-box}
+
+.htmlpopupdialog_HTMLPopupDialog_oHNgI .htmlpopupdialog_BrowserViewHost_Hfu72::-webkit-scrollbar-thumb:active{background-color:var(--Sbar2);border:2px solid transparent}
+
+.library_Container_3xRRJ *::-webkit-scrollbar-thumb:hover,.library_LibraryContextMenu_1UOkn::-webkit-scrollbar-thumb:hover{background-color:var(--Sbar2);background-clip:padding-box}
+
+.artworkmodal_ArtworkModalContainer_bAmL1::-webkit-scrollbar-thumb:hover{background-color:var(--Sbar2);background-clip:padding-box}
+
+.artworkmodal_ArtworkModalDetails_1sEyq *::-webkit-scrollbar-thumb:hover{background-color:var(--Sbar2);background-clip:padding-box}
+
+.artworkmodal_ArtworkModalDetails_1sEyq *::-webkit-scrollbar-corner{background-color:#434953}
+
+/* Chat Buttons */
+/*______________*/
+
+/* Submit */
+.chatentry_chatSubmitButton_1IEiK{position:relative;background-color:var(--CBG1);border:1px solid var(--CBorder);color:#c9c9c9;margin:0px;margin-top:2px;max-width:46px;max-height:46px;padding:0;background-image:none;background-size:22px 22px;background-position:center;background-repeat:no-repeat;min-width:46px;cursor:pointer}
+
+.chatentry_chatSubmitButton_1IEiK.chatentry_disabled_2GM2k{color:#898989;cursor:default;background-color:var(--CBG1);border:1px solid var(--CBorder)}
+
+.chatentry_chatSubmitButton_1IEiK .SVGIcon_Submit path{fill:var(--Icons);stroke-width:2px}
+
+/* Emoticon */
+
+.chatentry_chatSubmitButton_1IEiK.chatentry_EmbedButton_24xNx,.chatentry_chatSubmitButton_1IEiK.chatentry_EmoticonPickerButton_K-lPM{flex:0;min-width:46px;position:relative;color:#898989;background-color:var(--CBG1);border:1px solid var(--CBorder);margin:0px;margin-top:0px;max-width:46px;max-height:46px;display:inline-flex;justify-content:center;align-items:center}
+
+.chatentry_EmoticonPickerButton_K-lPM:hover,.chatentry_EmoticonPickerButton_K-lPM:focus{background-color:var(--CHover)}
+
+.chatentry_EmoticonPickerButton_K-lPM .SVGIcon_Emoticon line,.chatentry_EmoticonPickerButton_K-lPM .SVGIcon_Emoticon circle,.chatentry_EmoticonPickerButton_K-lPM .SVGIcon_Emoticon path{stroke:var(--Icons);stroke-width:10px}
+
+/* Attach Files */
+.chatentry_EmbedButton_24xNx .SVGIcon_Paperclip path{stroke:var(--Icons);stroke-width:12px}
+
+/* Voice Button Style in other file */
+.VoiceToggle.Inactive:hover{background-color:var(--CHover)}
+
+/*_____________*/
+
+/* Scroll to Top */
+.smartscrollcontainer_ScrollToTopButton_1bCHN div{pointer-events:all;cursor:pointer;display:inline-block;box-shadow:0 0 8px #00000088;border-top-left-radius:5px;border-top-right-radius:5px;padding:4px 32px 4px 32px;background:linear-gradient(to bottom, var(--ToTop1) 0, var(--ToTop2) 100%);text-transform:uppercase;letter-spacing:1px}
+
+
+/* If Filter Box is selected Search Input BG */
+
+.gamelistsearchbar_SearchFilterInput_172OF{padding-left:32px;border-radius:0;background-color:#183bb5a1;background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACfUlEQVRYhcXWSYhUVxTG8V+LiDYOYAytiwYJRIwSsaMbJ1A0QsABk6AQ0IULF4K9cFg4LAqkRUFF0YAiSCKiiAsVXZgEYnBAIWAgKI0SFXuldkLi0M7SLu7pVCNdVa9emcoHj3Mu7957/u+8Oxz+ZzVAoVCo1G8yWjAGg/AP2vErbuYNXigU9K/QZzxWYAFG9/H+Ko5hPx7mgehX5l0brqG1V/AnuIeX0f4M26RsLH1fAANxDhuifQPrIlgTmsPOwk48wygcwvb3AfATZobfhk9i4t/wFK+lNfAL1mAsTkb/NdhSC0Abpoe/ApvQXWGODizC3mivx5w8AKMV074VB7JOElqFi+EfzAOwOmyH9BV5tCxsM76sBmAiFoe/K2dwuIPT4S+pBmCatLLhhxoAKC7IKdUAfBS2C7drBPgjbDM+zAowMOwjPK8R4Fkvf0hWgMdhP8gyqIKGhX2Dv7ICtIcdgHE1AkwIe0OG+6EH4HwMgK9rBPgm7IUsnXsA7igeHisxOGfw2ZgU/nfVAMC30gJsxJEcwRtxOPxLuFItQBeWhz8fu6sIPlw6hkfiFuZmHfjuZXQUO8JvxY+KKS2leVJl1BLtJsWdUFF9VURr8UK6mD6P55R0TbdLmRqOT7EQU2PcAwyV1s956XR9kAcANuIyNkv3xMJ4SumsVBE14QQ+xs9S0dJZDqBcSXZGSutifC/tlB69wu/YE0G+wJ+4jhlhx0uVVdnjuFJRCsfjaYjJBklH9t8l+t8PqHO9IEpmolwG3lW39E/vlgneo84IWjET1QBUq1IQDfUCKAUxop4ApSD+/R31ACgLUS+AviCWkG0b/hcQX2FfnWP3rbdXsIgAtEnQ2wAAAABJRU5ErkJggg==);background-size:18px 18px;background-repeat:no-repeat;background-position:8px center;padding-right:24px}
+
+/* Hover*/
+.gamelistsearchbar_Container_20QAC .gamelistsearchbar_SearchInput_12vo5 .DialogTextInputBase:hover{background-color:var(--PulseHover)}
+
+.gamelistsearchbar_SearchFilterInput_172OF:hover{background-color:var(--PulseHover)}
+
+/* Filter Box */
+
+/* Connecting BG */
+.gamelistsearchbar_Container_20QAC .gamelistsearchbar_AdvancedSearchContainer_vCCmY .gamelistsearchbar_AdvancedSearchPaneContainer_1dgAM .gamelistsearchbar_AdvancedSearchPane_Woh0k:before{background-color:#00000000;}
+
+/* Icon */
+.gamelistsearchbar_Container_20QAC .gamelistsearchbar_AdvancedSearchContainer_vCCmY .gamelistsearchbar_AdvancedSearchButton_1TxHd svg path{fill:white}
+
+/* Button */
+.gamelistsearchbar_Container_20QAC .gamelistsearchbar_AdvancedSearchContainer_vCCmY{box-sizing:border-box;position:relative;left:-2px;background-color:#183bb5a1;color:rgba(255,255,255,.8);font-weight:100;border-radius:4px;height:32px;display:flex}
+
+/* Hover/Selected */
+.gamelistsearchbar_Container_20QAC .gamelistsearchbar_AdvancedSearchContainer_vCCmY.gamelistsearchbar_Extended_31r1_,.gamelistsearchbar_Container_20QAC .gamelistsearchbar_AdvancedSearchContainer_vCCmY:not(.gamelistsearchbar_Disabled_1Gjk2):hover{background-color:#0039ff}
+
+
+/* Filters Open BG */
+.gamelistsearchbar_Container_20QAC .gamelistsearchbar_AdvancedSearchContainer_vCCmY .gamelistsearchbar_AdvancedSearchPaneContainer_1dgAM .gamelistsearchbar_AdvancedSearchPane_Woh0k{background-image:radial-gradient(ellipse farthest-corner at 50% 30%, #001142 0%, #000e31 50%, #000314 100%);background-color:none;z-index:20;position:absolute;left:42px;border-radius:4px;box-shadow:0px 2px 8px 1px #000;opacity:0;transform:scale(0.1);transition:transform .21s ease-in-out,opacity .21s ease-in-out;transform-origin:0 0;border:1px solid #0e43da}
+
+/* Library Search */
+.gamelistsearchbar_Container_20QAC .gamelistsearchbar_SearchInput_12vo5 .DialogTextInputBase{padding-left:32px;border-radius:0;background-color:#183bb5a1;background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACfUlEQVRYhcXWSYhUVxTG8V+LiDYOYAytiwYJRIwSsaMbJ1A0QsABk6AQ0IULF4K9cFg4LAqkRUFF0YAiSCKiiAsVXZgEYnBAIWAgKI0SFXuldkLi0M7SLu7pVCNdVa9emcoHj3Mu7957/u+8Oxz+ZzVAoVCo1G8yWjAGg/AP2vErbuYNXigU9K/QZzxWYAFG9/H+Ko5hPx7mgehX5l0brqG1V/AnuIeX0f4M26RsLH1fAANxDhuifQPrIlgTmsPOwk48wygcwvb3AfATZobfhk9i4t/wFK+lNfAL1mAsTkb/NdhSC0Abpoe/ApvQXWGODizC3mivx5w8AKMV074VB7JOElqFi+EfzAOwOmyH9BV5tCxsM76sBmAiFoe/K2dwuIPT4S+pBmCatLLhhxoAKC7IKdUAfBS2C7drBPgjbDM+zAowMOwjPK8R4Fkvf0hWgMdhP8gyqIKGhX2Dv7ICtIcdgHE1AkwIe0OG+6EH4HwMgK9rBPgm7IUsnXsA7igeHisxOGfw2ZgU/nfVAMC30gJsxJEcwRtxOPxLuFItQBeWhz8fu6sIPlw6hkfiFuZmHfjuZXQUO8JvxY+KKS2leVJl1BLtJsWdUFF9VURr8UK6mD6P55R0TbdLmRqOT7EQU2PcAwyV1s956XR9kAcANuIyNkv3xMJ4SumsVBE14QQ+xs9S0dJZDqBcSXZGSutifC/tlB69wu/YE0G+wJ+4jhlhx0uVVdnjuFJRCsfjaYjJBklH9t8l+t8PqHO9IEpmolwG3lW39E/vlgneo84IWjET1QBUq1IQDfUCKAUxop4ApSD+/R31ACgLUS+AviCWkG0b/hcQX2FfnWP3rbdXsIgAtEnQ2wAAAABJRU5ErkJggg==);background-size:18px 18px;background-repeat:no-repeat;background-position:8px center;padding-right:24px}
+
+/* Game List Game Label Hover */
+.gamelistentry_Container_2-O4Z:hover,.gamelistentry_Container_2-O4Z.gamelistentry_HoverOverlay_3cMVy{color:#fff;background-color:var(--PulseHover)}
+
+/* Game List Selected */
+.gamelistentry_Selected_1UBpA.gamelistentry_Container_2-O4Z,.gamelistentry_Selected_1UBpA .gamelistentry_Container_2-O4Z{box-sizing:border-box;background-color:var(--PulseHover);box-shadow:0 0px 2px 0px #0005,0 0px 16px 0px #0004}
+
+/* Active Game List Selected Hover */
+.gamelistentry_Selected_1UBpA.gamelistentry_Container_2-O4Z:hover,.gamelistentry_Selected_1UBpA.gamelistentry_Container_2-O4Z.gamelistentry_HoverOverlay_3cMVy,.gamelistentry_Selected_1UBpA.gamelistentry_Container_2-O4Z :hover,.gamelistentry_Selected_1UBpA .gamelistentry_Container_2-O4Z:hover,.gamelistentry_Selected_1UBpA .gamelistentry_Container_2-O4Z.gamelistentry_HoverOverlay_3cMVy,.gamelistentry_Selected_1UBpA .gamelistentry_Container_2-O4Z :hover{background-color:#114fb7}
+
+/* Settings Buttons */
+.settings_SettingsDialogButton_3epr8.DesktopUI,.DesktopUI .settings_SettingsDialogButton_3epr8{color:var(--SettingsLabel);background-color:var(--SettingsButton1);padding:8px 14px;font-size:13px;line-height:18px}
+
+/* Large Settings Buttons */
+.settings_SettingsDialogFatButton_UqEiV.DesktopUI,.DesktopUI .settings_SettingsDialogFatButton_UqEiV{background-color:var(--SettingsButton1);padding:6px 0;line-height:16px}
+
+/* Large Settings Image Color */
+button.accountpanel_FatButton_TEWms svg{height:40px;width:40px;margin:10px;color:var(--SettingsLabel)}
+
+/* Large Settings Label Color */
+button.accountpanel_FatButton_TEWms .accountpanel_Label_3wadw{font-size:16px;color:var(--SettingsLabel)}
+
+/* Large Settings Descriptive Text */
+button.accountpanel_FatButton_TEWms .accountpanel_Details_3Wb9y{font-size:12px;line-height:20px;color:var(--SettingsText)}
+
+/* Large Settings Descriptive Text Hover? */
+button.accountpanel_FatButton_TEWms .accountpanel_Details_3Wb9y:hover{font-size:12px;line-height:20px;color:var(--SettingsLabel)}
+
+/* Settings Page Text */
+.accountsettings_EntryValue_3qIXY{color:var(--SettingsText);font-weight:400;font-size:12px;line-height:19px}
+
+/* Chat Entry for Chat Text? */
+
+.chatentry_chatTextarea_pewyB{resize:none;margin-right:4px;height:42px;background-color:transparent;box-shadow:inset 0px 0px 4px transparent;outline-width:0px;color:var(--ChatText);border:0px solid transparent;font-size:14px;font-family:Arial,Helvetica,sans-serif;font-family:"Motiva Sans",Arial,Helvetica,sans-serif;padding:4px 4px 4px 8px;flex-shrink:1;width:100%}
+
+/* Fix for Attachment Button in Chat for Hover */
+.chatentry_chatSubmitButton_1IEiK.chatentry_EmbedButton_24xNx:hover,.chatentry_chatSubmitButton_1IEiK.chatentry_EmbedButton_24xNx:focus{background-color:var(--CHover)}
+
+/* Downloads Page*/
+
+/* Background Overall */
+.downloads_DownloadsPage_1bq4x{height:100%;width:100%;display:flex;flex-direction:column;background:radial-gradient(ellipse farthest-corner at 50% 30%, var(--List1) 0%, var(--List2) 50%, var(--List2) 100%);box-sizing:border-box;z-index:1}
+
+/* Graph Section / Top */
+.downloadgraph_GraphAndStats_3KDkL{position:relative;width:100%;height:154px;background:radial-gradient(farthest-corner at 0px 0px, var(--GraphBG1) 0%, var(--GraphBG2) 90%);display:flex;flex-direction:row;margin-bottom:auto}
+
+/* Removal of pointless glow if nothing downloading */
+.downloadgraph_HeroAndLogo_3mZ2r.downloadgraph_Empty_pHDI1{background:linear-gradient(to right, #0056d6 0%, #1a9fff 100%);opacity:0;-webkit-mask-image:radial-gradient(circle at 0%, #0e141b 30%, rgba(14, 20, 27, 0) 90%);width:50%}
+
+/* Downloads Labels under speeds / file size */
+
+.downloadgraph_StatsPanel_3mdnp .downloadgraph_Stat_5TdA4{width:100%;text-transform:uppercase;font-family:"Motiva Sans",Helvetica,sans-serif;font-weight:normal;font-size:16px;font-style:normal;line-height:20px;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;letter-spacing:0px;color:#fff;font-weight:bold;font-size:10px;letter-spacing:.5px;text-transform:uppercase;color:#5ca8ff;padding-right:5px}
+
+/* Settings Button Mess*/
+.downloadgraph_SettingsButton_lzk4z{position:absolute;top:12px;right:12px}
+
+.downloadgraph_Button_3Tfp8.downloadgraph_Button_3Tfp8,.downloadgraph_Button_3Tfp8.downloadgraph_Button_3Tfp8:enabled,.downloadgraph_Button_3Tfp8.downloadgraph_Button_3Tfp8:active,.downloadgraph_Button_3Tfp8.downloadgraph_Button_3Tfp8:hover,.downloadgraph_Button_3Tfp8.downloadgraph_Button_3Tfp8:enabled:active:hover,.downloadgraph_Button_3Tfp8.downloadgraph_Button_3Tfp8.DialogButton:enabled{line-height:initial;width:16px;height:16px;box-sizing:content-box;display:flex;justify-content:center;padding:6px;margin:0;border-radius:2px;box-shadow:none;background:var(--DButtons);color:#fff}
+
+.BasicUI .downloadgraph_Button_3Tfp8.downloadgraph_Button_3Tfp8,.BasicUI .downloadgraph_Button_3Tfp8.downloadgraph_Button_3Tfp8:enabled,.BasicUI .downloadgraph_Button_3Tfp8.downloadgraph_Button_3Tfp8:active,.BasicUI .downloadgraph_Button_3Tfp8.downloadgraph_Button_3Tfp8:hover,.BasicUI .downloadgraph_Button_3Tfp8.downloadgraph_Button_3Tfp8:enabled:active:hover,.BasicUI .downloadgraph_Button_3Tfp8.downloadgraph_Button_3Tfp8.DialogButton:enabled{border-radius:0}
+
+.downloadgraph_Button_3Tfp8.downloadgraph_Button_3Tfp8.downloadgraph_Button_3Tfp8:hover{background:var(--DButtonHover)}
+
+.downloadgraph_Button_3Tfp8.downloadgraph_Button_3Tfp8 svg{width:inherit;height:inherit}
+
+.downloadgraph_DownloadGraphLegend_hGZq4 .downloadgraph_LegendText_1iulC{font-family:"Motiva Sans",Helvetica,sans-serif;font-weight:normal;font-size:16px;font-style:normal;line-height:20px;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;letter-spacing:0px;color:#fff;font-weight:bold;font-size:10px;letter-spacing:.5px;text-transform:uppercase;color:#cde8fd}
+
+/* Active Download */
+
+/* Border Fix */
+.downloads_Active_IbePL .downloads_SectionList_OINnO{border:2px solid transparent;border-radius:0px;margin-left:0px}
+
+/* BG */
+.downloads_SectionItem_1VNuY.downloads_Active_IbePL{background-color:var(--PulseHover);padding:8px 0px 8px 24px;overflow-y:scroll}
+
+/* Whats New Label Fix */
+.pageablecontainer_HeaderPageControls_2pAbU{box-sizing:border-box;display:flex;color:#fff;padding:0;font-size:13px;flex:1}
+
+/* Sort By Label */
+.appgrid_SortingDropDown_1tBzy .appgrid_SortingDropDownLabel_1ljKT{color:#fff;text-transform:uppercase;line-height:18px;font-weight:100;letter-spacing:1px;white-space:nowrap;margin-top:1px}
+
+/* Resize Games List Bar + Hover */
+.library_LibraryWindowDivider_276E6{width:1px;height:100%;flex-shrink:0;background-color:#0077eeb8;min-width:1px;z-index:12}
+
+.library_LibraryWindowDivider_276E6.library_Sizable_2g5K_{cursor:ew-resize}
+
+.library_LibraryWindowDivider_276E6.library_Sizable_2g5K_:hover{background-color:#3c6eea}
+
+/* Event News Popup in Library */
+/* ______________________ */
+
+/* BG */
+.partnereventdisplay_InLibraryView_3X6U9 .partnereventdisplay_EventDetailTitleContainer_35gM9{padding:16px 24px 12px 24px;background:radial-gradient(ellipse at bottom center, rgba(48 116 239, 1) 10%, rgba(44, 138, 255, 0.37) 80%)}
+
+/* BG for Event Title */
+.apppartnereventspage_PartnerEvent_lwprN{max-width:848px;overflow:hidden;margin:56px auto 16px auto;position:relative;background-color:#25282e;border-radius:4px;background-image:radial-gradient(ellipse at top left, #00206c, #001849);box-shadow:0 0 32px #000;pointer-events:initial;border:1px solid transparent;font-weight:300}
+
+.localdateandtime_RightSideTitles_3sPON{font-size:12px;font-weight:200;color:#fff;text-transform:uppercase;letter-spacing:1px;margin-bottom:4px}
+
+/* Posted Text */
+.localdateandtime_DateToolTip_3zhja{z-index:2000;padding:3px 8px;border-radius:2px;background-color:red;color:#fff;text-transform:uppercase;box-shadow:1px 1px 2px 2px rgba(0,0,0,.3)}
+
+/* Date */
+.localdateandtime_ShortDateAndTime_4K3Bl{margin:0px 4px;text-transform:initial;color:#fff;letter-spacing:normal}
+
+/* Event Title*/
+.partnereventdisplay_EventDetailTitle_2_4FS{font-size:33px;line-height:36px;font-weight:200;color:#fff}
+
+/* Event Text Contents */
+.partnereventdisplay_EventDetailsBody_3v0cw{padding-right:24px;border-right:1px solid rgba(0,0,0,.5);font-size:14px;line-height:19px;min-height:600px;color:#fff;overflow-wrap:break-word;word-wrap:break-word;word-break:break-word;max-width:688px}
+
+/* Rate / Share Etc BG */
+.discussionwidget_Container_3BVe_{display:flex;flex-direction:row;justify-content:space-between;padding:24px;background-image:radial-gradient(ellipse at top center, rgba(13, 67, 149, 1) 10%, rgba(2, 32, 142, 0) 80%)}
+
+/* BG Behind Rate Share Buttons */
+.discussionwidget_VoteContainer_1uhQY,.discussionwidget_ShareContainer_cLK_F,.discussionwidget_DiscussContainer_3tXYJ{padding:10px;background-color:rgba(30,33,38,.5)}
+
+/* Buttons For Rate Share */
+.partnereventshared_Button_3P0Tm.partnereventshared_Icon_3p1Hj{display:flex;flex-direction:row;align-items:center;color:#fff;transition-property:background,color,box-shadow;transition-duration:.2s;transition-timing-function:ease-out;background:#0f4fbc;padding:6px 25px 6px 25px;border-radius:2px;box-shadow:2px 2px 5px rgba(0,0,0,.2);position:relative}
+
+/* Button Hover */
+.partnereventshared_Button_3P0Tm.partnereventshared_Icon_3p1Hj:hover{background:red;color:#fff;box-shadow:2px 2px 15px rgba(0,0,0,.5);cursor:pointer}
+
+/* Voting Icons */
+.discussionwidget_VoteDownIcon_3QPkc{fill:rgba(255,255,255,1)}
+
+.discussionwidget_VoteDownSelectedIcon_3SLkg{fill:#9cccf5}
+
+.discussionwidget_VoteUpIcon_vRT1W{fill:rgba(255,255,255,1)}
+
+.discussionwidget_VoteUpSelectedIcon_8WczG{fill:#9cccf5}
+
+.discussionwidget_VoteUpStaticIcon_1g-En{width:36px;height:36px;margin-right:2px;margin-bottom:-4px;margin-top:-6px;margin-left:-5px;fill:#399aec}
+
+.discussionwidget_VoteButtonSelected_2c_5V{background-color:#399aec}
+
+/* Event Controls
+/* ______________________ */
+
+/* Image Size */
+.apppartnereventspage_ControlSection_1Wu6D .apppartnereventspage_ControlSectionWidth_2jz0p .apppartnereventspage_ControlSectionRightSide_1WrR8 .apppartnereventspage_GameArt_2u-98 img{object-fit:cover;width:100%;height:100%;border-radius:3px;padding:2px;box-sizing:border-box;transition:filter .1s ease-in-out}
+
+/* Scroll Button BG
+.apppartnereventspage_ScrollButton_357Gu{background-color:#44444b;border:1px solid #63636d00;border-radius:4px;cursor:pointer;margin-bottom:8px;width:48px;height:24px;box-shadow:0 3px 32px #000}
+
+.apppartnereventspage_ScrollButton_357Gu svg polygon{fill:#fff}
+
+.apppartnereventspage_ScrollButton_357Gu:hover{background-color:red;border:1px solid #9e9ead00}
+
+.apppartnereventspage_ScrollButton_357Gu:hover svg polygon{fill:#fff}
+
+.apppartnereventspage_ScrollButton_357Gu:hover.apppartnereventspage_GameArt_2u-98 img{filter:brightness(1.25)}
+
+.apppartnereventspage_ScrollButton_357Gu svg polygon{fill:#9e9ead}
+
+/* Close Button */
+.apppartnereventspage_CloseButton_35HbM{background-color:#44444b;border:1px solid #63636d00;padding:8px;cursor:pointer;border-radius:50%;width:32px;height:32px;margin-bottom:8px;box-shadow:0 3px 32px #000}
+
+.apppartnereventspage_CloseButton_35HbM:hover{background-color:red;border:1px solid #9e9ead00}
+
+.apppartnereventspage_CloseButton_35HbM:hover svg line{stroke:#fff}
+
+/* Whats Downloading Hover */
+.downloads_Active_IbePL .downloads_SectionList_OINnO:hover{border-color:#005eff00}
+
+/* Grabber Thing of Hover */
+.downloads_SectionItem_1VNuY .downloads_DragHandle_14DhZ{color:#fff}
+
+/* Download Page Counts */
+.downloads_SectionTitle_qq2xI .downloads_Count_1CGnw{color: #2f76c5;
+    text-shadow: 1px 0px 2px #00459a;}
+
+/* Download Page Rulers */
+.downloads_SectionTitle_qq2xI .downloads_Rule_1CTr1{flex-grow:1;height:2px;align-self:center;margin-left:10px;margin-right:10px;background-color:rgba(0,107,237,.3)}
+
+/* Auto Update label */
+.downloads_AutoUpdateHours_117rQ{color:#3475e6}
+
+/* Nothing Downloading Text */
+.downloads_EmptyTransfers_1zv2D .downloads_Text_1nCT-{flex:1 1 auto;height:75px;color:#2890fc;}
+
+/* Downloads Item Hover */
+.downloads_SectionItem_1VNuY:hover,.downloads_SectionItem_1VNuY.downloads_Dragging_3-SbB{background-color:var(--PulseHover);border-radius:2px}
+
+/* Mini Buttons*/
+
+.downloads_SectionItem_1VNuY .downloads_Button_3oavR,.downloads_SectionItem_1VNuY .downloads_Button_3oavR:enabled,.downloads_SectionItem_1VNuY .downloads_Button_3oavR:active,.downloads_SectionItem_1VNuY .downloads_Button_3oavR:hover,.downloads_SectionItem_1VNuY .downloads_Button_3oavR:enabled:active:hover,.downloads_SectionItem_1VNuY .downloads_Button_3oavR.DialogButton:enabled{line-height:initial;height:20px;width:20px;box-sizing:content-box;display:flex;justify-content:center;background:#004aa4;box-shadow:none;color:#fff;padding:8px;margin:0;border-radius:2px;min-width:0}
+
+.downloads_SectionItem_1VNuY:hover .downloads_Button_3oavR.DialogButton:enabled{background:#004aa4}
+
+.downloads_SectionItem_1VNuY:hover .downloads_Button_3oavR.DialogButton:enabled{background:#004aa4}
+
+.downloads_SectionItem_1VNuY:hover .downloads_Button_3oavR.DialogButton:enabled{background:#004aa4}
+
+.downloads_SectionItem_1VNuY:hover .downloads_Button_3oavR.DialogButton:enabled:hover{background:#2f69eb}
+
+/* Close Hover Button For Hovered Game Positioning Fix */
+
+.downloads_SectionItem_1VNuY .downloads_ButtonWrapper_2Zfas.downloads_Right_2WEwE {
+    margin-left: 6px;
+    padding-right: 6px;
+}
+
+/* Close X Hover Color Fix */
+
+.downloads_SectionItem_1VNuY.downloads_Active_IbePL .downloads_Button_3oavR.DialogButton:enabled.downloads_RemoveFromQueue_2xR-V:hover {
+    background: #2f69eb;
+    color: #fff;
+}
+
+/* Fix to Selected Downloads Icon Color */
+.downloads_ProgressDetails_sv3ZH .downloads_Icon_-OgRz {
+    height: 100%;
+    width: 100%;
+    color: white;
+}
+
+/* Downloads Active Downloads Button Colour */
+
+.downloads_SectionItem_1VNuY.downloads_Active_IbePL .downloads_Button_3oavR.DialogButton:enabled {
+    background: #004aa4;
+    background-position: inherit;
+    background-size: 100%;
+    transition-property: background,background;
+    transition-duration: .2s;
+    transition-timing-function: ease-out;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 3px;
+}
+
+.downloads_SectionItem_1VNuY.downloads_Active_IbePL .downloads_RemoveFromQueue_2xR-V.DialogButton:enabled {
+    background: #004aa4;
+}
+
+/* Download Bar Track */
+
+.downloads_SectionItemStatus_1Sygg .downloads_ProgressBar_1vMU1 {
+    width: 100%;
+    background-color: #002a73;
+    transition: background-color .1s linear;
+    margin-left: 0;
+}
+
+.downloads_SectionItem_1VNuY:hover .downloads_ProgressBar_1vMU1 {
+    background-color: #002a73;
+    
+}
+
+/* Completed Blip */
+
+.downloads_SectionItemStatus_1Sygg .downloads_ProgressBar_1vMU1.downloads_NotActive_2Xedp div {
+    background-color: #0077ff;
+}
+
+.downloads_SectionItem_1VNuY:hover .downloads_ProgressBar_1vMU1.downloads_NotActive_2Xedp div {
+    background-color: #0077ff;
+}
+
+/* Active Download State */
+.downloads_SectionItemStatus_1Sygg .downloads_State_2ns4w .downloads_InProgress_3Wavc {
+    color: #ffffff;
+}
+
+/* Download Size Total */
+.downloads_ProgressDetails_sv3ZH .downloads_Value_1dHjj{color:#325ec2;white-space:nowrap}
+
+.downloads_ProgressDetails_sv3ZH .downloads_Value_1dHjj.downloads_InProgress_3Wavc{color:#5aabff;margin-right:2px}
+
+/* Completed / When Queued */
+.downloads_SectionItemStatus_1Sygg{color:#fff}
+
+/* Clear all button */
+.downloads_RemoveAllButton_1GdR5.downloads_RemoveAllButton_1GdR5.DialogButton:enabled{width:inherit;background:#004aa4}
+
+.downloads_RemoveAllButton_1GdR5.downloads_RemoveAllButton_1GdR5:hover.DialogButton:enabled{background:#2f69eb;color:#fff;box-shadow:none}
+
+/* Some Other Download Text */
+.downloads_AutoUpdateSettings_22mb5{color:#fff;flex-grow:0}
+
+/* X Notifications Button */
+.standardtemplates_PinnedTemplateDesktop_2caCr {
+    height: 36px;
+    padding: 0px;
+    position: relative;
+    background-color: #1962de;
+    border-radius: 2px;
+    margin: 0 auto 2px auto;
+}
+
+.standardtemplates_PinnedTemplateDesktop_2caCr:hover {
+    background: #004ba7;
+}
+
+.standardtemplates_PinnedTemplateDesktop_2caCr .standardtemplates_PinnedBody_1Ljgv {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.standardtemplates_PinnedTemplateDesktop_2caCr .standardtemplates_Icon_19g_L {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+    padding-left: 2px;
+    color: #ffffff;
+}
+
+.standardtemplates_AllNotificationsTemplate_2m9JU .standardtemplates_Icon_19g_L, .standardtemplates_StandardTemplateDesktop_1tsEf .standardtemplates_Icon_19g_L, .standardtemplates_DesktopToastTemplate_3CGHg .standardtemplates_Icon_19g_L, .standardtemplates_PinnedTemplateDesktop_2caCr .standardtemplates_Icon_19g_L {
+    width: 13px;
+    height: 13px;
+    margin-right: 5px;
+    color: #8b929a;
+    fill: #ffffff;
+    display: flex;
+}
+
+/* Collections BG */
+.allcollections_ScrollContainer_u1xD3 {
+    box-sizing: border-box;
+    background: radial-gradient(100% 100% at 33% 45%, #001561 0%, #00112a 100%);
+    padding: 24px;
+    padding-bottom: 0;
+    border: 1px solid rgba(0,0,0,0);
+    overflow-y: auto;
+    overflow-x: hidden;
+    min-height: 100%;
+    user-select: none;
+}
+
+/* Collections Label */
+
+.allcollections_ScrollContainer_u1xD3 .allcollections_Header_2Th-v {
+    box-sizing: border-box;
+    flex: none;
+    display: flex;
+    color: rgb(255 255 255);
+}
+
+/* Create collection button */
+.allcollections_Collection_3IWn-.allcollections_NewCollection_2_dwx {
+    box-shadow: none;
+    border: 2px solid #003cab;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.allcollections_Collection_3IWn-:focus.allcollections_NewCollection_2_dwx, .allcollections_Collection_3IWn-:hover.allcollections_NewCollection_2_dwx {
+    border: 2px solid #00adff88;
+}
+
+.allcollections_Collection_3IWn- {
+    box-sizing: border-box;
+    width: 100%;
+    background: #003cab;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px 0px rgb(0 0 0 / 50%);
+    border-radius: 5px;
+    transition-property: background,box-shadow,border;
+    transition-duration: .2s;
+    transition-timing-function: ease-in-out;
+    border: 2px solid transparent;
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.allcollections_Collection_3IWn-:focus, .allcollections_Collection_3IWn-:hover {
+    background: #00adff88;
+    box-shadow: 0px 14px 22px 0px rgba(0,0,0,.3);
+    cursor: pointer;
+}
+
+/* Game Selected Play Bar */
+
+.appdetailsplaysection_Glassy_3DeO9.appdetailsplaysection_PlayBar_3fLo1 {
+    background: linear-gradient(to top, rgb(5 28 143) 0%, rgb(20 41 190) calc(100% - 2px), rgb(0 0 0) calc(100% - 1px), rgb(0 0 0) 100%);
+    box-shadow: none;
+    transition: background .21s ease-in-out;
+}
+
+.appdetailsplaysection_StickyHeader_39Rhe .appdetailsplaysection_Glassy_3DeO9 {
+    backdrop-filter: blur(8px);
+    background-color: rgb(0 0 0);
+    margin-top: -15px;
+    padding-top: 15px;
+}
+
+/* Large Bold Text */
+.appdetailsplaysection_PlayBarLabel_34lrt {
+    font-size: 14px;
+    color: rgb(255 255 255);
+    transition: margin .1s ease-in-out;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 16px;
+}
+
+/* Smaller Text Under Large Text */
+.appdetailsplaysection_PlayBarDetailLabel_2TYVG, .appdetailsplaysection_LastPlayed_3pS8k .appdetailsplaysection_LastPlayedInfo_1nfJN {
+    color: rgb(255 255 255 / 79%);
+}
+
+/* Small Square Buttons */
+.appdetailsplaysection_MenuButton_3qDWQ {
+    box-sizing: border-box;
+    margin-right: 10px;
+    width: 32px;
+    height: 32px;
+    padding: 7px;
+    border-radius: 4px;
+    background-color: #1841d68c;
+    position: relative;
+    border: none;
+    cursor: pointer;
+    transition: background-color .12s ease;
+}
+
+.appdetailsplaysection_MenuButton_3qDWQ:hover {
+    background-color: rgb(16 80 226 / 89%);
+}
+
+.appdetails_Glassy_3Fmxx.appdetails_ScrollContainer_2l416 {
+    background-image: radial-gradient(100% 100% at 45% 35%, #011a52 0%, #000000 100%);
+}
+
+/* Main BG for Selected Game */
+.appdetailsoverview_Container_27RcN {
+    position: relative;
+    width: 100%;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    background: #000a20;
+}
+
+.appdetailsoverview_Glassy_2OOzY .appdetailsoverview_BackdropGlass_Jbe-- {
+    box-sizing: border-box;
+    display: block;
+    height: fit-content;
+    width: 100%;
+    backdrop-filter: blur(8px);
+    background: linear-gradient(to bottom, rgb(0 6 77) 0%, rgb(0 54 151) 82px, rgb(0 12 99 / 92%) 80%, rgb(0 27 75) 100%);
+    z-index: 0;
+}
+
+.appdetailsprimarylinkssection_LinksSection_3-V8v>div {
+    background: radial-gradient(100% 80% at 64% 95%, rgb(0 54 128 / 36%) 40%, rgb(9 56 165 / 35%) 100%) !important;
+    box-shadow: none !important;
+}
+
+.appdetailsprimarylinkssection_Anchor_DY4_w .appdetailsprimarylinkssection_Link_1b6LY .appdetailsprimarylinkssection_Text_2sNDj {
+    align-self: center;
+    color: rgb(255 255 255);
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.appdetailsprimarylinkssection_Anchor_DY4_w .appdetailsprimarylinkssection_Link_1b6LY:hover {
+    background-color: rgb(0 113 255 / 36%);
+    cursor: pointer;
+}
+
+.appdetailssectionheader_SectionHeader_1Q2q_ {
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    color: #ffffff;
+}
+
+.appdetailsactivitysection_ViewLastNews_1EC1x {
+    box-sizing: border-box;
+    background: transparent;
+    color: #0072ff;
+    font-size: 13px;
+    font-family: "Motiva Sans",Arial,Helvetica,Sans-serif;
+    padding: 4px 12px;
+    line-height: initial;
+    align-self: flex-end;
+    text-align: left;
+    width: fit-content;
+    margin-bottom: 0;
+    border-radius: 2px;
+    transition: background-color .2s ease-in-out,color .2s ease-in-out;
+    cursor: pointer;
+}
+
+.appdetailsactivitysection_ViewLastNews_1EC1x:hover {
+    background-color: #023a8c;
+    color: #fff;
+}
+
+.appactivityday_AppActivityDay_S2Fu9 .appactivityday_AppActivityDate_19LfM {
+    color: #007eff;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-bottom: 4px;
+    letter-spacing: 1px;
+}
+
+.appactivityday_Event_UVeN0 .appactivityday_EventHeadline_QCKBq {
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 4px 4px 4px 0px;
+    font-size: 14px;
+}
+
+.appactivityday_Event_UVeN0 .appactivityday_EventHeadline_QCKBq .appactivityday_HeadlineGameName_Gy1Y7 {
+    color: #ffffff;
+    margin-left: 4px;
+}
+
+.appactivityday_Event_UVeN0 .appactivityday_EventHeadline_QCKBq a:-webkit-any-link {
+    color: #1b9ffc;
+}
+
+.appactivityday_PartnerEvent_1AYE1 {
+    border: 1px solid transparent;
+    border-image-source: none;
+    border-image-width: 1px;
+    border-image-repeat: stretch;
+    border-image-slice: 7;
+    box-shadow: 0 0 12px #00000025;
+    background: #00000000; 
+}
+
+.appactivityday_PartnerEventTextOnly_3QRf- {
+    font-size: 13px;
+    border-image-source:none;
+    border-image-width: 1px;
+    border-image-repeat: stretch;
+    border-image-slice: 7;
+    box-shadow: 0 0 12px #00000025;
+    background:#00000000;
+    transition-property: background;
+    transition-duration: .2s;
+    transition-timing-function: ease-out;
+}
+
+.appactivityday_PartnerEventTextOnly_3QRf-:hover {
+    background: #002870;
+    cursor: pointer;
+}
+
+.appactivityday_PartnerEventTextOnly_Icon_1-llQ svg path {
+    stroke: none;
+    fill: #ffffff;
+}
+
+.appactivityday_PartnerEventType_1ujzu {
+    color: #ffffff;
+    font-size: 13px;
+    text-transform: uppercase;
+    margin-right: 4px;
+    display: flex;
+    align-items: center;
+}
+
+.appactivityday_PartnerEventTextOnly_Title_1Cva_ {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.comment_thread_RatingBar_1yWgP .comment_thread_LikeCount_3grvn, .comment_thread_RatingBar_1yWgP .comment_thread_CommentCount_2RkIc, .comment_thread_RatingBar_1yWgP .comment_thread_ReactionCount_1S3Q9 {
+    color: #ffffff;
+    user-select: none;
+    font-size: 14px;
+}
+
+.comment_thread_RatingBar_1yWgP .comment_thread_LikeIcon_1OhPt .comment_thread_RatingIcon_2AVfX, .comment_thread_RatingBar_1yWgP .comment_thread_CommentIcon_1R6Ou .comment_thread_RatingIcon_2AVfX, .comment_thread_RatingBar_1yWgP .comment_thread_ReactionIcon_QL3Aa .comment_thread_RatingIcon_2AVfX {
+    width: auto;
+    height: inherit;
+    fill: #ffffff;
+    stroke: #ffffff;
+}
+
+.comment_thread_RatingBar_1yWgP .comment_thread_LikeButton_161IK.comment_thread_CanClick_3Mds9:hover, .comment_thread_RatingBar_1yWgP .comment_thread_CommentButton_3i62H.comment_thread_CanClick_3Mds9:hover, .comment_thread_RatingBar_1yWgP .comment_thread_Reactions_35yrb.comment_thread_CanClick_3Mds9:hover {
+    cursor: pointer;
+    background-color: #006dea;
+}
+
+.comment_thread_RatingBar_1yWgP .comment_thread_LikeButton_161IK.comment_thread_CanClick_3Mds9:hover .comment_thread_RatingIcon_2AVfX, .comment_thread_RatingBar_1yWgP .comment_thread_CommentButton_3i62H.comment_thread_CanClick_3Mds9:hover .comment_thread_RatingIcon_2AVfX, .comment_thread_RatingBar_1yWgP .comment_thread_Reactions_35yrb.comment_thread_CanClick_3Mds9:hover .comment_thread_RatingIcon_2AVfX {
+    width: auto;
+    height: inherit;
+    fill: #fff;
+    stroke: #fff;
+}
+
+.comment_thread_RatingBar_1yWgP .comment_thread_LikeButton_161IK.comment_thread_CanClick_3Mds9:hover .comment_thread_LikeCount_3grvn, .comment_thread_RatingBar_1yWgP .comment_thread_LikeButton_161IK.comment_thread_CanClick_3Mds9:hover .comment_thread_CommentCount_2RkIc, .comment_thread_RatingBar_1yWgP .comment_thread_LikeButton_161IK.comment_thread_CanClick_3Mds9:hover .comment_thread_ReactionCount_1S3Q9, .comment_thread_RatingBar_1yWgP .comment_thread_CommentButton_3i62H.comment_thread_CanClick_3Mds9:hover .comment_thread_LikeCount_3grvn, .comment_thread_RatingBar_1yWgP .comment_thread_CommentButton_3i62H.comment_thread_CanClick_3Mds9:hover .comment_thread_CommentCount_2RkIc, .comment_thread_RatingBar_1yWgP .comment_thread_CommentButton_3i62H.comment_thread_CanClick_3Mds9:hover .comment_thread_ReactionCount_1S3Q9, .comment_thread_RatingBar_1yWgP .comment_thread_Reactions_35yrb.comment_thread_CanClick_3Mds9:hover .comment_thread_LikeCount_3grvn, .comment_thread_RatingBar_1yWgP .comment_thread_Reactions_35yrb.comment_thread_CanClick_3Mds9:hover .comment_thread_CommentCount_2RkIc, .comment_thread_RatingBar_1yWgP .comment_thread_Reactions_35yrb.comment_thread_CanClick_3Mds9:hover .comment_thread_ReactionCount_1S3Q9 {
+    color: #fff;
+}
+
+.appactivityday_PartnerEventMediumImage_Container_1HZy7 {
+    background: #00000000;
+    transition-property: background;
+    transition-duration: .2s;
+    transition-timing-function: ease-out;
+}
+
+.appactivityday_PartnerEventMediumImage_Container_1HZy7:hover {
+    background: #272bb2ab;
+    cursor: pointer;
+}
+
+.appactivityday_PartnerEventMediumImage_Summary_Ru7OB {
+    color: #ffffff;
+    font-size: 13px;
+    position: relative;
+    padding-top: 10px;
+    max-width: 600px;
+}
+
+.appdetailsfeatureicon_Container_1SIa8 {
+    display: flex;
+    flex-flow: row;
+    height: 24px;
+    align-items: center;
+    width: 100%;
+    background: #000000b0;
+}
+
+.appdetailssection_AppDetailsSectionContainer_31ptF.appdetailssection_AppDetailsSectionHasLabel_2G5B7 {
+    margin-top: 6px;
+}
+.appdetailssection_AppDetailsSectionContainer_31ptF.appdetailssection_RightColumnSection_3KfxI {
+    border-image-source: none;
+    border-image-width: 1px;
+    border-image-repeat: stretch;
+    border-image-slice: 7;
+    background: rgb(0 0 0 / 25%);
+    box-shadow: 0 0 12px #00000025;
+}
+
+.sharedappdetailsheader_TitleSection_1P_tv {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding-left: 24px;
+    padding-bottom: 0px;
+    user-select: none;
+    color: #fff;
+}
+
+.sharedappdetailsheader_TitleSection_1P_tv .sharedappdetailsheader_Features_P_lFf {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    padding-right: 0px;
+    align-items: center;
+}
+
+/* Game List Header Image Size */
+.sharedappdetailsheader_TopCapsule_2meE3 {
+    --header-height: 24vw;
+    height: 221px;
+    width: 100%;
+    z-index: -1000;
+    background-color: #141414;
+    background-size: cover;
+    overflow: hidden;
+    user-select: none;
+}
+
+.appdetailsplaysection_StatusAndStats_1YbtI .appdetailsplaysection_PlayBarIconAndGame_2MBVR .appdetailsplaysection_PlayBarGameName_3rpUk {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.appdetailsplaysection_MenuButton_3qDWQ svg {
+    fill: rgb(255 255 255);
+    color: rgb(255 255 255);
+    transition: transform .32s ease-in-out;
+}
+
+.appdetailsplaysection_MenuButton_3qDWQ svg circle, .appdetailsplaysection_MenuButton_3qDWQ svg polyline {
+    stroke: rgb(255 255 255);
+    transition: stroke .12s ease-in-out;
+}
+
+.pageablecontainer_HeaderPageControls_2pAbU {
+    box-sizing: border-box;
+    display: flex;
+    color: #fff;
+    padding: 0;
+    font-size: 13px;
+    flex: 1;
+    margin-top: -2px;
+}
+
+.posttextentry_PostTextEntry_3x31A .posttextentry_PostTextEntryArea_1JlC2 {
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background: rgb(68 99 253 / 26%);
+    box-shadow: inset 0px 0px 4px transparent;
+    color: #b1b0b0;
+    resize: none;
+    font-family: "Motiva Sans",Arial,Helvetica,sans-serif;
+    padding: 8px;
+    font-size: 14px;
+    line-height: 20px;
+    width: calc(100% - 16px - 2px);
+    transition-property: background,box-shadow;
+    transition-duration: .18s;
+    transition-timing-function: ease-in-out;
+    color: white !important;
+}
+
+
+/*|_ "Other" Steam stuff"_|*/
+/*  \___________________/*/
+/*   \_________________/*/
+/*    \_______________/*/
+/*     \_____________/*/
+/*      \___________/*/
+/*       \_________/*/
+
+:root{
+--MenuTextHover:#1ab4fd;
+--SuperNavLabel:#fff;
+--SuperNavHover:#1a9fff;
+}
+/* Steam Menu */
+
+/* Menu Label */
+.rootmenu_RootMenuButton_2UyOB{color:#fff;font-size:12px;padding:6px 4px;transition:color .15s ease-out;display:flex;align-items:center;box-sizing:border-box;height:100%}
+
+/* Menu Label Disabled */
+.rootmenu_RootMenuButton_2UyOB.rootmenu_Disabled_2hcbl{color:rgba(169,169,169,.5)}
+
+/* Menu Label Hover */
+.rootmenu_RootMenuButton_2UyOB:hover:not(.rootmenu_Disabled_2hcbl){color:#1ab4fd;cursor:pointer}
+
+/* Games List BG */
+/* Top Section */
+.gamelistbar_Container_3x1Hk{background:#092671;height:100%;flex:1;display:flex;min-width:0;flex-direction:column;user-select:none;outline:none}
+
+/* List BG */
+.gamelist_Container_1ijTa{background:radial-gradient(ellipse farthest-corner at 50% 30%, #001142 0%, #000e31 50%, #000314 100%);border-top:1px solid black;box-sizing:border-box;width:100%;padding:0px;display:flex;flex-direction:column;align-items:stretch;flex-grow:1;flex-shrink:1;user-select:none;outline:none}
+
+/* Home Bar of Game List */
+.gamelistbar_GameListHomeAndSearch_2TKEa{padding:4px 6px 2px 6px;background-color:#00000000;box-shadow:0 3px 3px rgba(0,0,0,.01);position:relative;display:flex;height:36px}
+
+/* Bottom of Steam */
+
+/* Here so it doesnt break? */
+.bottombar_BottomBarContainer_1_yS5{display:flex;flex-direction:column;user-select:none}
+
+/* Bottom Bar BG */
+
+.bottombar_BottomBar_3vCzS{flex:0 0 40px;background:radial-gradient(155.42% 100% at 0% 0%, #23262E 0 0%, #0e141b 100%);background:radial-gradient(ellipse farthest-corner at 50% 30%, var(--Bar1) 0%, var(--Bar2) 50%, var(--Bar3) 100%);box-shadow:inset rgba(61,68,80,.65) 1px 1px 0px 0px,inset rgba(61,68,80,.45) -1px -1px 0px 0px;padding:0px 11px;display:flex;flex-direction:row;align-items:center;-webkit-app-region:drag}
+
+/* Add Game Thing */
+/*______________*/
+.bottombar_AddGameButton_2foCk,.bottombar_FriendsButton_1TdaA{flex-shrink:0;display:flex;flex-direction:row;gap:8px;align-items:center;cursor:pointer}
+
+.bottombar_AddGameButton_2foCk .bottombar_Icon_1KrJ3,.bottombar_FriendsButton_1TdaA .bottombar_Icon_1KrJ3{height:16px;width:16px;color:white;transition-property:color;transition-duration:.1s;transition-timing-function:ease-in-out;display:grid}
+
+.bottombar_AddGameButton_2foCk .bottombar_Text_3OhUx,.bottombar_FriendsButton_1TdaA .bottombar_Text_3OhUx{font-size:12px;color:white;font-weight:400;transition-property:color;transition-duration:.1s;transition-timing-function:ease-in-out}
+
+.bottombar_AddGameButton_2foCk{padding:5px 10px 5px 5px}
+
+/* Hover */
+.bottombar_AddGameButton_2foCk:hover .bottombar_Icon_1KrJ3{color:var(--MenuTextHover)}
+.bottombar_AddGameButton_2foCk:hover .bottombar_Text_3OhUx{color:var(--MenuTextHover)}
+.bottombar_FriendsButton_1TdaA:hover:not(.bottombar_Disabled_2Sdix) .bottombar_Text_3OhUx{color:var(--MenuTextHover)}
+.bottombar_DownloadStatusContent_ip-YZ:hover .bottombar_Icon_1KrJ3,.bottombar_DownloadStatusContent_ip-YZ:hover .bottombar_Queue_3wJnT{color:var(--MenuTextHover)}
+
+/*______________*/
+
+/* Download Label */
+.bottombar_DownloadStatusContent_ip-YZ .bottombar_Status_1sCy-{font-size:12px;color:white;font-weight:400;text-transform:uppercase}
+
+.bottombar_DownloadStatusContent_ip-YZ .bottombar_Queue_3wJnT{font-size:12px;color:white;font-weight:400;transition-property:color;transition-duration:.1s;transition-timing-function:ease-in-out;cursor:pointer}
+
+/* Icon / Img */
+.bottombar_DetailedDownloadProgress_2VtAq{flex-grow:1;display:flex;flex-direction:row;align-items:center;gap:6px;width:30vw;position:relative}
+
+.bottombar_DownloadStatusContent_ip-YZ .bottombar_Icon_1KrJ3{height:26px;width:26px;color:#fff;transition-property:color;transition-duration:.1s;transition-timing-function:ease-in-out}
+
+
+/* Top of Steam */
+.steamdesktop_TopBar_3Z7VQ{flex:0 0 auto;width:100%;background:radial-gradient(ellipse farthest-corner at 50% 30%, var(--Top1) 0%, var(--Top2) 50%, var(--Top3) 100%);box-shadow:inset rgba(61,68,80,.75) 1px 1px 1px 0px,inset rgba(61,68,80,.25) -1px 0px 1px 0px;display:flex;flex-direction:column;user-select:none}
+
+/* URL bar replacement */
+.steamdesktop_LocalContentContainer_RGNMW .steamdesktop_URLBarReplacement_2Cmrn{min-height:1px;height:1px;background:#0068f363;box-shadow:inset rgba(61,68,80,.75) 1px 0px 0px 0px,inset rgba(61,68,80,.25) -1px -1px 0px 0px}
+
+/* Section Header Game List */
+.gamelistsectionheader_Container_2sYIg{box-sizing:border-box;color:#707379;border:1px solid rgba(0,0,0,255);text-overflow:ellipsis;overflow:hidden;white-space:nowrap;background:linear-gradient(to right, #205bd1 40%, rgb(62 78 105 / 0%) 100%);display:flex;flex-grow:0;user-select:none;cursor:pointer}
+
+/* Scroll to top button */
+.gamelistdropdown_ScrollToTop_uE7Pj .SVGIcon_Arrow{box-sizing:border-box;width:32px;height:32px;padding:8px;background-color:rgb(32 68 193 / 40%);border:1px solid #00000000;opacity:1;flex:0;transition-property:background-color;transition-duration:.2s;transition-timing-function:ease-in-out;border-radius:4px}
+
+.gamelistdropdown_ScrollToTop_uE7Pj .SVGIcon_Arrow polyline {
+    margin-top: -1px;
+    transition: stroke .12s ease-in-out;
+    stroke-width: 20px;
+    stroke: #ffffff;
+}
+
+.gamelistdropdown_ScrollToTop_uE7Pj:hover .SVGIcon_Arrow {
+    background-color: var(--PulseHover);
+}
+
+.gamelistdropdown_Bar_1ZS_x .gamelistdropdown_Filters_1PgAo .gamelistdropdown_CheckboxWithImage_3mzKd svg {
+    fill: white;
+}
+
+.gamelistdropdown_Bar_1ZS_x .gamelistdropdown_Filters_1PgAo .gamelistdropdown_CheckboxWithImage_3mzKd svg path, .gamelistdropdown_Bar_1ZS_x .gamelistdropdown_Filters_1PgAo .gamelistdropdown_CheckboxWithImage_3mzKd svg line, .gamelistdropdown_Bar_1ZS_x .gamelistdropdown_Filters_1PgAo .gamelistdropdown_CheckboxWithImage_3mzKd svg polyline, .gamelistdropdown_Bar_1ZS_x .gamelistdropdown_Filters_1PgAo .gamelistdropdown_CheckboxWithImage_3mzKd svg circle {
+    stroke: white;
+}
+
+.gamelistdropdown_Bar_1ZS_x .gamelistdropdown_Filters_1PgAo .gamelistdropdown_CheckboxWithImage_3mzKd:hover svg {
+    fill: #26a1ff;
+}
+
+.gamelistsearchbar_Container_20QAC .gamelistsearchbar_AdvancedSearchContainer_vCCmY.gamelistsearchbar_Disabled_1Gjk2 {
+    background-color: #011e5f;
+}
+
+.gamelistsearchbar_Container_20QAC .gamelistsearchbar_AdvancedSearchContainer_vCCmY.gamelistsearchbar_Disabled_1Gjk2 .gamelistsearchbar_AdvancedSearchButton_1TxHd svg path {
+    fill: #ffffff;
+}
+
+.gamelistdropdown_Bar_1ZS_x .gamelistdropdown_Filters_1PgAo .gamelistdropdown_CheckboxWithImage_3mzKd:hover svg path, .gamelistdropdown_Bar_1ZS_x .gamelistdropdown_Filters_1PgAo .gamelistdropdown_CheckboxWithImage_3mzKd:hover svg line, .gamelistdropdown_Bar_1ZS_x .gamelistdropdown_Filters_1PgAo .gamelistdropdown_CheckboxWithImage_3mzKd:hover svg polyline, .gamelistdropdown_Bar_1ZS_x .gamelistdropdown_Filters_1PgAo .gamelistdropdown_CheckboxWithImage_3mzKd:hover svg circle {
+    stroke: #26a1ff;
+}
+
+.gamelist_NoSearchResultsContainer_1fbRp {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    font-size: 13px;
+    flex: 1;
+    text-align: center;
+    background: linear-gradient(180deg, var(--List1), var(--List2));
+}
+
+.gamelist_NoResultsTitle_2NXXf {
+    margin-top: 12px;
+    color: white;
+}
+
+.gamelist_NoResultsLink_WMjaq {
+    text-decoration: underline;
+    font-weight: bold;
+    cursor: pointer;
+    color: var(--Close1);
+}
+
+.titlebarcontrols_AnnouncementsButton_5wILZ {
+    padding: 0px 12px;
+    border-radius: 2px;
+    background-color: rgb(0 103 229 / 33%);
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.titlebarcontrols_AnnouncementsButton_5wILZ:hover {
+    background-color: #0e5ee6;
+    transition: background-color .15s ease-out;
+}
+
+.titlebarcontrols_AnnouncementsButton_5wILZ.titlebarcontrols_Active_1oEwi {
+    background-color: #1960ff;
+    color: #fff;
+}
+
+.titlebarcontrols_AnnouncementsButton_5wILZ.titlebarcontrols_Active_1oEwi:hover {
+    background-color: #2755fc;
+    transition: background-color .15s ease-out;
+}
+
+.titlebarcontrols_NotificationsButton_RtSv3.titlebarcontrols_WasNew_9YK5I, .titlebarcontrols_NotificationsButton_RtSv3.titlebarcontrols_NoNew_3qhGk {
+    background-color: rgb(0 103 229 / 33%);
+}
+
+.titlebarcontrols_NotificationsButton_RtSv3.titlebarcontrols_WasNew_9YK5I .titlebarcontrols_Icon_34bQc, .titlebarcontrols_NotificationsButton_RtSv3.titlebarcontrols_NoNew_3qhGk .titlebarcontrols_Icon_34bQc {
+    color: #ffffff;
+}
+
+.titlebarcontrols_NotificationsButton_RtSv3.titlebarcontrols_WasNew_9YK5I:not(.titlebarcontrols_Disabled_1QQWj):hover, .titlebarcontrols_NotificationsButton_RtSv3.titlebarcontrols_NoNew_3qhGk:not(.titlebarcontrols_Disabled_1QQWj):hover {
+    background-color: #0e5ee6;
+    transition: background-color .15s ease-out;
+}
+
+.titlebarcontrols_NotificationsButton_RtSv3.titlebarcontrols_WasNew_9YK5I:not(.titlebarcontrols_Disabled_1QQWj):hover .titlebarcontrols_Icon_34bQc, .titlebarcontrols_NotificationsButton_RtSv3.titlebarcontrols_NoNew_3qhGk:not(.titlebarcontrols_Disabled_1QQWj):hover .titlebarcontrols_Icon_34bQc {
+    color: #ffffff;
+    transition: color .15s ease-out;
+}
+
+.titlebarcontrols_GamepadUIToggle_3LKQ3 {
+    color: #ffffff;
+    width: 32px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.titlebarcontrols_GamepadUIToggle_3LKQ3:hover {
+    background: #0e5ee6;
+    border-radius: 2px;
+}
+
+.titlebarcontrols_NotificationHeader_MCa4R .titlebarcontrols_AllNotificationsButton_1oERP {
+    background-color: #1962de;
+    color: #fff;
+    border-style: none;
+    outline: none;
+    padding: 5px 10px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.titlebarcontrols_NotificationHeader_MCa4R .titlebarcontrols_AllNotificationsButton_1oERP:hover {
+    background-color: #004ba7;
+    transition-property: background;
+    transition-duration: 250ms;
+}
+
+.gamelistsectionheader_Container_2sYIg:focus{outline:none}
+
+.gamelistsectionheader_Container_2sYIg.gamelistsectionheader_HoverOverlay_2zGph{background-color:white;border-radius:3px}
+
+.gamelistsectionheader_Container_2sYIg:hover{box-sizing:border-box;background:var(--PulseHover)}
+
+.gamelistsectionheader_Container_2sYIg.gamelistsectionheader_Selected_sXMOs{box-sizing:border-box;background:linear-gradient(to right, #205bd1 40%, rgb(62 78 105 / 0%) 100%);box-shadow:0 0px 2px 0px #0005,0 0px 16px 0px #0004}
+
+/* Menu BG */
+.menu_MenuPopup_3pofG{display:flex;flex-direction:column;padding:0px 0px !important;background:radial-gradient(ellipse farthest-corner at 50% 0%, var(--MenuBG1) 0%, var(--BG1) 50%, var(--BG2) 100%)}
+
+/* Menu Crap */
+.menu_MenuItem_2jXHP{font-size:13px;color:red;overflow:hidden;min-width:fit-content;white-space:nowrap;display:flex;align-items:center;flex-direction:row;border:none;padding:8px 18px}
+
+.menu_MenuItem_2jXHP.menu_Item_2uiDe:hover{background-color:var(--PulseHover);color:var(--PWhite)}
+
+.menu_MenuItem_2jXHP.menu_Separator_21GPY{box-sizing:border-box;width:100%;border-bottom:.2px solid var(--SettingsLineSeperator);margin:0px;padding:0px}
+
+.menu_MenuItem_2jXHP.disabled{color:rgba(19,169,255,1)}
+
+/* Random Whats New Pop Up Window BG */
+.libraryhomenewupdates_WhatsNewSettingsContainer_2JKpG{background:radial-gradient(circle at top left, rgba(0, 99, 255, 0.4) 0%, rgba(0, 66, 187, 0.33) 60%),#000010;user-select:none}
+
+/* Whats New Text Popup */
+
+._DialogInputContainer .libraryhomenewupdates_DialogLabelSoft_3Hf53,.DialogLabel.libraryhomenewupdates_DialogLabelSoft_3Hf53{font-weight:300;color:#c3e5ff;text-transform:none;line-height:19px;font-size:13px;user-select:none;letter-spacing:initial}
+
+/* Super Nav Menu (<-, ->, Store,Library... Etc) */
+/*_________________*/
+
+/* Arrow States */
+
+/* Normal */
+.supernav_Arrow_25lBL{min-width:16px;width:16px;min-height:16px;height:16px;color:var(--SuperNavLabel);padding:0 4px 6px;transition:color .15s ease-out;-webkit-app-region:no-drag}
+
+/* Left Spacing for Other arrow/Store */
+.supernav_Arrow_25lBL:first-child{padding-left:12px} 
+
+/* Hover */
+.supernav_Arrow_25lBL.supernav_Enabled_1LYTH:hover{color:var(--SuperNavHover);text-shadow:0px 0px 1px var(--SuperNavHover);cursor:pointer}
+
+/* Disabled */
+.supernav_Arrow_25lBL.supernav_Disabled_2cO0H{color:var(--SuperNavLabel)}
+
+/* Super Nav Label States */
+
+/* Normal */
+.supernav_SuperNavMenu_7AlhC .supernav_MenuButton_19axK{color:var(--SuperNavLabel)}
+
+/* Selected */
+.supernav_SuperNavMenu_7AlhC .supernav_MenuButton_19axK:active{color:var(--SuperNavHover);cursor:pointer}
+
+/* Disabled */
+.supernav_SuperNavMenu_7AlhC.supernav_Disabled_2cO0H .supernav_MenuButton_19axK{color:var(--SuperNavLabel)}
+
+/* Hover */
+.supernav_SuperNavMenu_7AlhC:hover:not(.supernav_Disabled_2cO0H) .supernav_MenuButton_19axK{color:var(--SuperNavHover);transition:color .15s ease-out,text-shadow .15s ease-out;cursor:pointer}
+
+/* Not Sure what this is yet */
+.supernav_SuperNavMenu_7AlhC.supernav_MenuPopup_Eq8Px{background:red;text-transform:unset;font-weight:400;line-height:17px}
+
+
+/* Super Nav Active Selected */
+
+.supernav_SuperNavMenu_7AlhC.supernav_Selected_1gqEj:not(.supernav_Disabled_2cO0H) .supernav_MenuButton_19axK{color:var(--SuperNavHover);text-shadow:0px 0px 1px #1a9fff;transition:text-shadow .15s ease-out;font-weight:500;cursor:pointer}
+
+.supernav_SuperNavMenu_7AlhC.supernav_Selected_1gqEj:not(.supernav_Disabled_2cO0H) .supernav_MenuButton_19axK::after{content:"";display:block;width:100%;height:3px;background:var(--SuperNavHover);border-radius:3px;animation:supernav_slide_2wrHk .1s}@keyframes supernav_slide_2wrHk{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+
+/*________________*/
+
+/* Library Whats New BG */
+.libraryhome_UpdatesContainer_17uEB {
+    box-sizing: border-box;
+    padding: 8px 24px 0px 24px;
+    position: relative;
+    height: 324px;
+    overflow: hidden;
+    background: linear-gradient(var(--ButtonMidBlue) 0px, var(--Top2) 35px, #d1cff000 30px, #0c00c900 100%);
+}
+
+/* Library Date Stuff of Whats New */
+.libraryhomenewupdates_EventTime_2rlKq{overflow:hidden;color:#fff;white-space:nowrap;text-overflow:ellipsis;font-size:12px;font-weight:100;padding-bottom:2px}
+
+/* Event Active BG */
+.libraryhomenewupdates_PartnerEventRowCapsule_Container_B-vCd .libraryhomenewupdates_EventTimeSpan_3OSZu{background-color:#1735a4;padding:2px 10px;color:#fff;position:absolute;bottom:0px;right:0px;font-size:12px}
+
+/* Titles of Carousel */
+.libraryhomenewupdates_Event_Title_1Gu1U div.libraryhomenewupdates_PartnerEventRowCapsule_TextTitle_DVBcp{font-size:15px;font-weight:300;line-height:18px;color:rgba(255,255,255,1);max-height:40px;text-overflow:ellipsis;overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+
+.libraryhomeshowcases_AddShowcaseRow_3SkuN svg line, .libraryhomeshowcases_AddShowcaseRow_3SkuN svg circle {
+    stroke: #ffffff;
+    transition-property: stroke;
+    transition-duration: .21s;
+    transition-timing-function: ease-in-out;
+}
+
+
+/* Game Name BG + Hover
+.libraryhomenewupdates_GameIconAndName_3_xMy{display:flex;font-size:13px;font-weight:200;width:fit-content;cursor:pointer;background-color:rgb(0 88 175);border-radius:2px;padding:0 8px 0 0;margin-top:4px;text-overflow:ellipsis;white-space:nowrap;overflow:hidden}.libraryhomenewupdates_GameIconAndName_3_xMy:hover{background-color:var(--PulseHover)}
+
+.libraryhomenewupdates_GameIconAndName_3_xMy .libraryhomenewupdates_GameName_28Iqr{color:#fff}
+
+.libraryhome_LibraryHome_3Sb2o{box-sizing:border-box;display:flex;flex-direction:column;padding:8px 14px 14px;background-image:linear-gradient(to bottom, var(--List1) 0%, var(--List2) 20%)}
+
+/* Add Shelf Label */
+.libraryhomeshowcases_AddShowcaseRow_3SkuN .libraryhomeshowcases_AddShowcase_2aw5a{padding:4px 8px;margin-left:5px;margin-right:5px;text-transform:uppercase;cursor:pointer;transition-property:opacity;transition-duration:.21s;transition-timing-function:ease-in-out;display:flex;align-items:center;color:white;}
+
+/* White Fix for Buttons */
+
+.libraryhome_InnerContainer_2AUVZ{overflow-y:auto;overflow-x:hidden;transform:translate3d(0, 0, 0);backface-visibility:hidden;color:white}
+
+/* More Text Fixes */
+.libraryhomeshowcases_ShowcaseHeader_23Snl{box-sizing:border-box;display:flex;color:#fff;font-size:13px;margin-bottom:5px;padding-left:8px;border:1px solid transparent;position:relative}
+
+/* Ruler Line Fix */
+.libraryhomeshowcases_ShowcaseHeader_23Snl .libraryhomeshowcases_Rule_1PhK8{flex-grow:1;height:2px;align-self:center;margin-left:0px;background-color:rgba(54,106,252,.22);transition:height .21s ease-in-out}
+
+/* Date Labels */
+.libraryhomerecentgames_RecentGame_1esfE .libraryhomerecentgames_AddedDate_1ANYF{white-space:nowrap;text-overflow:ellipsis;font-size:12px;font-weight:100;color:#fff;line-height:14px;letter-spacing:1px}
+
+/* More Font Fix */
+.libraryhomeplaynext_PlayNextSubHead_1kdin{text-overflow:ellipsis;font-size:12px;font-weight:100;color:#fff;line-height:14px;letter-spacing:1px}
+
+.libraryhomeshowcases_CollectionDropDown_1YdRd ._DialogInputContainer{box-sizing:border-box;background:transparent;margin:0;padding:0;font-size:16px;text-transform:uppercase;line-height:18px;font-weight:100;letter-spacing:1px;margin-top:1px;display:flex;flex-direction:row;justify-content:flex-start;color:#fff}
+
+.libraryhomeshowcases_CollectionDropDown_1YdRd .libraryhomeshowcases_CountDisplay_2qm05{color:#0095ff;margin-left:6px;font-size:14px}
+
+.libraryhome_LibraryHome_3Sb2o{box-sizing:border-box;display:flex;flex-direction:column;padding:8px 14px 14px;background-image:linear-gradient(to bottom, var(--List1) 0%, var(--List2) 20%)}
+
+/* Home Button of Games List */
+.gamelisthome_Bar_3pSPl{box-sizing:border-box;position:relative;color:#fff;border-radius:2px;flex:1;min-width:0;user-select:none;display:flex;flex-direction:row;height:32px;align-content:center;cursor:pointer;font-size:13px;border:1px solid transparent;background-color:#183bb5a1;background-repeat:no-repeat;text-decoration:none}
+
+.gamelisthome_Bar_3pSPl:hover{background-color:var(--PulseHover)}
+
+.gamelisthome_Bar_3pSPl.gamelisthome_Selected_eNLOx{background-color:#183bb5a1;background-repeat:no-repeat}
+
+.gamelisthome_CollectionIcon_nC-pL .gamelisthome_CollectionIconBox_2tyaV{width:100%;height:100%;background:#fff;transition-property:background-color;transition-duration:.16s;transition-timing-function:ease-in-out}
+
+.gamelisthome_Label_3O48L{margin-left:6px;color:#fff;text-transform:uppercase;text-overflow:ellipsis;align-self:center;font-size:13px;flex-shrink:1;z-index:1;overflow:hidden}
+
+/* Games Dropdown */
+
+.gamelistdropdown_Bar_1ZS_x {
+    box-sizing: border-box;
+    padding: 2px 6px 0px;
+    outline: none;
+    display: flex;
+    min-width: 0;
+    position: relative;
+}
+
+.gamelistdropdown_Bar_1ZS_x .gamelistdropdown_MenuHeader_2PF_m{outline:none;box-sizing:border-box;text-transform:uppercase;color:#fff;display:flex;flex-direction:row;width:0;font-size:13px;cursor:pointer;padding:3px 8px;padding-right:5px;background-color:#183bb5a1;transition-property:color,background-color;transition-duration:.12s;transition-timing-function:ease-in-out;align-items:center;height:32px;border-radius:3px;flex:1}
+
+.gamelistdropdown_Bar_1ZS_x .gamelistdropdown_MenuHeader_2PF_m:hover{color:#fff;background-color:var(--PulseHover)}
+
+.gamelistsearchbar_Container_20QAC {
+    display: flex;
+    flex-grow: 0;
+    user-select: none;
+    color: #fff;
+    font-size: 12px;
+    outline: none;
+    position: relative;
+    padding: 8px 6px;
+    /* padding-bottom: 10px; */
+}
+
+/* Another Menu? */
+.libraryhomeshowcases_CollectionDropDownContainer_2Sj4-.libraryhomeshowcases_CollectionDropDownContainer_2Sj4- ._DialogInputContainer{overflow:hidden auto;box-sizing:border-box;padding:8px 0;box-shadow:1px 8px 32px 1px #0009 !important;border:.5px solid #6e6e6e;border-radius:0;background:radial-gradient(ellipse farthest-corner at 50% 0%, var(--MenuBG1) 0%, var(--MenuBG1) 50%, var(--MenuBG2) 100%)!important;color:#fff;border-left:1px solid #ced0da;width:200px;height:100%;margin-bottom:8px}
+
+.libraryhomeshowcases_CollectionDropDownContainer_2Sj4-.libraryhomeshowcases_CollectionDropDownContainer_2Sj4- .libraryhomeshowcases_DropDownItems_lYnGt:hover{background:var(--PulseHover);color:#fff}
+
+.DesktopUI .libraryhomeshowcases_CollectionDropDownContainer_2Sj4-.libraryhomeshowcases_CollectionDropDownContainer_2Sj4- ._DialogInputContainer{box-shadow:0 10px 32px 0px #000000ab !important;background:radial-gradient(ellipse farthest-corner at 50% 0%, var(--MenuBG1) 0%, var(--MenuBG1) 50%, var(--MenuBG2) 100%)!important;color:#fff;border:none}
+
+.DesktopUI .libraryhomeshowcases_CollectionDropDownContainer_2Sj4-.libraryhomeshowcases_CollectionDropDownContainer_2Sj4- .libraryhomeshowcases_DropDownItems_lYnGt:hover{background:var(--PulseHover);color:#fff}
+
+/* URL Bar */
+.steamdesktop_LocalContentContainer_RGNMW .steamdesktop_URLBarReplacement_2Cmrn{background:radial-gradient(ellipse farthest-corner at 50% 30%, var(--Bar1) 0%, var(--Bar2) 50%, var(--Bar3) 100%);}
+
+.steamdesktop_BrowserWrapper_1bGew .steamdesktop_URLBar_UkR3s{background:radial-gradient(ellipse farthest-corner at 50% 30%, var(--Bar1) 0%, var(--Bar2) 50%, var(--Bar3) 100%);}
+
+.steamdesktop_BrowserWrapper_1bGew .steamdesktop_URLBar_UkR3s .steamdesktop_StatusIcon_3izqE{height:18px;color:#fff}
+
+.steamdesktop_BrowserWrapper_1bGew .steamdesktop_URLBar_UkR3s .steamdesktop_ReloadButton_3KaB9{padding:2px 0px 0px 2px;margin-top:3px;}
+
+.steamdesktop_BrowserWrapper_1bGew .steamdesktop_URLBar_UkR3s .steamdesktop_ReloadButton_3KaB9:hover{cursor:pointer;background:var(--PulseHover);border-radius:16px;color:#fff}
+
+.steamdesktop_BrowserWrapper_1bGew .steamdesktop_URLBar_UkR3s .steamdesktop_URLBarText_2m_or{display:flex;align-items:center;padding:1px 16px 1px 8px;margin-top:4px;border-radius:16px;transition:background .15s ease-out,color .15s ease-out,border-radius .15s ease-out}
+
+.steamdesktop_BrowserWrapper_1bGew .steamdesktop_URLBar_UkR3s .steamdesktop_URLBarText_2m_or:hover{cursor:pointer;background:var(--PulseHover);}
+
+.steamdesktop_BrowserWrapper_1bGew .steamdesktop_URLBar_UkR3s .steamdesktop_URLBarText_2m_or:hover .steamdesktop_URL_MZPxE{color:#fff;}
+
+.steamdesktop_BrowserWrapper_1bGew .steamdesktop_URLBar_UkR3s .steamdesktop_URLBarText_2m_or:hover .steamdesktop_StatusIcon_3izqE{color:#fff;}
+
+.steamdesktop_BrowserWrapper_1bGew .steamdesktop_URLBar_UkR3s .steamdesktop_URLBarText_2m_or .steamdesktop_URL_MZPxE{color:#fff;margin-top:1px;}
+
+.steamdesktop_ContentFrame_1rDh5{overflow:hidden;flex-grow:1;display:flex;flex-direction:column;background:radial-gradient(ellipse farthest-corner at 50% 30%, var(--List1) 0%, var(--List2) 50%, var(--List3) 100%);border-right:1px solid} /*Border to fix scrollbar*/
+
+.libraryhome_Container_2gSXC{height:100%;position:relative;background:linear-gradient(to bottom, var(--List1) 0%, var(--List2) 20%);}
+
+.libraryhomenewupdates_EventRowCarousel_11cYv {
+    margin-top: 12px;
+}
+
+.libraryhomenewupdates_SettingsButton_1eFe5 svg {
+    fill: rgb(255 255 255);
+    color: rgb(255 255 255);
+    transition: transform .32s ease-in-out;
+}
+
+.libraryhomenewupdates_SettingsButton_1eFe5:hover .SVGIcon_Settings path {
+    fill: #4f95ff;
+}
+
+.pageablecontainer_HeaderPageControls_2pAbU {
+    box-sizing: border-box;
+    display: flex;
+    color: #fff;
+    padding: 0;
+    font-size: 13px;
+    flex: 1;
+    margin-top: -2px;
+}
+
+
+
+.libraryhomenewupdates_GameIconAndName_3_xMy {
+    display: flex;
+    font-size: 13px;
+    font-weight: 200;
+    width: fit-content;
+    cursor: pointer;
+    background-color: rgb(0 86 173 / 6%);
+    border-radius: 2px;
+    padding: 0 8px 0 0;
+    margin-top: 4px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    /* color: red; */
+}
+
+.libraryhomenewupdates_GameIconAndName_3_xMy:hover {
+    background-color: #007fff;
+}
+
+.libraryhomenewupdates_GameIconAndName_3_xMy .libraryhomenewupdates_GameName_28Iqr {
+    color: #fff;
+}
+
+/* About Steam Popup */
+.aboutsteamdialog_AboutSteamDialog_FFIKU {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: linear-gradient( rgb(0 29 110) 30px, rgb(0 16 62) 31px,#00031b 83.5%, #001e8a 83.6%, #001e61 100% );
+}
+
+/* About Steam Text */
+.aboutsteamdialog_AboutSteamDialog_FFIKU.aboutsteamdialog_Desktop_yXl6A .aboutsteamdialog_DialogBodyText_32eeZ {
+    padding-bottom: 30px;
+    margin-bottom: 8px;
+    padding-top: 10px;
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400;
+}
+
+.DialogFooter {
+    margin-top: 20px;
+    padding-top: 0px;
+    flex-shrink: 0;
+}
+
+.titlebarcontrols_AccountMenu_3yD46.online {
+    color: #ffffff;
+    background: rgb(0 103 229 / 33%);
+}
+
+.titlebarcontrols_AccountMenu_3yD46.online:hover {
+    color: #ffffff;
+    background: #0e5ee6;
+}
+
+/* located: chunk aaf7 */
+.ModalDialogPopup .ModalDialogBody.friendsui-container .PopupFullWindow .TitleBar, .ModalDialogPopup .ModalDialogBody.DesktopUI .PopupFullWindow .TitleBar {
+    height: calc(1rem + 16px);
+    background: linear-gradient( #012077 calc(1rem + 15px), #ff000000 calc(1rem + 16px), transparent);
+}
+
+/* located chunk aaf7 */
+
+.hardwaresurveydialog_HardwareSurveyDialog_3v2Gg.hardwaresurveydialog_Desktop_hYVp3 .hardwaresurveydialog_DialogBodyText_13282 {
+    font-size: 14px;
+    padding-bottom: 16px;
+    margin-bottom: 0px;
+    margin-left: 8px;
+}
+
+
+.hardwaresurveydialog_HardwareSurveyDialog_3v2Gg.hardwaresurveydialog_Desktop_hYVp3>.hardwaresurveydialog_HardwareSurveySections_3f3VJ {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background: #00195d99;
+    border: 1px solid #0e141b;
+    box-shadow: inset 0px 2px 2px rgba(0,0,0,.25);
+    border-radius: 2px;
+    user-select: text;
+    margin: 0px;
+}
+
+.hardwaresurveydialog_HardwareSurveyDialog_3v2Gg.hardwaresurveydialog_Desktop_hYVp3>.hardwaresurveydialog_HardwareSurveySections_3f3VJ .hardwaresurveydialog_HardwareSurveySection_RRhNQ {
+    padding-bottom: 0px;
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400;
+}
+
+.hardwaresurveydialog_HardwareSurveyDialog_3v2Gg.hardwaresurveydialog_Desktop_hYVp3>.hardwaresurveydialog_HardwareSurveySections_3f3VJ h3 {
+    margin-bottom: 5px;
+    padding: 0px;
+    color: #297bf5 !important;
+    font-size: 18px;
+}
+
+.serverbrowserdialog_ServerBrowserDialog_2rxrV .serverbrowserdialog_DialogBody_2SvsK .serverbrowserdialog_ServerTabPane_2YSm1 .serverbrowserdialog_ServerList_2_4_n .serverbrowserdialog_ServerRow_c8HfP:hover {
+    background: var(--PulseHover);
+    cursor: pointer;
+}
+
+.serverbrowserdialog_ServerBrowserDialog_2rxrV .serverbrowserdialog_DialogBody_2SvsK .serverbrowserdialog_ServerTabPane_2YSm1 .serverbrowserdialog_ServerList_2_4_n .serverbrowserdialog_SelectedRow_3vedM {
+    color: #fff;
+    background: var(--Bar1);
+}
+
+.serverbrowserdialog_ServerBrowserDialog_2rxrV .serverbrowserdialog_DialogBody_2SvsK .serverbrowserdialog_ServerTabPane_2YSm1 .serverbrowserdialog_ServerList_2_4_n .serverbrowserdialog_SelectedRow_3vedM:hover {
+    background: var(--Bar1);
+    cursor: pointer;
+}
+
+button.serverbrowserdialog_SearchButton_2KYMM.DialogButton._DialogLayout.Small.Focusable {
+    padding: 4px;
+    width: auto;
+    min-width: 30px;
+}
+
+.serverbrowserdialog_ServerBrowserDialog_2rxrV button.DialogButton svg {
+    width: 2ex;
+    height: 2ex;
+    color: #fff;
+    margin-left: 5px;
+}
+
+.serverbrowserdialog_ServerBrowserDialog_2rxrV .serverbrowserdialog_DialogBody_2SvsK .serverbrowserdialog_ServerTabPane_2YSm1 .serverbrowserdialog_ServerList_2_4_n .serverbrowserdialog_ColumnResizer_1XAm7 {
+    background: #f5f5f500;
+    display: inline-block;
+    cursor: col-resize;
+    width: 1px;
+    top: 0;
+    right: 0;
+    margin-left: 0px;
+    padding-left: 3px;
+    padding-right: 3px;
+    margin-right: 0px;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    touch-action: none;
+}
+
+.serverbrowserdialog_ServerBrowserDialog_2rxrV .serverbrowserdialog_DialogBody_2SvsK .serverbrowserdialog_ServerTabPane_2YSm1 .serverbrowserdialog_ServerList_2_4_n .serverbrowserdialog_ColumnResizer_1XAm7 span {
+    height: 100%;
+    width: 1px;
+    border-left: 2px solid #0073ff;
+}
+
+.serverbrowserdialog_ServerBrowserDialog_2rxrV .serverbrowserdialog_DialogBody_2SvsK .serverbrowserdialog_ServerTabPane_2YSm1 .serverbrowserdialog_BottomControlsRow_341md .serverbrowserdialog_ToggleShowFilterDetailsButton_30Bn7.serverbrowserdialog_Selected_L3t04 {
+    color: #fff;
+    background: var(--ButtonMidBlueHover);
+}
+
+.serverbrowserdialog_ServerBrowserDialog_2rxrV .serverbrowserdialog_DialogBody_2SvsK .serverbrowserdialog_TopControlsCtr_2X_Zp button.serverbrowserdialog_SwitchTabButton_1jEPp.serverbrowserdialog_Selected_L3t04 {
+    font-weight: bold;
+    color: #fff;
+    background: #0073ff;
+}
+
+.serverbrowserdialog_ServerBrowserDialog_2rxrV .serverbrowserdialog_DialogBody_2SvsK .serverbrowserdialog_ServerTabPane_2YSm1 .serverbrowserdialog_ServerList_2_4_n {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    margin-top: 12px;
+    margin-bottom: 0px;
+    background: #011244;
+    border: 1px solid #0e141b;
+    box-shadow: inset 0px 4px 4px rgba(0,0,0,.25);
+}
+
+.serverbrowserdialog_ServerBrowserDialog_2rxrV .serverbrowserdialog_DialogBody_2SvsK .serverbrowserdialog_ServerTabPane_2YSm1 .serverbrowserdialog_ServerList_2_4_n .serverbrowserdialog_ServerListHeaderCtr_2cIK- {
+    display: flex;
+    width: 100%;
+    background: #094aba;
+    padding: 6px 0px;
+}
+
+.serverbrowserdialog_ServerBrowserDialog_2rxrV .serverbrowserdialog_DialogBody_2SvsK .serverbrowserdialog_ServerTabPane_2YSm1 .serverbrowserdialog_ServerList_2_4_n .serverbrowserdialog_SelectColumnsButton_3mCrT {
+    width: 18px;
+    height: 100%;
+    text-align: center;
+    padding: 0px 3px;
+    cursor: pointer;
+    margin-right: 6px;
+    background: #2860ff;
+    border-radius: 3px;
+}
+
+.serverbrowserdialog_ServerBrowserDialog_2rxrV .serverbrowserdialog_DialogBody_2SvsK .serverbrowserdialog_ServerTabPane_2YSm1 .serverbrowserdialog_ServerList_2_4_n .serverbrowserdialog_SelectColumnsButton_3mCrT:hover {
+    color: #fff;
+    background: #2d79f1;
+    transition: background .3s ease-in-out;
+}
+
+/* Big Pic */
+
+.footer_BasicFooter_3T1iF {
+    min-height: 40px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: auto;
+    background: linear-gradient(180deg, black 0px, #0c34a5 2px, #01167a);
+    z-index: 6000;
+    align-items: center;
+    display: flex;
+}
+
+.gamepadhome_TabbedContent_cE1Sa {
+    background: linear-gradient, #000e53 0 0%, #000931 60%, #000000 100%);
+    background: linear-gradient(180deg, #000c22, #000005);
+    padding: 0px;
+    min-height: calc(100vh - 40px - 40px);
+    height: 454px;
+}
+
+.gamepadhomerecentgames_RecentGamesInnerContainer_282X0 {
+    position: relative;
+    background: linear-gradient(45deg, #00076061, #00157f61);
+}
+
+.gamepadhomewhatsnew_EventInfo_6TGe7 {
+    height: 126px;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+    padding: 10px;
+    background-color: #0554ca14;
+    box-sizing: border-box;
+    transition-property: background-color;
+    transition-duration: .45s;
+    transition-timing-function: cubic-bezier(0.17, 0.45, 0.14, 0.83);
+}
+
+.gamepadhomewhatsnew_GameIconAndName_1jXSh .gamepadhomewhatsnew_GameName_3H9W- {
+    font-size: 14px;
+    color: #0072ff;
+}
+
+.recentlycompleted_RecentlyCompletedItem_3OC7i {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background: #0010327d;
+}
+
+.recentlycompleted_BottomSection_3LyF6 {
+    height: 40%;
+    box-sizing: border-box;
+    padding: 4px 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(1 23 62 / 50%);
+}
+
+.recentlycompleted_DownloadInfo_1wLpm {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    font-size: 12px;
+    line-height: 3;
+    color: #0077ff;
+}
+
+.gamecapsule_GameCapsule_fXdhj {
+    background-color: #02123e;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    position: relative;
+    cursor: pointer;
+}
+
+.gamecapsule_GameCapsule_fXdhj .gamecapsule_BottomBar_3-GyQ {
+    display: flex;
+    flex-direction: row;
+    font-size: 12px;
+    text-transform: uppercase;
+    height: 28px;
+    align-items: center;
+    background-color: #00091b;
+    justify-content: space-between;
+}
+
+}
+.gamepadhomewhatsnew_EventType_1f0dZ.gamepadhomewhatsnew_EventType28_39b83 {
+    color: #007eff;
+}
+
+.gamepadhomewhatsnew_EventType_1f0dZ.gamepadhomewhatsnew_EventType13_16aly {
+    color: #007eff;
+}
+
+.gamepadcontextmenu_contextMenuItem_1sdvo {
+    display: flex;
+    line-height: 20px;
+    position: relative;
+    cursor: pointer;
+    width: 100%;
+    min-width: 280px;
+    box-sizing: border-box;
+    padding: 14px;
+    background: #072465;
+    color: #ffffff;
+    align-items: center;
+}
+
+.gamepadcontextmenu_contextMenuItem_1sdvo:hover {
+    display: flex;
+    line-height: 20px;
+    position: relative;
+    cursor: pointer;
+    width: 100%;
+    min-width: 280px;
+    box-sizing: border-box;
+    padding: 14px;
+    background: var(--PulseHover);
+    color: #ffffff;
+    align-items: center;
+}
+
+.mainmenu_Menu_23IDi {
+    height: calc( 100% - var(--basicui-header-height) - 40px );
+    margin-top: 40px;
+    margin-bottom: 41px;
+    width: 240px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    background: #0d2788;
+    overflow: hidden;
+    transition-property: width,transform;
+    transition-duration: 320ms,300ms;
+    transition-timing-function: ease-in-out,cubic-bezier(0.16, 0.86, 0.43, 0.99);
+    transform: translateX(-240px);
+}
+
+.mainmenu_Item_2w9Tp:hover {
+    background: var(--PulseHover);
+}
+
+.gamepadtabbedpage_TabHeaderRowWrapper_2Jobs {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    padding: 0px 2.8vw;
+    background: #003e9c;
+}
+
+.gamepadtabbedpage_TabHeaderRowWrapper_2Jobs {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    padding: 0px 2.8vw;
+    background: var(--OldButton1);
+}
+
+.gamepadtabbedpage_TabContents_WDa0_ {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(180deg, var(--List2), var(--List3));
+}
+
+.searchbar_SearchContainer_161Tj .searchbar_SearchIconLeft_2Ya83.searchbar_WhiteBackground_1l8js {
+    color: var(--SuperNavLabel);
+}
+
+.searchbar_SearchBox_2a1-s.gpfocus, .searchbar_SearchContainer_161Tj.searchbar_ForceExpanded_1bmuJ .searchbar_SearchBox_2a1-s {
+    color: #ffffff;
+    opacity: 1;
+    width: 100%;
+    min-width: 100%;
+    caret-color: #fff;
+}
+.searchbar_SearchContainer_161Tj.searchbar_ForceExpanded_1bmuJ:not(.gpfocuswithin) .searchbar_SearchFieldBackground_3F4YR.searchbar_WhiteBackground_1l8js {
+    background-color: var(--PulseMidBlue);
+}
+
+.mainmenu_Item_2w9Tp.mainmenu_Active_10bq5 {
+    z-index: 2;
+    transform: scale(1.1) rotateX(1deg);
+    background: var(--PulseHover);
+}
+
+.uninstalldialog_UninstallDialog_7au1m {
+    min-width: 600px;
+    min-height: 10px;
+}
+
+
+.savecollectiondialog_SaveCollectionContainer_z-cTL .DialogBodyText {
+    margin-bottom: 0;
+color: #ffffff;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 300;
+    margin-bottom: 32px;
+    user-select: none;
+    padding-bottom: 8px !important;
+}
+
+.addnonsteamgamedialog_AddNonSteamGameDialogContent_zhaKe .addnonsteamgamedialog_Header_3m0Mn {
+    margin-top: 8px;
+    padding: 10px 0px;
+    display: flex;
+    flex-direction: row;
+    background: #013082;
+    border: 1px solid #0e141b;
+    border-bottom: none;
+}
+
+.addnonsteamgamedialog_AddNonSteamGameDialogContent_zhaKe .addnonsteamgamedialog_GameList_1e6tj {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background: #001448;
+    border: 1px solid #0e141b;
+    box-shadow: inset 0px 4px 4px rgba(0,0,0,.25);
+    border-radius: 2px;
+}
+
+.addnonsteamgamedialog_AddNonSteamGameDialogContent_zhaKe .addnonsteamgamedialog_GameRow_1cXzM:hover {
+    background-color: var(--PulseHover);
+}
+
+.addnonsteamgamedialog_AddNonSteamGameDialog_1tQy- {
+    min-width: 600px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    height: 100%;
+    padding: 2px;
+    padding-bottom: 6px;
+}
+
+.addnonsteamgamedialog_AddNonSteamGameDialogContent_zhaKe .addnonsteamgamedialog_Footer_kOsdH {
+    flex-direction: row;
+    display: flex;
+    gap: 10px;
+    padding-top: 8px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-bottom: 4px;
+}
+
+.addnonsteamgamedialog_AddNonSteamGameDialogContent_zhaKe .addnonsteamgamedialog_DialogBodyText_Xdr35 {
+    font-size: 14px;
+    padding-bottom: 0px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #4677ff;
+    margin-bottom: 6px;
+    margin-left: 4px;
+}
+
+.DialogHeader.addnonsteamgamedialog_DialogHeader_tNxx1 {
+    margin-left: 6px;
+}
+
+.addnonsteamgamedialog_AddNonSteamGameDialogContent_zhaKe .addnonsteamgamedialog_GameRow_1cXzM .addnonsteamgamedialog_ExePath_1LM_T {
+    width: 62%;
+    padding-left: 6px;
+    font-style: italic;
+    overflow-x: hidden;
+    white-space: nowrap;
+    margin: auto 0;
+    font-size: 12px;
+    color: #739eff;
+    opacity: 90%;
+}
+
+.addnonsteamgamedialog_AddNonSteamGameDialogContent_zhaKe .addnonsteamgamedialog_Header_3m0Mn .addnonsteamgamedialog_AppName_1kVk1:hover {
+    color: #3a92ff;
+}
+
+.addnonsteamgamedialog_AddNonSteamGameDialogContent_zhaKe .addnonsteamgamedialog_Header_3m0Mn .addnonsteamgamedialog_ExePath_1LM_T:hover {
+    color: #3a92ff;
+}
+
+.savecollectiondialog_SaveCollectionContainer_z-cTL .DialogFooter {
+    display: block;
+    margin-top: -40px;
+    margin-bottom: 50px;
+} 
+
+.savecollectiondialog_TwoOptionsContainer_33bWW {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff0;
+    border-radius: 4px;
+    align-self: stretch;
+}
+
+.savecollectiondialog_Description_3uOEr {
+    align-self: stretch;
+    padding: 8px;
+    flex: 1;
+    background: var(--MenuBG2);
+    color: #ffffff;
+}
+
+.savecollectiondialog_TwoOptionsContainer_33bWW .savecollectiondialog_Option_3vDq3 .savecollectiondialog_ActionLabel_25n_z {
+    background: #000e41;
+    background-position: 25%;
+    background-size: 330% 100%;
+    text-transform: uppercase;
+    color: #dfe3e6;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 2px;
+    align-self: stretch;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border: 1px solid #0000;
+}
+
+.savecollectiondialog_TwoOptionsContainer_33bWW .savecollectiondialog_Option_3vDq3.savecollectiondialog_Disabled_3Jmn3 .savecollectiondialog_ActionLabel_25n_z {
+    color: #fff;
+    filter: saturate(0.8);
+    cursor: default;
+}
+
+/* Ingame */
+
+.steamdesktopoverlay_OverlayPopup_C9tvu {
+    background: radial-gradient(155.42% 100% at 0% 0%, var(--List1) 0 0%, var(--List2) 100%);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    transition: opacity .2s linear;
+}
+
+.gamenotes_EditorInput_3zWun {
+    background: linear-gradient(180deg, var(--GamesBG1), var(--GamesBG2));
+    box-shadow: inset 0 8px 6px -6px #000;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin-bottom: -18px;
+    margin-right: -6px;
+    line-height: 4px;
+}
+
+/* Delete Notes Button Fix */
+.gamenotes_NoteEditorArea_3WOF4 .gamenotes_NoteActions_3uGOy .DialogButton {
+    width: 22px;
+    height: 52px;
+    padding: 4px 0px 0px 0px !important;
+    opacity: 0.5;
+    background: none;
+}
+
+.achievementspage_HeaderContainer_36Dp_ {
+    padding-left: 0px;
+    padding-right: 0px;
+    scroll-margin-top: 68px;
+    user-select: none;
+}
+
+.achievementsheader_Container_2iGYY .achievementsheader_Title_3wNyl.DesktopUI, .DesktopUI .achievementsheader_Container_2iGYY .achievementsheader_Title_3wNyl {
+    font-weight: 700;
+    margin-left: 14px;
+}
+
+.achievementsheader_StatsBlock__gDkI {
+    padding: 14px;
+    display: flex;
+    flex-direction: row;
+    gap: 14px;
+    background-color: var(--BG1);
+}
+
+.progressbar_ProgressBar_1-nHj {
+    border-radius: 10px;
+    height: 8px;
+    width: 100%;
+    background: #002d7b;
+    overflow: hidden;
+}
+
+.gamepadtabbedpage_Tab_3eEbS {
+    font-family: "Motiva Sans",Helvetica,sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    font-style: normal;
+    line-height: 20px;
+    text-align: left;
+    text-decoration: none;
+    text-indent: 0;
+    text-shadow: none;
+    text-transform: none;
+    letter-spacing: 0px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 22px;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    background-color: transparent;
+    color: #fff;
+    padding: 6px 16px;
+    border-radius: 3px;
+    white-space: nowrap;
+    transition-property: background-color,color,box-shadow;
+    transition-duration: .1s;
+    transition-timing-function: ease;
+    height: 22px;
+    line-height: unset;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+}
+
+.gamepadtabbedpage_Tab_3eEbS.gamepadtabbedpage_Selected_3Gp1b {
+    background-color: #1848ff;
+    color: #fff;
+    border-radius: 3px;
+}
+
+.gamepadtabbedpage_Tab_3eEbS.gamepadtabbedpage_Selected_3Gp1b:hover {
+    background-color: #1848ff;
+    color: #fff;
+    border-radius: 3px;
+}
+
+.gamepadtabbedpage_Tab_3eEbS:hover {
+    background-color: #1848ff;
+    color: #fff;
+}
+
+.achievementslist_AchievementListItemBase_2Kmn7 {
+    display: flex;
+    flex-direction: column;
+    background-color: #041c5d6b;
+    height: 80px;
+}
+
+.achievementslist_UnlockDate_2fFW2 {
+    font-size: 12px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.achievementslist_AchievementDescription_1WP2Y {
+    font-size: 12px;
+    color: #ffffff;
+    opacity: 0.9;
+}
+
+.achievementslist_AchievementGlobalPercentage_VQbek {
+    font-size: 12px;
+    color: #419aff;
+}
+
+.achievementslist_AchievementList_1UXC2 {
+    display: flex;
+    flex-direction: column;
+    padding: 8px 20px;
+    gap: 8px;
+    background-color: #001125;
+}
+
+.desktopbrowser_URLBar_26Gmf {
+    position: relative;
+    padding: 4px 4px 4px 9px;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(180deg, #1038ab, var(--Bar2));
+    margin-top: -4px;
+}
+
+.steamdesktopoverlay_OverlayPopup_C9tvu .title-area-children {
+    float: none;
+    -webkit-app-region: drag;
+    pointer-events: auto;
+    position: relative;
+    padding-left: 14px;
+    top: unset;
+    right: unset;
+    color: #ffffff;
+    font-size: 13px;
+    text-align: left;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-right: 0px;
+}
+
+.desktopbrowser_URLBar_26Gmf .desktopbrowser_NavigationButton_1oXr_.desktopbrowser_Disabled_1f6yY {
+    pointer-events: none;
+    color: #ffffff;
+}
+
+.desktopbrowser_URLBar_26Gmf .desktopbrowser_StatusIcon_2UTNf {
+    height: 18px;
+    color: #ffffff;
+}
+
+.desktopbrowser_URLBar_26Gmf .desktopbrowser_URLBarText_1d2NZ .desktopbrowser_URL_1W55u {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    padding: 0 0px;
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 400;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.desktopbrowser_URLBar_26Gmf .desktopbrowser_URLBarText_1d2NZ:hover {
+    cursor: pointer;
+    background: var(--PulseHover);
+    border-radius: 16px;
+}
+
+.desktopbrowser_URLBar_26Gmf .desktopbrowser_NavigationButton_1oXr_:hover {
+    cursor: pointer;
+    background: var(--PulseHover);
+    border-radius: 22px;
+    color: #fff;
+}
+
+.appdetailsspotlight_ReviewContainer_3LE-6 {
+    box-sizing: border-box;
+    width: 100%;
+    padding-left: 8px;
+    padding-right: 10px;
+    background-color: #0b49b000;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 200;
+}
+
+.writereview_RatingContainer_2SAb6 {
+    background-color: #001c4900;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+
+.writereview_ReviewThumbButton_1kCN0 {
+    padding: 8px 30px;
+    background: #1a4bb8bf;
+    color: #ffffff;
+    text-decoration: none !important;
+    margin: 0 3px;
+    position: relative;
+    border: none;
+    cursor: pointer;
+    font-size: 13px;
+    outline: none;
+    border-radius: 3px;
+    x: ;
+}
+
+.writereview_ReviewThumbButton_1kCN0:not(.writereview_Selected_Z3L6K):hover {
+    text-decoration: none !important;
+    color: #fff !important;
+    background: #417a9b;
+    background: -webkit-linear-gradient(-60deg, #417a9b 5%, #67c1f5 95%);
+    background: var(--ButtonMidBlueHover);
+}
+
+.gamepadhomewhatsnew_EventPreviewContainer_1ltOY.Panel:hover {
+    background: #005aff47;
+}
+
+.recentlycompleted_TopSection_2wVB-:hover {
+    background: #005aff47;
+}
+
+.gamecapsule_PriceCtn_2E-mS .salepreviewwidgets_StoreSalePriceBox_Wh0L8 {
+    font-size: 15px !important;
+}
+
+.gamepadui_BasicHome_3LYP1.gamepadui_OpaqueBackground_b084m {
+    background: linear-gradient(120deg, #00228a, rgb(1 13 56));
+}
+
+.GamepadMode.friendlist.FriendsListAnchored {
+    max-width: 240px;
+    background: #001b4db3;
+}
+
+.chattabs_ChatTab_2Vrcp.chattabs_Active_Lrqoj.GamepadMode, .GamepadMode .chattabs_ChatTab_2Vrcp.chattabs_Active_Lrqoj {
+    background: linear-gradient(180deg, var(--Bar1), var(--Bar2));
+    border: none;
+}
+
+.titleBarContainer.ChatTabs.GamepadMode, .GamepadMode .titleBarContainer.ChatTabs, .chatWindow.GamepadMode, .GamepadMode .chatWindow, .chatDialogs.GamepadMode, .GamepadMode .chatDialogs {
+    background: linear-gradient(180deg, var(--List1), var(--List3));
+}
+
+.GamepadMode.friendlist.FriendsListAnchored {
+    max-width: 240px;
+    background: linear-gradient(15deg, #011955, #002f7a00);
+}
+
+.chatentry_chatTextarea_pewyB.GamepadMode, .GamepadMode .chatentry_chatTextarea_pewyB {
+    box-shadow: none;
+    font-size: 16px;
+    padding: 10px 0 0 8px;
+    margin-right: 0;
+    max-height: 34px;
+    height: 34px;
+    transition: none;
+    background: #001f77;
+}
+
+.chatentry_chatEntryControls_2gP0D .chatentry_chatSubmitButton_1IEiK.GamepadMode, .GamepadMode .chatentry_chatEntryControls_2gP0D .chatentry_chatSubmitButton_1IEiK {
+    min-height: 0px;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    border: 0px solid black;
+    background-color: #00207b;
+    max-width: 44px;
+    min-width: 0;
+}
+
+.chatentry_chatEntryControls_2gP0D .chatentry_chatSubmitButton_1IEiK.GamepadMode:not(.chatentry_disabled_2GM2k), .GamepadMode .chatentry_chatEntryControls_2gP0D .chatentry_chatSubmitButton_1IEiK:not(.chatentry_disabled_2GM2k) {
+    background-color: #00207b;
+    color: #fff;
+}
+
+.miniprofile_miniProfileBackground_108IP{position:absolute;top:0;right:0;bottom:0;left:0;overflow:hidden;z-index:-3;background:radial-gradient(ellipse farthest-corner at 20% 30%, var(--Bar1) 0%, var(--Bar2) 50%, var(--List2) 100%)}
+
+.miniprofile_miniProfileBackgroundBlur_QTyZx{width:380px;height:380px;filter:blur(6px) saturate(2);position:absolute;left:-60px;top:-60px;opacity:.2;-webkit-mask:radial-gradient(ellipse farthest-corner at 150px 150px, black 0%, rgba(0, 0, 40, 0.6) 20%, rgba(0, 0, 210, 0.3) 34%, rgba(0, 0, 0, 0) 64%);mask:radial-gradient(ellipse farthest-corner at 150px 150px, black 0%, rgba(0, 0, 0, 0.6) 20%, rgba(0, 0, 0, 0.3) 34%, rgba(0, 0, 0, 0) 64%);mix-blend-mode:screen}
+
+.miniprofile_miniProfileVideoBackground_34Ni9{width:100%;height:100%;object-fit:cover;object-position:top right}
+
+.miniprofile_miniProfileVideoBackgroundContainer_2SW_Y{position:absolute;top:0;left:0;right:0;bottom:0;z-index:-3;background-color:#00000000}
+
+.miniprofile_miniProfileBackdropBlur_LN94b{backdrop-filter:blur(1px);-webkit-backdrop-filter:blur(1px)}
+
+.miniprofile_miniProfileContent_3QoRR.miniprofile_notInOrWatchingGame_34jjZ .miniprofile_miniProfileBottom_2MwqO,.miniprofile_miniProfileContent_3QoRR .miniprofile_miniProfileGameContainer_3gSTD{background:linear-gradient(to bottom, rgba(0, 0, 0, 0.10) 5%, rgba(0, 0, 0, 0.13) 95%)}
+
+.standardtemplates_AllNotificationsTemplate_2m9JU .standardtemplates_StandardNotificationSubText_2XcN2, .standardtemplates_StandardTemplateDesktop_1tsEf .standardtemplates_StandardNotificationSubText_2XcN2, .standardtemplates_DesktopToastTemplate_3CGHg .standardtemplates_StandardNotificationSubText_2XcN2, .standardtemplates_PinnedTemplateDesktop_2caCr .standardtemplates_StandardNotificationSubText_2XcN2 {
+    color: #ffffff;
+    font-size: 11px;
+}
+
+.standardtemplates_StandardTemplateDesktop_1tsEf.standardtemplates_Unread_2GC8q {
+    background: #00217200;
+}
+
+.standardtemplates_StandardTemplateDesktop_1tsEf.standardtemplates_Unread_2GC8q:hover {
+    background: #002c7d;
+}
+
+.standardtemplates_AllNotificationsTemplate_2m9JU .standardtemplates_Title_1WlRE, .standardtemplates_StandardTemplateDesktop_1tsEf .standardtemplates_Title_1WlRE, .standardtemplates_DesktopToastTemplate_3CGHg .standardtemplates_Title_1WlRE, .standardtemplates_PinnedTemplateDesktop_2caCr .standardtemplates_Title_1WlRE {
+    font-family: "Motiva Sans",Arial,Helvetica,sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #3392ff;
+    margin-right: .5em;
+}
+
+.notificationcontent_TimestampDesktop_1N5mc {
+    color: #3392ff;
+}
+
+.standardtemplates_AllNotificationsTemplate_2m9JU .standardtemplates_Icon_19g_L, .standardtemplates_StandardTemplateDesktop_1tsEf .standardtemplates_Icon_19g_L, .standardtemplates_DesktopToastTemplate_3CGHg .standardtemplates_Icon_19g_L, .standardtemplates_PinnedTemplateDesktop_2caCr .standardtemplates_Icon_19g_L {
+    width: 13px;
+    height: 13px;
+    margin-right: 5px;
+    color: #3392ff;
+    fill: #ffffff;
+    display: flex;
+}
+
+.menu_MenuPopup_3pofG {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 0px !important;
+    
+    background: linear-gradient(180deg, var(--Top2), var(--Top1));
+}
+
+.collectionview_OuterContainer_2sNr7 {
+    min-height: 100%;
+    background:radial-gradient(ellipse farthest-corner at 20% 30%, var(--Bar1) 0%, var(--Bar2) 3%, var(--List2) 100%);
+}
+
+._1I9_2lGTsH32GiBEXyePrp.DialogContent {
+    padding: 2px 2px 2px 2px;
+}
+
+._31Kkeb6BIUOVu8QL-dgtY-.DialogContent {
+    padding: 32px 2px 2px 2px;
+}
+
+._1ILFQY2sxyGFT_n-fifayy {
+    padding: 1px;
+    padding-top: 32px;
+    background: none;
+}
+
+/* fix for friendlist "group chats" (strong grey background) */
+.ChatRoomListGroupItem:hover .ChatRoomListGroupItem_header {
+    background-color: var(--PulseHover);
+}
+

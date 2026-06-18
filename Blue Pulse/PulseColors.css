@@ -1,0 +1,157 @@
+/* Colors? */
+/* #Note I am using these for theme consistency and easier editing */
+/* Color Reference */
+:root {
+
+/* TopBG */
+--Top1:#00195f;
+--Top2:#001854;
+--Top3:#000a40;
+
+/* Hovers */
+--PulseHover:rgba(0,0,0,0.5);
+
+/* Bars */
+--Bar1:#02268b;
+--Bar2:#012170;
+--Bar3:#000d53;
+--BarLabel:#f8f8f8;
+
+/* Backgrounds for Lists */
+--List1:#001142;
+--List2:#000e31;
+--List3:#000314;
+
+/* Testing Colour */
+--Test1:rgba(233,13,65,0.95);
+
+/* Dividers */
+--Divider1:rgba(53,116,221,0.44);
+--Divider2:rgba(53,116,221,0.74);
+
+/* Almost Nothing*/
+--None1:rgba(0,0,0,0.01);
+
+/* Almost White*/
+--AlmostWhite1:#d5e4ff;
+
+/* Tab X */
+--Close1:#236bec;
+--Close2:#fff;
+
+
+/* Scrollbar */
+--Sbar1:#1757c2;
+--Sbar2:#ffffff;
+
+/* Chat Buttons */
+--CBG1:#012863;
+--CHover:#225fcd;
+--CBorder:#114aea;
+--Icons:#ffffff;
+
+/* To Top Gradient*/
+--ToTop1:rgba(20, 93, 219, 1);
+--ToTop2:#03326e;
+
+/* Download Page Colors */
+--GraphBG1: #16208e;
+--GraphBG2: #001344;
+--GamesBG1: #002c77;
+--GamesBG2: #001344;
+--DButtons: #003ea9;
+--DButtonHover: #0073ff;
+
+--NewerButton: #004aa4;
+
+/* Colors from Library.css */
+--BG1:#001e58;
+--BG2:rgba(0,45,117,1);
+--BG3:rgba(1,16,45,1);
+
+--MenuBG1:rgba(0,47,122,1);
+--MenuBG2:rgba(1,16,45,1);
+--Button1:#004aa4;
+--ButtonHover:#0646d9e8;
+--ButtonClick:#00319e;
+
+--OldButton1:#0b357d;
+--OldButtonHover:#3672d6;
+--OldButtonClick:#2743a7;
+
+
+--CheckBoxes:#0004;
+--CheckBoxHover:#29479ebf;
+--InputFocus:#2853c8;
+--InputBase:rgba(17,66,174,0.5);
+--InputHover:rgba(51,109,206,0.6);
+--PWhite:#fff;
+
+/* Steam Settings Menu Colors */
+--SettingsMenuBG1:#081738;
+--SettingsMenuBG2:#031f44;
+--SettingsButton1:#003082;
+--SettingsButtonLabel:#fff;
+--SettingsLabels:#fff;
+--SettingsText:#4fa5e5;
+--SettingsTabActive:#00348d;
+--SettingsLineSeperator:#10245b;
+
+/* Colors from Friends */
+/* #Note I am using these for theme consistency and easier editing */
+/* Color Reference */
+
+
+/* Date */
+--Date1:#236bec;
+
+/* Blue Test */
+--Btest1:#005bfe;
+
+/* Unread Glow */
+--Unread1:rgba(25,149,255,0.8);
+--Unread2:rgba(35,142,233,0.2);
+--Unread3:rgba(35,169,233,0.01);
+--UnreadCircle:#16dfff;
+
+/* Chat Buttons */
+--CBG1:#012863;
+--VoiceButton:var(--CBG1);
+--CHover:#225fcd;
+--CBorder:#114aea;
+--Icons:#ffffff;
+--CBubble:#14336e;
+
+--MsgReactBG:#00081f;
+
+--Search1:#5b8af7;
+
+--ChatText:#629dfd;
+--ChatText2:#59adf3;
+
+/* Status Colors */
+
+--Online:#25a5ff;
+--Ingame:#1fe42f;
+--Offline:#8791a7;
+--Broadcast:#bd24cb;
+
+/* Fix for Messages */
+--SentFiles:rgba(19, 87, 255, 0.3);
+
+/* Library Games List Sect */
+--GListButtonH:rgb(0 0 0 / 20%);
+--GListButton:rgb(0 0 120 / 28%);
+
+/* New Tech? */
+  --GamesBar: linear-gradient(
+    to bottom, 
+    var(--Bar2) 0%, 
+    var(--List2) 85%, 
+    var(--List2) calc(100% - 1px), 
+    black 100%
+  );
+  
+  --GamesPanel: color-mix(in srgb, var(--BG1) 42%, transparent)
+}
+

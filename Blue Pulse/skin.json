@@ -1,0 +1,24 @@
+{
+  "name": "Blue Pulse",
+  "author": "Asp",
+  "description": "Slowly bringing back Blue Pulse to a usable version ",
+  "header_image": "",
+  "splash_image": "",
+  "tags": [
+    "Blue",
+    "Pulse",
+    "Gradients",
+    "Not Metro",
+    "Clean UI",
+    "Indie",
+    "User-Friendly"
+  ],
+    "version": "0.0.92.54", 
+    "github": {
+        "owner": "Asp",
+        "repo_name": "Asphira"
+    },
+
+  "Steam-WebKit": "webkit.css",
+  "UseDefaultPatches": true
+}

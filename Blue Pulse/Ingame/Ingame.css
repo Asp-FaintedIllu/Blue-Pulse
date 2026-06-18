@@ -1,0 +1,130 @@
+/* Invite Anyone to Play BG (background color only, for some reason background-img doesnt work so flat colours only)	 */
+
+._14S4rlGAAqfqW6lMKYB2GM ._1tN7mH20YhTaXLqtoW2hR- {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: var(--Button1);
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 16px;
+    cursor: pointer;
+    color: #b7ccd5;
+    font-weight: 500;
+}
+
+._14S4rlGAAqfqW6lMKYB2GM ._1tN7mH20YhTaXLqtoW2hR-:hover {
+background-color: var(--PulseHover);   
+color: hsl(198, 26.3157894737%, 87.6470588235%);
+}
+
+/* to add into ingame overlay segment: Remote Play Highlight Bg */
+.byUV3gGMo74sUHlxvyjDp {
+    background-color: var(--PulseHover);
+    padding: 12px;
+}
+
+/* add friend button bg and size */
+._1j2F52r3Ii1QcgyElBRYZ1 {
+    flex: 1;
+    display: flex;
+    padding: 4px;
+    background-color: #ff009400; /* 00 for no Alpha aka 0 opacity */
+}
+
+/* Hovers for invite page */
+.byUV3gGMo74sUHlxvyjDp.weXF9tYk6FLht9FLdGY_:hover {
+    background-color: var(--Bar2);
+}
+
+/* "quality setting for Remote play" */
+._3ZHIBZbKR6DCeKpSDqwlMg.hwsQa9AuO5HnZjJobwSys {
+    color: white;
+    background-color: #0646d900;
+    background: linear-gradient(45deg, var(--BG2), var(--BG3));
+}
+
+/* game pad ui */
+._3PZjzoWLVofSeZpDpB1hrL ._3X22h7YdnZrFC2KSDbQiLq {
+    padding: 4px;
+    display: flex;
+    flex-direction: row;
+    background-color: var(--PulseHover);
+    position: relative;
+}
+
+/* game pad controller bg */
+._1dGgVLeznTJ_tSM-ISiy0C {
+    width: 32px;
+    height: 32px;
+    background-color: var(--BG2);
+    background: linear-gradient(180deg, var(--BG2), var(--BG3));
+    padding: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Controller "text" color */
+._1dGgVLeznTJ_tSM-ISiy0C ._10yQBasY8fMJwRAPKkcY3z {
+    width: 100%;
+    height: 100%;
+    color: #ffffff;
+}
+
+/* Volume BG */
+._1A662abUbKAn0ig5xH3aUN .ncAM2VaXiUJiIk2yvdf5T, ._1A662abUbKAn0ig5xH3aUN ._2icGUB0eQHsvd1mlUILwtM {
+    background-color: #0050ff00;
+    padding: 4px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* Volume Speaker Colour */
+._1A662abUbKAn0ig5xH3aUN .ncAM2VaXiUJiIk2yvdf5T ._39Y7lYCI-8Miq_9WNayebv {
+    width: 36px;
+    height: 36px;
+    color: #3684ff;
+}
+
+/* Volume Slide Bar BG */
+._1A662abUbKAn0ig5xH3aUN ._2icGUB0eQHsvd1mlUILwtM ._1sbwHLsJOdQizrAQPmwIDk {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background: var(--PulseHover);
+}
+
+/* Volume Slide Bar BG test */
+._1A662abUbKAn0ig5xH3aUN ._2icGUB0eQHsvd1mlUILwtM ._1sbwHLsJOdQizrAQPmwIDk .DialogSlider_Slider {
+    border: 4px solid var(--Bar3);
+    border-radius: 10px;
+    position: relative;
+    height: 10px;
+    background: #20222600;
+    cursor: pointer;
+    box-shadow: inset 0px 11px 8px -10px #131313;
+    user-select: none;
+}
+
+/* Remote Play Together Ingame Window size fix */
+.C9tvuqqEXGcrkcAtHrQ_R._290hvyptb3mP0rOSaapjgZ {
+    height: calc(100% + 8px);
+    padding-bottom: 0px;
+}
+
+/* Remote Play Dialog Header */
+.Kc4WjLKVpfZnHgYks5JaH {
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: unset;
+    text-transform: unset;
+    margin-bottom: 0px !important;
+    margin-left: 2px !important;
+    margin-top:  4px !important;
+    line-height: 14px !important;
+    margin-inline-end: 0px !important;
+    
+}
+

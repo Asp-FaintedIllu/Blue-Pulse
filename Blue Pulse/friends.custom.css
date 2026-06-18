@@ -1,0 +1,832 @@
+@import url(include.css);
+
+/* FriendList Hover */
+
+.friendStatusHover.ingame:hover,
+.friendStatusHover.ingame.Friend_ContextMenuActive{background-color:var(--PulseHover)}
+.friendStatusHover.online:hover,
+.friendStatusHover.online.Friend_ContextMenuActive{background-color:var(--PulseHover)}
+.friendStatusHover.offline:hover,
+.friendStatusHover.offline.Friend_ContextMenuActive{background-color:var(--PulseHover)}
+/* ______________ */
+
+/* Friends Labels - unsure it works */
+.friend.ingame .status{color:#91c257}
+.friend.online .status{color:#4c91ac}
+.friend.offline{color:#7a7a7a}
+.friend.online{color:#6dcff6}
+.friend.ingame{color:#e3ffc2}
+.friend.watchingbroadcast{color:#c9bdf7}
+
+
+/* Blasted Friends List + Chat Menus currently redundant*/
+.contextmenu_contextMenu_LQkrb{position:absolute;background:radial-gradient(ellipse farthest-corner at 50% 0%, var(--MenuBG1) 0%, var(--BG1) 50%, var(--BG2) 100%);box-shadow:0 10px 32px 0px #000000ab;opacity:1;transition:opacity 200ms;z-index:1600;user-select:none;padding:4px}
+
+/* Chat Menus More also redundant till find new names */
+.contextmenu_contextMenuItem_pFo3k{padding:4px 6px;line-height:17px;color:white;border-top:1px solid rgba(80,87,94,.5);border-bottom:1px solid rgba(80,87,94,0);cursor:default;position:relative;min-width:120px;display:block;align-items:center;flex-direction:row}
+
+.contextmenu_contextMenuItem_pFo3k:first-child{border-top:1px solid rgba(80,87,94,0)}
+
+.contextmenu_contextMenuItem_pFo3k:hover,.contextmenu_contextMenuItem_pFo3k.contextmenu_active_1KPWU{background:var(--PulseHover);color:cyan}
+
+/* Fix for add friend to Categories BG */
+.AssignCategoriesDialog_Friend{margin-bottom:16px;padding:6px;background:#00112dcf}
+
+.FriendCategoryCheckboxes_List{max-height:300px;overflow:auto;margin-bottom:16px}
+
+.AssignCategoriesDialog_AddNewButton{margin-bottom:32px}
+
+/* Friendslist Edits */
+/* ______________ */
+
+/* Removal of Pointless Glow top of Friendslist Window */
+.statusHeaderGlow{position:absolute;opacity:0;transition:opacity .92s ease-in-out;pointer-events:none}
+
+/* Scrollbar Position Fix */
+.FriendsListContent{border-right:solid 1px;}
+
+/* Top Portion for Friendslist Background */
+.friendListHeaderContainer{min-height:84px;background:radial-gradient(ellipse farthest-corner at 50% 30%, var(--Top1) 0%, var(--Top2) 50%, var(--Top3) 100%);border:1px solid rgba(0,0,0,.3);border-bottom:none;box-shadow:inset 1px 1px 0px rgba(71,71,71,.3);position:relative;user-select:none;cursor:default;flex-shrink:0}
+
+/* Line before Quick Select */
+.currentUserContainer{padding-right:24px;border-bottom:1px solid var(--Divider1)}
+
+/* Friends Text Label */
+.socialListTab{flex-grow:1;height:30px;user-select:none;cursor:default;margin-top:6px;letter-spacing:.3px;text-transform:uppercase;font-weight:500;padding-left:16px;font-size:13px;line-height:20px;text-align:left;color:var(--BarLabel);transition-property:background-color,box-shadow,color,padding;transition-duration:233ms;transition-timing-function:ease-in-out;display:flex;flex-direction:row;justify-content:space-between;align-items:center}
+
+/* Friends Search Bar */
+.activeTab{background:radial-gradient(ellipse farthest-corner at 50% 30%, var(--Bar1) 0%, var(--Bar2) 50%, var(--Bar3) 100%);box-shadow:0px -2px 3px 0px rgba(0,0,0,.05),4px -1px 1px 0px rgba(0,0,0,.05);color:#ffffff}
+
+/* Friends Search Hover */
+.TabSearchButton:hover{background-color: var(--PulseHover)}
+
+/* Add Friend to Chat*/
+.inviteAnotherFriendButton{width:32px;height:32px;border-radius:50%;display:block;position:absolute;top:8px;right:6px;background-color:var(--None1);cursor:pointer;transition:top .32s ease-in-out}
+
+.inviteAnotherFriendButton .SVGIcon_Button{width:80%;height:80%;fill:#0357ff;margin-left:4px;margin-top:2px}
+
+.inviteAnotherFriendButton .SVGIcon_Button line{stroke:#0357ff}.inviteAnotherFriendButton:hover 
+
+.SVGIcon_Button,.inviteAnotherFriendButton:hover .SVGIcon_Button line{stroke:#fff;fill:#fff}
+
+/* Unread Message Count Indicator */
+
+.chatTab .chatTabUnreadBadge,.FriendMessageCount,.ChatUnreadMessageIndicator{border-top-left-radius:4px;color:#fff;line-height:22px;height:22px;font-size:12px;margin:0px;padding:0px;padding-right:5px;padding-left:6px;text-align:right;position:relative;pointer-events:none;animation-name:UnreadLabelPulse;animation-name:none;background:rgba(0,114,255,.65);animation-duration:2.3s;animation-iteration-count:infinite;animation-timing-function:ease-in-out}
+
+.ChatRoomListGroupItem .FriendMessageCount,.unreadFriend .FriendMessageCount{font-size:12px;animation-name:UnreadLabelPulseAndGlow;animation-name:none;background:rgba(0,114,255,.65);box-shadow:0 0 8px 1px rgba(0,114,255,.35);border-radius:4px;padding:0px 8px;text-align:center;right:6px;top:-2px;pointer-events:none;margin-top:12px;position:absolute}
+
+
+/* List Background */
+/* ______________ */
+
+.FriendsListContent.gpfocus .friendlistListContainer{background:#3d4450;transition:none}.friendlistListContainer{overflow-y:auto;overflow-x:hidden;scroll-behavior:smooth;flex-grow:1;background:radial-gradient(ellipse farthest-corner at 50% 30%, var(--List1) 0%, var(--List2) 50%, var(--List3) 100%);min-height:32px}
+
+/* Group Chats Bar */
+/* ______________ */
+
+.friendsListSectionTitle{background:radial-gradient(ellipse farthest-corner at 50% 30%, var(--Bar1) 0%, var(--Bar2) 50%, var(--Bar3) 100%);display:flex;flex-direction:row;justify-content:space-between;height:30px;user-select:none;cursor:default;letter-spacing:2px;text-transform:uppercase;font-size:12px;line-height:20px;text-align:left;color:var(--BarLabel);padding:0;position:relative}
+
+/* Friends Search */
+
+.friendSearchInput[type=text]{width:100%;height:100%;box-shadow:inset 2px 2px 8px #00000075;border:0px solid transparent;background-color:var(--PulseHover);color:#fff;font-size:12px;letter-spacing:.5px;padding-left:24px;transition-property:background-position,box-shadow,background-color,color,padding;transition-duration:.32s;transition-timing-function:ease-in-out;background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAMAAAC7IEhfAAAAkFBMVEX///9JW1tQU1ZPVFZPU1ZPU1ZPVFdPU1ZPT1hPUlZPU1ZPU1ZOU1ZPU1ZOUlVOU1ZPU1ZQVFdPU1ZPU1ZOU1WAgIBPU1ZQVFZPU1dQU1ZPU1ZQU1dPU1ZPU1VOU1VPVFZPVFhPU1ZOTllPU1VPU1ZOU1dPU1ZNVVVQU1YAAABPU1ZQUFBPUlZOUlZPU1VPU1borkgUAAAAL3RSTlMADly05Ple0x2b/vrQkU6pu0aO73ICcb2iU/WQrMJv6D39F7n83d4enQHuEJ5/zh5EjbMAAAAJcEhZcwAACxIAAAsSAdLdfvwAAADcSURBVDjL5ZPXDoJAEEVBwd5QEbBh73r+/+9cYzSwu+Dqk8Z5m5uT6WNZP2V2oei44DrFgp3Hlco8rVzKxCrVGtQbzVar2ahDrVrJ4NoiTse7O15HOG092YVe3394fr8HXW19Iu8gKQxEdk2ddgChn1T8EAK19wiGXlryhhAp4AjGsjaGkQJOYCprU5goYAwzWZtBrIBzWMjaAuafRzSu0bhr4zkab8Z418r1LFcZ1yPd41o4m62lJ9MXLmy315OpnznkkokvPJ5yyeR4/pjc794iz6+5G3kx4r7DrlHAK3/NAfF8AAAAAElFTkSuQmCC);background-size:16px 16px;background-repeat:no-repeat;background-position:6px 4px}
+
+.friendSearchInput[type=text]:focus{background-color:var(--PulseHover);box-shadow:inset 0px 1px 4px #000000aa;outline-width:0px;color:white;padding-left:22px;background-position:4px 4px}
+
+.friendSearchNoResultsContainer{margin:15px;font-size:14px;color:white}
+
+.friendSearchNoResultsContainer a{color:#2d81ff;text-decoration:underline;font-weight:bold}
+
+/* Group Chats BG */
+/* ______________ */
+.chatRoomListContainer{background:radial-gradient(ellipse farthest-corner at 20% 30%, var(--List1) 0%, var(--List2) 50%, var(--List3) 100%);flex-shrink:0;overflow-y:auto;overflow-x:hidden;transition:all .2s ease-in-out}
+
+/* BGLineTest */
+.insetshadow_FriendlistInsetShadowTop_2-sgw{background:linear-gradient(to bottom, rgba(7, 187, 246, 1) 0%, rgba(0, 0, 0, 0.2) 25%, rgba(0,0,0,0) 100%);height:5px;}
+
+/* Group Hover */
+.ChatRoomListGroupItem:hover{background-color:var(--PulseHover)}
+
+/* Footer */
+/* ______________ */
+.friendListFooter{position:relative;min-height:26px;background:radial-gradient(ellipse farthest-corner at 50% 30%, var(--Bar1) 0%, var(--Bar2) 50%, var(--Bar3) 100%);flex-shrink:0}
+
+/*|_ "End of Friendslist"_|*/
+/*  \___________________/*/
+/*   \_________________/ */
+/*    \_______________/*/
+/*     \_____________/*/
+/*      \___________/*/
+/*       \_________/*/
+ 
+
+/* Chats */
+/* ______________ */
+
+/* Top BG */
+.titleBarContainer.ChatTabs{background:radial-gradient(ellipse farthest-corner at 50% 30%, var(--Top1) 0%, var(--Top2) 50%, var(--Top3) 100%);border:1px solid rgba(0,0,0,.3);border-bottom:none;border-left:none;box-shadow:inset 1px 1px 1px rgba(71,71,71,.3)}
+
+/* Chat Tab stuff */
+/* ______________ */
+
+/* Tab Hover 
+
+.chattabs_ChatTab_2Vrcp:hover:not(.chattabs_Active_Lrqoj){background-color:var(--PulseHover)}
+*/
+
+/* Tab Close Button */
+/*__________________*/
+
+/* Size + Position */
+.chattabs_CloseButton_7gMwY{width:12px;height:12px;margin-left:8px;flex-shrink:0;cursor:pointer;transform:translate(0px, -6px)}
+
+/* Close X */
+.chattabs_CloseButton_7gMwY .SVGIcon_X_Line line{stroke:var(--Close1);stroke-width:30px}
+
+/* Close X Hover */
+.chattabs_CloseButton_7gMwY:hover .SVGIcon_X_Line line{stroke:var(--Close2);stroke-width:30px}
+
+/* Unread Message Glow */
+.chattabs_UnreadGlow_3oV47{position:relative;pointer-events:none;width:100px;height:43px;position:absolute;bottom:0;right:0;background:radial-gradient(ellipse farthest-corner at 98% 90%, var(--Unread1) 0%, var(--Unread2) 40%, var(--Unread3) 70%)}
+
+/* Unread Message Circle */
+.chattabs_UnreadCircle_52cn_{position:absolute;bottom:4px;right:4px;width:4px;height:4px;background-color:var(--UnreadCircle);border-radius:50%;overflow:hidden}
+
+/*___________*/ 
+
+/* Pointless Bar that shows to divide tabs */
+.chattabs_ChatTab_2Vrcp:before,.chattabs_ChatTab_2Vrcp:last-of-type:after{content:"";background:var(--None1);position:absolute;left:0;top:8px;bottom:8px;width:1px} 
+
+/* ChatTabHover_notActiveChat */
+
+/* ChatSwap Button */
+.chatTabSelector{margin-top:0px;background:none;background-color:var(--None1);width:42px;height:36px;flex-shrink:0;border-top-left-radius:4px;border-top-right-radius:4px;-webkit-app-region:no-drag;z-index:3;position:relative;box-shadow:0px 0px 1px 1px var(--Divider2);overflow:hidden}
+
+/* ChatSwap Button Hover */
+.chatTabSelector:hover{background:var(--PulseHover);cursor:pointer} /* Tab Hovers */
+
+.chatTabSelector /* Here because */
+
+/* Down Arrow positioning will test custom images later */
+.SVGIcon_DownArrowContextMenu{width:16px;height:16px;margin:auto;margin-right:1px;margin-left:14px;margin-top:16px} 
+
+.chatTabSelector.UnreadMessages  /* Here because */
+
+.SVGIcon_DownArrowContextMenu{fill:var(--Btest1)} /* Test on Context Menu */
+
+.chatTabSelector.UnreadMessages /* Just hanging out */
+
+.FriendChatTimeStamp{font-size:9px;top:0;color:#ffffff} /* Dunno */
+
+.chatTabSelector.UnreadMessages .ChatUnreadMessageIndicator{width:42px;height:36px;left:0;background:radial-gradient(52px 42px at 22px 100%, var(--Unread1) 0%, var(--Unread2) 40%, var(--Unread3) 70%)}
+
+/* Strange unread glow for Tab Selector */
+.ChatUnreadMessageIndicator{width:34px;height:48px;left:0;background:radial-gradient(52px 42px at 22px 100%, var(--Unread1) 0%, var(--Unread2) 40%, var(--Unread3) 70%)} 
+
+
+
+/* Chat BG */ 
+.chatWindow{position:absolute;top:0;right:0;bottom:0;left:0;display:flex;flex-direction:column;word-wrap:break-word;word-break:break-word;background:radial-gradient(ellipse farthest-corner at 50% 30%, var(--List1) 0%, var(--List2) 50%, var(--List2) 100%);font-size:14px;border-right:solid 1px none;}
+
+.chatWindow .chatHeader {background-color:#0055ff;background:linear-gradient(to right, #0055ff 80%, #0055ff 100%);min-height:1px;}
+
+/* Typing Notification */
+.FriendChatTypingNotification{width:calc(100% - 32px);color:#fff;font-weight:100;text-shadow:none;z-index:12;position:absolute;bottom:0px;left:0px;padding:18px 10px 4px 10px;background-color:#1d1e23;background:linear-gradient(to top, rgba(26, 28, 133, 0.3) 0%, rgba(29, 30, 135, 0.3) 12px, rgba(29, 30, 135, 0) 80%);margin-right:6px;opacity:0;transition:opacity .4s ease-in-out;pointer-events:none}
+
+/* Time Stamp Stuff */
+/*__________________*/
+
+/* Date Color*/
+.msg.timeDivision{height:18px;font-size:10px;color:var(--Date1);margin-top:6px;margin-bottom:6px;display:flex;flex-direction:row;padding-left:0px}
+
+/* Message Date*/
+.speakerTimeStamp{font-size:10px;color:var(--Date1);align-self:flex-end;line-height:20px;margin-left:6px;white-space:nowrap}
+
+/* Date Lines */
+
+/* Left */
+.timeDivision .preHorizDivider{width:20%;height:1px;background-color:var(--Date1);margin-top:auto;margin-bottom:auto;margin-right:8px}
+
+/* Right */
+.timeDivision .horizDivider{height:1px;flex-grow:1;background-color:var(--Date1);margin-top:auto;margin-bottom:auto;margin-left:8px}
+
+/*_____________*/
+
+/* Steam had it twice? */
+.ChatUnreadMessageIndicator{position:absolute;height:48px;width:24px;margin:0px;border-radius:0px;top:0px;left:-1px;background:radial-gradient(ellipse farthest-corner at 0% 50%, var(--Unread1) 0%, var(--Unread2) 40%, var(--Unread3) 70%);animation-name:none;bottom:0px;z-index:1}
+
+/* Emoticon Popup currently redundant
+
+/* BG */
+.messages_MsgWithAddons_32Uri .messages_Addons_1pGgX{display:none;background-color:var(--MsgReactBG);border:1px solid var(--Date1);border-radius:6px;padding:4px;margin-right:4px;position:absolute;top:-15px;right:0;flex-direction:row}
+
+/* Smile Color */
+.messages_MsgWithAddons_32Uri .messages_Addons_1pGgX .messages_Emoticon_3uwQM{width:24px;height:24px;stroke:var(--Date1);cursor:pointer}
+
+/* Smile Hover */
+.messages_MsgWithAddons_32Uri .messages_Addons_1pGgX .messages_Emoticon_3uwQM:hover{opacity:1;stroke:#fff}
+
+/*______________*/
+
+
+/* User Text Color */
+.MultiUserChat .isCurrentUser .msgText{color:var(--ChatText)}
+
+/* Other Person Text Color */
+.msgText{color:var(--ChatText2);overflow:hidden}
+
+/* Message BG Hover */
+._3qYm9oxf8MdyvQDJgbfCrF:hover {
+    background-color: var(--PulseHover);
+}
+
+/* Bottom of chat BG */ 
+.chatWindow .chatEntry{flex-shrink:0;position:relative;display:flex;flex-direction:row;padding-top:6px;padding-left:6px;padding-right:6px;background:radial-gradient(ellipse farthest-corner at 50% 30%, var(--Top1) 0%, var(--Top2) 50%, var(--Top3) 100%);transition:all .21s ease-in-out;flex-wrap:wrap;justify-content:center}
+
+/* Text Entry */
+.chatWindow .chatEntry>*{margin-bottom:8px;background-color:var(--PulseHover);color:#ffffff}
+
+/* Voice Chat Button */
+/*___________________*/
+
+.VoiceToggle{max-width:46px;min-width:46px;max-height:46px;width:46px;height:46px;margin:0px;background:var(--VoiceButton);border:none;border:1px solid var(--CBorder);box-shadow:none;padding:0px;cursor:pointer;transition-property:width,max-width,border-radius,border,background-color;transition-duration:.3s;display:flex}
+
+/* Not sure what these states are yet */
+
+.VoiceToggle:focus{outline:none}
+
+.VoiceToggle.Active{border:1px solid #1b6329;border-right:.5px solid #1c852f;border-bottom:.5px solid #1c852f;background-color:rgba(36,39,46,.5)}
+
+.VoiceToggle.Active:focus,.VoiceToggle.Active:hover{background-color:rgba(97,253,151,.3)}
+
+/* Mic Bubble */
+.friendsui-container .SVGIcon_VoiceRoom .Bubble{fill:var(--CBubble);transition:fill .15s ease-in-out;transition-delay:0s}
+
+friendsui-container .SVGIcon_TextRoom,.friendsui-container .SVGIcon_Button.SVGIcon_TextRoom,.friendsui-container .SVGIcon_VoiceRoom,.friendsui-container .SVGIcon_Button.SVGIcon_VoiceRoom{width:24px;height:24px;margin-right:4px;fill:rgba(0,0,0,0);stroke:#ffffff}
+
+/* Microphone Icon */
+.VoiceToggleIconCtn .SVGIcon_VoiceRoom .Microphone{fill:#ffffff;transition-duration:0s}
+
+/* Other Microphone Icon State */
+.friendsui-container .SVGIcon_VoiceRoom .Microphone,.friendsui-container .SVGIcon_VoiceRoom .AudioLines{fill:#ffffff;stroke:transparent;transition:fill .21s ease-in-out,opacity .21s ease-in-out,transform .21s ease-in-out}
+
+/* Color Fix for Setting Nickname */
+
+.friend.editNickname .labelHolder .nickNamedAs{margin-top:6px;margin-bottom:6px;font-size:14px;color:#fff;user-select:none}
+
+/*___________________*/
+
+/* Scroll To Bottom */
+
+.ScrollToBottomButton {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding-top: 10px;
+    overflow: hidden;
+    text-align: center;
+    transition-property: transform,opacity;
+    transition-duration: .3s;
+    transition-timing-function: ease-in-out;
+    pointer-events: none;
+    font-size: 12px;
+    color: #ffffff;
+    z-index: 5;
+    user-select: none;
+}
+
+.ScrollToBottomButton>span{pointer-events:all;cursor:pointer;display:inline-block;box-shadow:0 0 8px #00000088;border-top-left-radius:5px;border-top-right-radius:5px;padding:4px 10px 4px 10px;background:linear-gradient(to bottom, var(--Bar1) 0, var(--Bar1) 100%)}
+
+.ScrollToBottomButton.UnreadMessages>span{background:linear-gradient(to bottom, var(--Bar1) 0, var(--Bar1) 100%);color:#fff}
+
+.ScrollToBottomButton:hover>span {
+    pointer-events: all;
+    cursor: pointer;
+    display: inline-block;
+    box-shadow: 0 0 8px #00000088;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 4px 10px 4px 10px;
+    background: linear-gradient(to bottom, #1a57e1 0, var(--Bar1) 100%);
+}
+
+/* User Status */
+
+.messages_SpeakerName_InGame_3xyn_{color:var(--Ingame)}
+
+.messages_SpeakerName_InGame_3xyn_.GamepadMode,.GamepadMode .messages_SpeakerName_InGame_3xyn_{color:var(--Ingame)}
+
+.isCurrentUser .messages_SpeakerName_InGame_3xyn_{color:var(--Ingame)}
+
+.isCurrentUser .messages_SpeakerName_InGame_3xyn_.GamepadMode,.GamepadMode .isCurrentUser .messages_SpeakerName_InGame_3xyn_{color:var(--Ingame)}
+
+.messages_SpeakerName_WatchingBroadcast_42oIW{color:var(--Broadcast)}
+
+.isCurrentUser .messages_SpeakerName_WatchingBroadcast_42oIW{color:var(--Broadcast)}
+
+.messages_SpeakerName_Online_7B6M2{color:var(--Online)}
+
+.messages_SpeakerName_Online_7B6M2.GamepadMode,.GamepadMode .messages_SpeakerName_Online_7B6M2{color:var(--Online)}
+
+.isCurrentUser .messages_SpeakerName_Online_7B6M2{color:var(--Online)}
+
+.isCurrentUser .messages_SpeakerName_Online_7B6M2.GamepadMode,.GamepadMode .isCurrentUser .messages_SpeakerName_Online_7B6M2{color:var(--Online)}
+
+/* Default Status / Offline  */
+.messages_SpeakerName_Default_2NMuV{color:var(--Offline)}
+
+.messages_SpeakerName_Default_2NMuV.GamepadMode,.GamepadMode .messages_SpeakerName_Default_2NMuV{color:var(--Offline)}
+
+.isCurrentUser .messages_SpeakerName_Default_2NMuV{color:var(--Offline)}
+
+.isCurrentUser .messages_SpeakerName_Default_2NMuV.GamepadMode,.GamepadMode .isCurrentUser .messages_SpeakerName_Default_2NMuV{color:var(--Offline)}
+
+/* Fix for Sending Files */
+
+.msg div.ChatMessageOpenGraph,.msg div.SteamPublishedFile{max-width:640px;color:#000;cursor:default;padding:8px;margin:8px 0px 8px 0px;background:linear-gradient(to right, var(--SentFiles) 40%, var(--SentFiles) 100%);color:silver;font-family:"Motiva Sans",Helvetica,Arial,sans-serif;border-radius:8px;box-shadow:0px 0px 6px rgba(0,0,0,.1);position:relative;overflow:hidden}
+
+/* Image Popups Layout Tweak */
+.bbcode_ImageModalBackground_1feGl {
+    background-color: #2c3036;
+    background: #001a56;
+    border: 1px solid #000;
+    box-sizing: content-box;
+    box-shadow: inset 0 0 0 6px #0003;
+    /* padding: 24px; */
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-bottom: -26px;
+    margin-top: 30px;
+    margin-left: -14px;
+    margin-right: -12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+/* Unread Message Popup Bar in Friendslist */
+
+.unreadMessageViolator{position:absolute;left:6px;right:6px;color:#fff;background:linear-gradient(to bottom, var(--PulseHover) 0%, var(--Bar1) 2px, var(--Bar2) 100%);font-size:14px;line-height:30px;text-align:center;width:calc(100% - 12px);z-index:1;margin:0 auto;margin-top:-2px;border-bottom-right-radius:4px;border-bottom-left-radius:4px;border-top-width:0;border:.5px solid rgba(250,250,250,.1);box-shadow:0 4px 12px #00000088;cursor:pointer}
+
+.unreadMessageViolator:hover{filter:brightness(1.2)}
+
+/* Not sure yet */
+
+.chatTab .chatTabHighlight{pointer-events:none;position:absolute;width:180px;height:16px;background:radial-gradient(ellipse farthest-corner at 10% -8px, rgba(205, 212, 228, 0.3) 0%, rgba(205, 212, 228, 0.2) 10%, rgba(57, 61, 69, 0.1) 55%, rgba(57, 61, 69, 0) 80%);z-index:0;mix-blend-mode:screen;transition:all .32s ease-in-out}
+
+/* Voicechat Active Tab Highlight */
+
+.chatTab.VoiceActive .chatTabHighlight{background:radial-gradient(ellipse farthest-corner at 10% -8px, #52fd1e 0%, rgba(82, 255, 66, 0.3) 30%, rgba(57, 61, 69, 0.1) 55%, rgba(57, 61, 69, 0) 80%)}
+
+.chatTab.VoiceActive.MicMuted .chatTabHighlight{opacity:.5}
+
+/* Group Chat Window BG Fix */
+
+.chatRoomGroupHeader {
+    display: flex;
+    flex-direction: row;
+    padding: 2px;
+    background: linear-gradient(180deg, #06206c, #001445);
+    border-bottom: 1px solid rgb(0 0 0 / 75%);
+    border-top: 1px solid rgb(255 255 255 / 0%);
+}
+
+/* Group Chat Icon Border */
+.ChatRoomGroupAvatar{flex-shrink:0;width:46px;height:46px;border-radius:50%;border:2px solid #0056c9;background-color:#0056c9;overflow:hidden;font-family:"Motiva Sans",Arial,Helvetica,sans-serif;background:radial-gradient(150% 150% at 50% 30%, #4d5663 0%, #454d58 20%, #212329 50%, #1b1d22 100%)}
+
+/* Group Name Label */
+
+.chatRoomGroupHeaderName{font-size:18px;font-weight:500;margin-left:8px;color:#fff;margin-bottom:-3px;margin-top:-3px}
+
+/* Group Chat Notifcation Button ETC */
+.chatRoomButton .SVGIcon_Button{fill:#4084fd;width:80%;height:80%;margin:3px}
+
+.inviteAnotherFriendButton .SVGIcon_Button line,.chatRoomButton .SVGIcon_Button line{stroke:#4084fd;transition:stroke .21s ease-in-out}
+
+/* Total Members in Chat Fix */
+.statMemberStat.statMembersTotal{margin-right:5px;text-transform:uppercase;letter-spacing:1px;color:#fff;}
+
+/* Group Nav Column Fix */
+.chatRoomGroupNavColumn{position:relative;display:flex;flex:1;flex-direction:column;justify-content:space-between;max-width:200px;min-width:200px;box-shadow:0 0 1px 0 #0049ee69;transition:all .4s ease-in-out;overflow:visible;z-index:1}\
+
+/* +Circle */
+.ChatRoomAddRoomBtn .SVGIcon_PlusCircle{stroke:#fff}
+
+/* Other Channel Text */
+.chatRoomVoiceChannelsGroup,.chatRoomTextChannelsGroup{color:#fff}
+
+/* Group Add Voice / Add Text Channel Text */
+.ChannelTypeTitle{color:#fff;display:flex;flex-direction:row;justify-content:space-between;user-select:none;padding:6px 4px 4px 12px;line-height:20px;white-space:nowrap;transition:all .4s ease-in-out}
+
+/* Hover State for Group Add Voice etc */
+.ChannelTypeTitle .ChannelTypeLabel:hover:not(.NoPermission){color:#2cacff}
+
+/* Active Channel BG */
+.chatRoomTextChannel.ActiveTextChannel{background-color:#0a378f}
+
+/* Pin Thing */
+.friendsui-container .SVGIcon_Pin .ground,.friendsui-container .SVGIcon_Pin .point,.friendsui-container .SVGIcon_Pin .head{transition:all .21s ease-in-out;fill:#fff}
+
+.friendsui-container .SVGIcon_Pin .head{fill:#1d1f24;stroke-width:10px;stroke:#6290ff;z-index:2}
+
+.friendsui-container .SVGIcon_Pin .ground{stroke:#3e69e8}
+
+/* Search Adjustment */
+.MemberListOptionsContainer{width:100%;height:19px;display:flex;flex-direction:row;justify-content:flex-end;position:relative;margin-left:0px;margin-top:16px;}
+
+.MemberListOptionsContainer .inputContainer{margin:0px;margin-top:-14px;}
+
+.MemberListOptionsContainer .friendSearchClear{position:absolute;width:28px;height:26px;right:-2px;top:-14px;opacity:0;transition:opacity .2s ease-in-out,transform .2s ease-in-out;pointer-events:none;cursor:pointer;display:flex;z-index:2}
+
+.chatRoomMembers{flex:1;user-select:none;cursor:default;border-left:1px solid #001540;overflow-x:hidden}
+
+/* Voice Chat Active BG */
+.chatRoomVoiceChannel.ActiveVoiceChannel{background-color:#021e57;border:0px solid transparent}
+
+.ActiveVoiceChannel .chatRoomVoiceChannelIconGlow{opacity:0}
+
+.VoiceChannelInvite .leftInviteContainer .SVGIcon_VoiceRoom .Bubble,.OneOnOneVoiceRoomControls.OneOnOneVoiceActive .SVGIcon_VoiceRoom .Bubble,.chatRoomVoiceChannel.ActiveVoiceChannel .SVGIcon_VoiceRoom .Bubble,.VoiceToggle.Active .SVGIcon_VoiceRoom .Bubble{fill:#ffffff00;transition-delay:0s}
+
+.friendsui-container .SVGIcon_TextRoom,.friendsui-container .SVGIcon_Button.SVGIcon_TextRoom,.friendsui-container .SVGIcon_VoiceRoom,.friendsui-container .SVGIcon_Button.SVGIcon_VoiceRoom{width:24px;height:24px;margin-right:4px;fill:rgba(0,0,0,0);stroke:#fff}
+
+/* Voice Chat Quick Chat Popup */
+
+.VoiceRoomChatTitle{background-color:#0b337c;padding:6px 8px;display:flex;flex-direction:row}
+
+.VoiceRoomChatWindow{position:absolute;top:32px;left:32px;width:720px;max-width:calc(100% - 64px);bottom:68px;display:flex;flex-direction:column;border:1px solid #185491;background-color:#0b123c;box-shadow:1px 2px 18px #000}
+
+/* Voice Chat Messages will clear Gradient */
+.VoiceChatTextChannelDesc{font-size:12px;color:white;text-align:center;position:absolute;top:32px;height:30px;width:100%;z-index:2;padding-top:4px;background:linear-gradient(to bottom, rgba(44, 45, 51, 0) 0%, rgba(44, 45, 51, 0) 50%, rgba(44, 45, 51, 0) 100%);text-shadow:1px 1px 2px #000;user-select:none;pointer-events:none}
+
+/* Needed To keep ChatTabs Scrollbar not showing */
+.ChatTabs ::-webkit-scrollbar-thumb{background-color:transparent!important}
+
+/* Why this has is own defined scrollbar Thumb for the Friends List who knows */
+/* Good old Valve - Now overriden by webkit.css due to !important tag */
+.ChatRoomList::-webkit-scrollbar-thumb,.friendlistListContainer::-webkit-scrollbar-thumb{background-color:rgba(67,73,83,0);background-clip:padding-box;}
+
+/* Error Sending Message Bg */
+
+.msg.isCurrentUser.ChatMessageErrorSending {
+    padding: 0;
+    padding-left: 0 !important;
+    margin: 12px;
+    background: linear-gradient(to bottom, rgb(0 25 72 / 40%) 0%, rgb(0 25 72 / 40%) 100%);
+    border: 1px dashed rgb(0 0 0 / 51%);
+}
+
+/* Title Bar of Error Sending Bg + Label */
+
+.ChatMessageErrorSendingAlert {
+    text-transform: none;
+    font-size: 12px;
+    background-color: #881414;
+    padding-left: 8px;
+    letter-spacing: 2px;
+    color: #ffffff;
+    user-select: none;
+    text-shadow: none;
+    font-weight: 350;
+    border-radius: 3px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    text-shadow: 4px 2px 5px black;
+}
+
+/* Group Chat Server Message aka people joining */
+.msg.serverMsg .msgText {
+    color: #3199e4;
+    width: 100%;
+    max-width: none;
+    text-align: right;
+    font-size: 12px;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.05) 50%, rgba(0, 0, 0, 0.1) 100%);
+    background: transparent;
+    padding: 0px;
+    margin: 0px;
+    cursor: default;
+}
+
+.msg.timeDivision.new_messages {
+    color: var(--Date1);
+}
+
+.timeDivision.new_messages .preHorizDivider, .timeDivision.new_messages .horizDivider {
+    background-color: var(--Date1);
+    height: 1px;
+}
+
+.timeDivision.new_messages .preHorizDivider, .timeDivision.new_messages .horizDivider {
+    background-color: var(--Date1);
+    height: 1px;
+}
+
+.reactions_MessageReaction_22B6h {
+    display: flex;
+    flex-direction: row;
+    border-radius: 4px;
+    background-color: #001e61a3;
+    margin-right: 5px;
+    border: 1px solid #202020;
+    padding: 2px 3px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.reactions_MessageReaction_22B6h:hover {
+    background-color: #002987;
+}
+
+.ChatRoomSpeaker .speaker .speakerName {
+    max-width: 480px;
+    min-width: 0;
+    flex-shrink: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: -0px;
+    transition: color .6s ease-in-out;
+    background: var(--Top1);
+    padding: 4px;
+    margin-left: -9px;
+    color: white;
+    border-radius: 3px;
+    padding-left: 40px;
+    margin-left: -45px;
+    margin-top: -2px;
+    padding-right: 8px;
+}
+
+.messages_SpeakerName_InGame_3xyn_ {
+    color: #ffffff;
+    margin-top: -2px !important;
+    background: #064e1d87 !important;
+    font-size: 14px;
+    margin-left: -46px !important;
+}
+
+.ChatRoomGroupDialog_history {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    overflow: hidden;
+    margin-left: -4px !important;
+}
+
+.miniprofile_miniProfileBackground_108IP{position:absolute;top:0;right:0;bottom:0;left:0;overflow:hidden;z-index:-3;background:radial-gradient(ellipse farthest-corner at 20% 30%, var(--Bar1) 0%, var(--Bar2) 50%, var(--List2) 100%)}
+
+.miniprofile_miniProfileBackgroundBlur_QTyZx{width:380px;height:380px;filter:blur(6px) saturate(2);position:absolute;left:-60px;top:-60px;opacity:.2;-webkit-mask:radial-gradient(ellipse farthest-corner at 150px 150px, black 0%, rgba(0, 0, 40, 0.6) 20%, rgba(0, 0, 210, 0.3) 34%, rgba(0, 0, 0, 0) 64%);mask:radial-gradient(ellipse farthest-corner at 150px 150px, black 0%, rgba(0, 0, 0, 0.6) 20%, rgba(0, 0, 0, 0.3) 34%, rgba(0, 0, 0, 0) 64%);mix-blend-mode:screen}
+
+.miniprofile_miniProfileVideoBackground_34Ni9{width:100%;height:100%;object-fit:cover;object-position:top right}
+
+.miniprofile_miniProfileVideoBackgroundContainer_2SW_Y{position:absolute;top:0;left:0;right:0;bottom:0;z-index:-3;background-color:#00000000}
+
+.miniprofile_miniProfileBackdropBlur_LN94b{backdrop-filter:blur(1px);-webkit-backdrop-filter:blur(1px)}
+
+.miniprofile_miniProfileContent_3QoRR.miniprofile_notInOrWatchingGame_34jjZ .miniprofile_miniProfileBottom_2MwqO,.miniprofile_miniProfileContent_3QoRR .miniprofile_miniProfileGameContainer_3gSTD{background:linear-gradient(to bottom, rgba(0, 0, 0, 0.10) 5%, rgba(0, 0, 0, 0.13) 95%)}
+
+.standardtemplates_AllNotificationsTemplate_2m9JU .standardtemplates_StandardNotificationSubText_2XcN2, .standardtemplates_StandardTemplateDesktop_1tsEf .standardtemplates_StandardNotificationSubText_2XcN2, .standardtemplates_DesktopToastTemplate_3CGHg .standardtemplates_StandardNotificationSubText_2XcN2, .standardtemplates_PinnedTemplateDesktop_2caCr .standardtemplates_StandardNotificationSubText_2XcN2 {
+    color: #ffffff;
+    font-size: 11px;
+}
+
+.standardtemplates_StandardTemplateDesktop_1tsEf.standardtemplates_Unread_2GC8q {
+    background: #00217200;
+}
+
+.standardtemplates_StandardTemplateDesktop_1tsEf.standardtemplates_Unread_2GC8q:hover {
+    background: #002c7d;
+}
+
+.standardtemplates_AllNotificationsTemplate_2m9JU .standardtemplates_Title_1WlRE, .standardtemplates_StandardTemplateDesktop_1tsEf .standardtemplates_Title_1WlRE, .standardtemplates_DesktopToastTemplate_3CGHg .standardtemplates_Title_1WlRE, .standardtemplates_PinnedTemplateDesktop_2caCr .standardtemplates_Title_1WlRE {
+    font-family: "Motiva Sans",Arial,Helvetica,sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #3392ff;
+    margin-right: .5em;
+}
+
+.notificationcontent_TimestampDesktop_1N5mc {
+    color: #3392ff;
+}
+
+.standardtemplates_AllNotificationsTemplate_2m9JU .standardtemplates_Icon_19g_L, .standardtemplates_StandardTemplateDesktop_1tsEf .standardtemplates_Icon_19g_L, .standardtemplates_DesktopToastTemplate_3CGHg .standardtemplates_Icon_19g_L, .standardtemplates_PinnedTemplateDesktop_2caCr .standardtemplates_Icon_19g_L {
+    width: 13px;
+    height: 13px;
+    margin-right: 5px;
+    color: #3392ff;
+    fill: #ffffff;
+    display: flex;
+}
+
+/* background of window located library.css */
+
+.DialogContent, .DialogContentTransition {
+    background: linear-gradient(180deg, #000c35, #000510);
+    user-select: none;
+}
+
+/* header reposistion located  library.css */
+.DesktopUI .DialogHeader, .friendsui-container .DialogHeader {
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: unset;
+    text-transform: unset;
+    margin-bottom: 4px;
+    margin-left: 0px;
+    margin-top: 6px;
+    line-height: 28px;
+}
+
+
+
+/* Rest Located Library.css */
+.DesktopUI .DialogFooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 0px;
+    padding-top: 16px;
+    background: transparent;
+}
+
+.DialogFooter .DialogTwoColLayout._DialogColLayout {
+    gap: 12px;
+    padding: 2px;
+    margin-bottom: 0px;
+    /* margin-right: 8px; */
+}
+
+button.DialogButton.Primary {
+    background: transparent;
+    background: #0d41b5e8;
+    background-position: 25%;
+    background-size: 100% 100%;
+}
+
+button.DialogButton.Primary:hover, button.DialogButton.Primary.gpfocus {
+    background: #1240c3;
+    background-position: 0%;
+    background-size: 100% 100%;
+    color: #fff;
+}
+
+button.DialogButton {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    border: 0;
+    font: inherit;
+    overflow: visible;
+    padding: 0;
+    margin: 2px 0;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    display: block;
+    line-height: 32px;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 3px;
+    cursor: pointer;
+    min-width: 50px;
+    transition-property: opacity,background,color,box-shadow;
+    transition-duration: .2s;
+    transition-timing-function: ease-out;
+    background: #0d41b5e8;
+    background-position: 99% 1%;
+    background-size: 100% 100%;
+    position: relative;
+}
+
+/* Fix for BG to add bottom bar */
+
+.DialogContent, .DialogContentTransition {
+    background: linear-gradient(180deg, #000c35, #000510 calc(100% - 54px), #011d82 calc(100% - 53px), #121d95);
+    user-select: none;
+}
+
+button.DialogButton:disabled, button.DialogButton:disabled:hover, button.DialogButton.Disabled, button.DialogButton.Disabled:hover {
+    background: rgba(0,0,37,.20);
+    color: white;
+    box-shadow: none;
+    cursor: default;
+    pointer-events: none;
+}
+
+
+.DialogContent._DialogLayout.GenericConfirmDialog._DialogCenterVertically .DialogBodyText {
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 300;
+    margin-bottom: 8px;
+    user-select: none;
+    padding-bottom: 0px;
+}
+
+/* Top Popup Bar */
+div.ModalPosition_TopBar {
+    min-height: 30px;
+    min-width: initial;
+    flex-grow: initial;
+    flex-shrink: initial;
+    background: linear-gradient(180deg, var(--Bar1), var(--Bar2));
+}
+
+/* Top Popup Bar X */
+div.ModalPosition_Dismiss {
+    min-width: initial;
+    min-height: initial;
+    flex-grow: initial;
+    flex-shrink: initial;
+    position: absolute;
+    right: 4px;
+    top: 0px;
+    z-index: 1;
+}
+
+.ModalPosition_Dismiss .closeButton {
+    width: 16px;
+    height: 16px;
+    padding: 4px;
+    background-size: cover;
+    cursor: pointer;
+    background-image: none;
+    border-radius: 4px;
+}
+
+.ModalPosition_Dismiss .closeButton .SVGIcon_X_Line line {
+    stroke: #ffffff;
+    stroke-width: 24px;
+}
+
+.pagedsettings_PagedSettingsDialog_PageListColumn_RTicB {
+    background: linear-gradient (180deg, var(--MenuBG1) 0%, var(--MenuBG2) 90%);
+    flex: 1;
+    min-width: 140px;
+    max-width: 220px;
+    padding-top: 36px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border-right: 1px solid var(--BG2);
+}
+
+.pagedsettings_PagedSettingsDialog_Title_3qEgQ {
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    margin-top: 4px;
+    padding-left: 4%;
+    color: #0e58ff;
+    font-weight: 700;
+    text-shadow: 1px 1px #001d61;
+    font-size: 17px;
+    user-select: none;
+}
+
+.pagedsettings_HidePageListButton_3i4Ep {
+    position: absolute;
+    left: 24px;
+    top: 38px;
+    z-index: 5;
+    width: 32px;
+    height: 24px;
+    background-color: #1144b8;
+    border-radius: 2px;
+    transition-property: background-color,color;
+    transition-duration: .2s;
+    transition-timing-function: ease-out;
+    -webkit-app-region: no-drag;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.pagedsettings_HidePageListButton_3i4Ep svg {
+    width: 16px;
+    height: 16px;
+    margin-top: 4px;
+    margin-left: 7px;
+    color: white;
+    border-radius: 3px;
+}
+
+.pagedsettings_HidePageListButton_3i4Ep:hover {
+    color: #fff;
+    background: var(--ButtonMidBlueHover);
+    border-radius: 3px;
+}
+
+
+/*# sourceMappingURL=sourcemaps\css\library.css.map*/
+
+    

@@ -1,0 +1,29 @@
+
+:root {
+--Online:#25a5ff; /* Had to define manually , issue with @import for this property */
+}
+
+
+/* Windows Controls UI */
+/* __________________ */
+
+/* Default view */
+/* Minimise */
+.title-area-icon .SVGIcon_Minimize{width:14px;height:14px;margin-top:-2px;margin-left:4px !important}
+.title-area-icon .SVGIcon_Minimize line{stroke:var(--Online);stroke-width:30px !important }
+
+/* Maximise */
+.title-area-icon .SVGIcon_Maximize{width:16px;height:16px;margin-top:-2px;margin-left:4px}
+.title-area-icon .SVGIcon_Maximize line{stroke:var(--Online)}
+.title-area-icon .SVGIcon_Maximize rect{stroke:var(--Online)}
+
+/* Close */
+.DesktopUI .title-area-icon .SVGIcon_X_Line{width:14px;height:14px;margin-top:-2px;margin-left:-2px !important; margin-right:4px !important;}.title-area-icon .SVGIcon_X_Line line{stroke:var(--Online);stroke-width:30px !important}
+
+/* Hovers All */
+.DesktopUI .title-area-icon:hover,.friendsui-container .title-area-icon:hover{background:var(--PulseHover);transition:background .15s ease-out !important}
+
+.DesktopUI .title-area-icon.closeButton:hover,.friendsui-container .title-area-icon.closeButton:hover{background:#e22a27;transition:background .15s ease-out !important}
+
+/* Hover All Label Color */
+.title-area-icon:hover .SVGIcon_Button rect,.title-area-icon:hover .SVGIcon_Button line,.title-area-icon:hover .SVGIcon_Button polyline{stroke:#fff;transition:stroke .15s ease-out !important}

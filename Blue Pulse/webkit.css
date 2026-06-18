@@ -1,0 +1,3304 @@
+::-webkit-scrollbar {
+    height: 12px;
+    width: 14px;
+    background: transparent;
+    z-index: 12;
+    overflow: visible;
+}
+
+::-webkit-scrollbar-thumb {
+    width: 4px!important;
+    min-height: 32px;
+    	
+    border: 4px solid transparent;
+    border-radius: 10px;
+    z-index: 12;
+    margin: 4px!important;
+    background-image: none;
+    background-color: var(--Sbar1)!important;
+    background-clip: padding-box;
+    transition: background-color .32s ease-in-out;
+        // margin: 4px;
+    // min-width: 32px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--Sbar2)!important;
+    background-clip: padding-box;
+}
+
+::-webkit-scrollbar-corner {
+    background: transparent;
+}
+
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-button {
+    display: none;
+}
+:root {
+/* Backgrounds for Lists */
+--List1:#001142;
+--List2:#000e31;
+--List3:#000314;
+
+/* Bars */
+--Bar1:#02268b;
+--Bar2:#012170;
+--Bar3:#000d53;
+--BarLabel:#f8f8f8;
+/* Scrollbar */
+--Sbar1:#1757c2;
+--Sbar2:#ffffff;
+
+/* Buttons */
+--ButtonMidBlue:#002d93e8;
+--ButtonMidBlueHover:#0646d9e8; 
+
+/* Containers */
+--PulseMidBlue:#0f308d52;
+
+--PulseHover:rgba(0,0,0,0.5);
+
+--DivLine:#1a82d81f;
+
+}
+
+/* review section side panel bg */
+.dh9oGaFfS7QEnReR1JGRQ.amNoDX2pd1HfanrHX9QUo ._2uvK1zucSC4I2mo3PDObGs {
+    padding: 0px 0px 8px 0px;
+    background: var(--List3) !important;
+    opacity: .9;
+}
+
+/* Related Items */
+related_items_ctn {
+    background: red !important;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    margin-top: 20px;
+}
+
+/* Review by Friend fix */
+.amNoDX2pd1HfanrHX9QUo._1LI9d9a8_tfZJvBuuZz6Oh ._2uvK1zucSC4I2mo3PDObGs {
+    background-color: var(--Bar3) !important;
+}
+
+/* Recently Posted name and review bar hover area */
+.HGCiCZ2mhusHJku7z15Nw.Focusable:hover {
+    background: var(--Bar2) !important;
+    color: var(--Sbar2) !important;
+}
+
+/* card bg for community view of a game */
+
+.apphub_Card {
+    background-color: var(--PulseHover) !important;
+    border: 1px solid transparent;
+    float: left;
+    margin: 0 5px 10px;
+    padding: 0;
+    position: relative;
+    text-align: left;
+}
+
+/* profile customization header (background: none also looks good) */
+
+.profile_customization_header {
+    font-family: "Motiva Sans", Sans-serif;
+    font-weight: 200;
+    background: red !important;
+    background: linear-gradient(90deg, var(--Bar2) 0%, var(--Bar2) 55%, var(--Bar3) 95%) !important;
+    padding: 5px 10px 5px 10px;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 30px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+/* Temporary Event Menu Store Bar*/
+#store_nav_area .store_nav_bg,.home_page_body_ctn.has_takeover #store_nav_area .store_nav_bg{
+	background:var(--ButtonMidBlue)!important;
+	border-radius:3px !important;
+}
+
+/* Client Game Popup Whats new or deals window */
+._1N7O3VXbkpN2z55HsSDZsi {
+
+    background: none !important;
+}
+
+/* Click for details */
+
+._3J3L60oPKSSmfBrQoNzGka{
+    background-color: var(--ButtonMidBlue) !important;
+    height: 32px !important;
+
+}
+
+._3J3L60oPKSSmfBrQoNzGka:hover {
+    background-color:  var(--ButtonMidBlueHover) !important;
+
+}
+
+/* Search Box of Store Nav */
+.searchbox {
+    background-image: #00193e91 !important;
+    background-color: var(--ButtonMidBlue) !important;
+    border-radius: 3px;
+    border: 1px solid rgba( 0, 0, 0, 0.3);
+    box-shadow: 1px 1px 0px rgba( 255, 255, 255, 0.2);
+    color: #fff;
+    margin-bottom: 0px;
+    outline: none;
+    height: 27px;
+    padding: 0px 6px;
+}
+
+/* Steam Web Footer */
+._291ttHtxyu5obiKzor2G9G {
+    color: #fff !important;
+    background-color: rgb(0 121 255 / 0%) !important;
+}
+
+/* Store Page Search */
+._16jZ3HEbtaJTl80pQINN2Y {
+    color: #dcdedf;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    background: #01183aa1 !important;
+    background-size: 101% 101%;
+    background-position-y: top;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, .2);
+    z-index: 1;
+    transition: background-size 100ms ease-in-out, background-position-y 100ms ease-in;
+}
+/* Store Page Search horrid grey overtone when active */
+.h2B3SGR_w4RWdrnsRZEcD ._19o1GB7ysfrWKLYpqZ6aXu._2IyR9WyPwYb15ILBjPvLR9 {
+    background: rgb(0 0 0 / 65%)!important;
+    opacity: 1;
+    pointer-events: initial;
+}
+
+/* Wishlist Panels */
+.c-Pw-ER6JnA- {
+    display: grid;
+    grid-template-columns: fit-content(0) 292px auto auto;
+    grid-template-rows: 32px 32px 32px auto;
+    grid-template-areas:
+        "dragger capsule upper upper"
+        "dragger capsule lower remove"
+        "dragger capsule mid purchase"
+        "dragger capsule platform purchase";
+    gap: 2px 12px;
+    box-sizing: border-box;
+    position: relative;
+    padding-inline: 0px 12px;
+    padding-block: 12px;
+    background-color: #0a0a0adb !important;
+    color: #b2b8bd;
+    transition: background-color .3s, opacity .3s;
+    font-family: "Motiva Sans", Sans-serif;
+    font-weight: 200;
+    box-shadow: 0 0 5px #0003;
+    height: 160px;
+    margin-bottom: 10px;
+    transition: padding .3s, height .3s, margin-bottom .3s;
+}
+
+/* Removed "featured game events img taking over top menu of Store */
+.menu_takeover_background img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 0px !important;
+    object-position: center top;
+    object-fit: none;
+    transform: scaleY(-1);
+}
+
+/* The Search Popup suggestions thing */
+body.v6 .store_nav .popup_block_new .popup_body.search_v2 {
+    padding: 1px;
+    box-sizing: border-box;
+    background: #002667!important;
+}
+
+/* Item Hover of Search Popup */
+.popup_body.search_v2 .match.match_v2.hover,
+.popup_body.search_v2 .match.match_v2.focus {
+	background-color:var(--PulseHover)!important;
+	color:#fff !important;
+}
+
+/* Item Text of Search Popup */
+.popup_body.search_v2 .match.match_v2.hover .match_name,
+.popup_body.search_v2 .match.match_v2.focus .match_name,
+.popup_body.search_v2 .match.match_v2.hover .match_subtitle,
+.popup_body.search_v2 .match.match_v2.focus .match_subtitle{
+	color:#fff !important;
+}
+
+
+
+.popup_block_new .popup_body {
+    background: linear-gradient(90deg, rgb(0 24 109 / 81%) 1.89%, rgb(0 22 101 / 78%) 50%), linear-gradient(180deg, #1443ec 11.6%, #3A4852 54.73%, #2C2D34 100%)!important;
+    padding: 8px 5px 8px 5px;
+}
+
+/* Base Page Backgrounds */
+html{min-height: 100%!important;}
+body{background:radial-gradient(ellipse farthest-corner at 50% 30%, var(--List1) 0%, var(--List2) 50%, var(--List3) 100%) fixed!important;}
+
+/* Game Page Fixes */
+.game_page_background.game {background-image:none!important;}
+.game_background_glow{background:none!important;}
+
+/* Fixing Steams Broken Back To Top button positioning */
+.apphub_BackToTop{margin-right:auto!important;margin-left:43%!important;right:auto!important;}
+
+/* Removal of Image for AppHub Sections e.g Community Activity */
+.apphub_background{background-image:none!important;}
+
+#widget {
+    border: 1px solid #2d313900 !important;
+    background-color: #00328e30 !important;
+    /* width: 614px; */
+    height: 146px;
+    padding: 10px 15px;
+    position: relative;
+    margin: 0 auto;
+    
+    background-repeat: no-repeat;
+    background-position-x: 99%;
+    background-position-y: 5px;
+}
+
+.store_nav .tab {
+    padding: 1px;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    margin-left: 4px !important;
+}
+
+.store_nav .tab:hover > span, .store_nav .tab:hover, .store_nav .tab.focus > span, .store_nav .tab.focus {
+    background: linear-gradient(90deg, rgb(75 97 255 / 49%) 0%, rgb(121 199 255 / 15%) 50%, rgb(81 81 250 / 11%) 100%) !important;
+    text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
+    height: 33px;
+}
+
+/* Content Owned Fixes */
+body.v6 .game_area_already_owned.page_content {
+    height: 40px;
+    padding: 0px 15px 0px 0px;
+    position: relative;
+    background: -moz-linear-gradient(left, rgba(163,207,6,0.6) 0%, rgba(75,106,33,0.6) 100%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(163,207,6,0.6)), color-stop(100%,rgba(75,106,33,0.6)));
+    background: -webkit-linear-gradient(left, rgba(163,207,6,0.6) 0%,rgba(75,106,33,0.6) 100%);
+    background: -o-linear-gradient(left, rgba(163,207,6,0.6) 0%,rgba(75,106,33,0.6) 100%);
+    background: -ms-linear-gradient(left, rgba(163,207,6,0.6) 0%,rgba(75,106,33,0.6) 100%);
+    background: linear-gradient(to right, var(--Sbar1) 0%,var(--Bar1) 100%) !important;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99a3cf06', endColorstr='#994b6a21',GradientType=1 );
+    font-size: 18px;
+    font-family: "Motiva Sans", Sans-serif;
+    font-weight: 300;
+    line-height: 40px;
+    color: #ffffff !important;
+    margin-bottom: 1px;
+    width: 925px;
+}
+
+.game_area_already_owned .ds_flag {
+    position: relative;
+    float: left;
+    top: 10px;
+    left: -8px;
+    box-shadow: 1px 1px 2px #000000;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAKCAYAAABi8KSDAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OUNDNzBFNTUyMUM0MTFFNDk1REVFODRBNUU5RjA2MUYiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OUNDNzBFNTYyMUM0MTFFNDk1REVFODRBNUU5RjA2MUYiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo5Q0M3MEU1MzIxQzQxMUU0OTVERUU4NEE1RTlGMDYxRiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo5Q0M3MEU1NDIxQzQxMUU0OTVERUU4NEE1RTlGMDYxRiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pv3vUKAAAAAlSURBVHjaYvz//z8DsYARpFhISAivjnfv3jGSp3jUGeQ4AyDAADZHNe2nyOBrAAAAAElFTkSuQmCC) no-repeat 4px 4px #027fff !important;
+}
+
+.game_area_play_stats {
+
+    background: var(--PulseMidBlue) !important;
+
+    padding: 0px 16px 16px 16px;
+    margin: 0px auto;
+    margin-bottom: 40px;
+    max-width: 908px;
+}
+
+.hours_played {
+    color: #ffffff !important;
+    font-size: 12px;
+    margin-bottom: 1px;
+    margin-top: 3px;
+}
+
+.btnv6_lightblue_blue {
+    border-radius: 2px;
+    border: none;
+    padding: 1px;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none !important;
+    color: #2B5066 !important;
+    background: rgba(193,228,249,1);
+    background: -webkit-linear-gradient( top, rgba(193,228,249,1) 5%, rgba(148,183,202,1) 95%);
+    background: linear-gradient( to bottom, #006cf2 5%, #358fff 95%)!important;
+}
+
+.btnv6_lightblue_blue > span {
+    border-radius: 2px;
+    display: block;
+    background: transparent;
+    text-shadow: 1px 1px 0px rgb(0 148 255 / 0%) !important;
+}
+
+.btnv6_lightblue_blue:not(.btn_disabled):not(:disabled):not(.btn_active):not(.active):hover {
+    text-decoration: none !important;
+    color: #ffffff !important;
+    background: rgba(102,192,244,1);
+    background: -webkit-linear-gradient( top, rgba(102,192,244,1) 5%, rgba(47,137,188,1) 95%);
+    background: linear-gradient( to bottom, rgb(0 78 158) 5%, rgb(47 84 188) 95%)!important;
+}
+
+#review_create p {
+    font-size: 13px;
+    margin-bottom: 15px;
+    line-height: 17px;
+    color: #ffffffe6 !important;
+}
+
+#review_create .input_box {
+    border: 1px solid #233c5100;
+    border-radius: 3px;
+    height: 132px;
+    width: 764px;
+    outline: 0 !important;
+    max-width: 800px;
+    background-color: #001432 !important;
+    color: #ffffff !important;
+    padding: 10px 11px;
+    font-size: 13px;
+    font-family: "Motiva Sans", Sans-serif;
+    font-weight: normal;
+    -webkit-box-shadow: inset 0px 0px 7px rgba( 0, 0, 0, 0.5 );
+    -moz-box-shadow: inset 0px 0px 7px rgba( 0, 0, 0, 0.5 );
+    /* box-shadow: inset 0px 0px 7px rgba( 0, 0, 0, 0.5 ); */
+}
+
+.review_controls {
+    padding: 8px;
+    background-color: rgb(0 0 0 / 8%) !important;
+    margin-bottom: 10px;
+    max-width: 772px;
+}
+
+.game_purchase_area_friends_want {
+    height: 41px !important;
+    padding-left: 0px !important;
+    position: relative;
+    background-color: rgba( 0, 0, 0, 0.2 ) !important;
+    font-size: 12px;
+    color: #3e6eff !important;
+    z-index: 0;
+}
+
+.game_purchase_area_friends_want a {
+    color: #0095ff !important;
+}
+
+.game_purchase_area_friends_want .gift_icon {
+    opacity: 0 !important;
+    
+}
+
+.game_purchase_area_friends_want .gift_instructions {
+    padding-top: 5px !important;
+    margin-left: 6px !important;
+}
+
+.game_area_purchase_game_wrapper .game_area_purchase_game p {
+    margin-bottom: 8px;
+    color: rgb(0, 135, 255) !important;
+}
+
+.game_description_column {
+    font-size: 14px;
+    color: #00a1ff !important;
+    margin-top: 16px;
+    text-shadow: 1px 1px 2px #0037ffd4 !important;
+}
+
+.game_area_description ul {
+    color: #00a1ff !important;
+    margin-left: 16px;
+    text-shadow: 1px 1px 2px #0037ffd4 !important;
+    list-style-type: square;
+}
+
+.game_page_autocollapse_fade {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 33px !important;
+    z-index: 1;
+    border: 1px solid transparent !important;
+    border-radius: 3px !important;
+    background: none !important;
+    margin-bottom: 2px !important;
+    margin-left: -1px !important;
+}
+
+.game_page_autocollapse_readmore {
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+    width: auto !important;
+	position: absolute !important;
+    right: 0 !important;
+    left: 0 !important;
+    bottom: 0 !important;
+    height: 20px !important;
+    line-height: 16px !important;    
+    cursor: pointer !important;
+    color: #ffffff !important;
+    font-size: 19px !important;
+    padding-left: 40% !important;
+    padding-right: 30% !important;
+    padding-top: 8px !important;
+    padding-bottom: 4px !important;
+    border: 1px solid transparent !important;
+    border-radius: 3px !important;
+    background: linear-gradient(0deg, rgb(1 33 112), rgb(1 33 112))!important;
+}
+
+.game_page_autocollapse_readmore:hover {
+    color: #ffffff !important;
+    background: linear-gradient(-60deg, rgb(25, 112, 242) 5%, rgb(54, 79, 255) 95%) !important;
+}
+
+.game_area_sys_req ul li strong {
+    color: #ffffff !important;
+    font-size: 12px;
+    margin-right: 4px;
+    font-weight: normal;
+    margin-bottom: 2px;
+    text-transform: none;
+    text-shadow: none !important;
+
+}
+
+.sysreq_tabs, .discselect_tabs {
+    font-size: 12px;
+    padding-top: 8px;
+    padding-left: 5px;
+    margin-bottom: 15px;
+    background: -webkit-linear-gradient( left, rgba(58,110,139,0.2) 0%,rgba(58,110,139,0) 100%);
+    background: linear-gradient( to right, #003ec833 0%,#003ec833 100%) !important;
+}
+
+.sysreq_tab, .discselect_tab {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    line-height: 26px !important;
+    margin-right: 10px !important;
+    margin-bottom: 6px !important;
+    color: #ffffff !important;
+    float: left;
+    cursor: pointer;
+}
+
+.sysreq_tab:hover, .discselect_tab:hover {
+    color: #ffffff !important;
+    background-color: #0051b2 !important;
+}
+
+.sysreq_tab.active, .discselect_tab.active {
+    background-color: #0051b2 !important;
+    color: #ffffff !important;
+    cursor: default !important;
+}
+
+#game_area_legal {
+    color: #ffffff !important;
+    font-size: 11px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+/* Side Scrolling */
+
+.slider_ctn.store_autoslider {
+    background: #002d5833 !important;
+}
+
+.slider_ctn .slider_left, .slider_ctn .slider_right {
+    position: absolute;
+    width: 38px;
+    top: 0;
+    bottom: 0;
+    background-color: rgb(255 255 255 / 0%) !important;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.slider {
+    position: absolute;
+    left: 39px;
+    right: 39px;
+    top: 0;
+    bottom: 0;
+    background-color: rgb(0 0 0 / 0%) !important;
+    border-radius: 3px;
+}
+
+.slider_ctn .handle {
+    position: absolute;
+    top: 0;
+    background-color: rgb(9 62 255) !important;
+    border-radius: 8px !important;
+    height: 12px !important;
+    margin-top: 3px !important;
+    width: 60px;
+    cursor: pointer;
+}
+
+.slider_ctn.store_autoslider .handle {
+    background-color: rgb(9 62 255) !important;
+    height: 12px !important;
+    border-radius: 8px !important;
+    margin-top: 3px !important;
+}
+
+.slider_ctn .slider_left:hover, .slider_ctn .slider_right:hover {
+    background: none !important;
+  }
+
+.slider .handle:hover {
+    background: white !important;
+    }
+
+/* Game Hover Popup */
+.game_hover_box {
+    background: rgb(227,234,239);
+    background: -moz-linear-gradient(top, rgba(227,234,239,1) 0%, rgba(199,213,224,1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(227,234,239,1)), color-stop(100%,rgba(199,213,224,1)));
+    background: -webkit-linear-gradient(top, rgba(227,234,239,1) 0%,rgba(199,213,224,1) 100%);
+    background: -o-linear-gradient(top, rgba(227,234,239,1) 0%,rgba(199,213,224,1) 100%);
+    background: -ms-linear-gradient(top, rgba(227,234,239,1) 0%,rgba(199,213,224,1) 100%);
+    background: linear-gradient(to bottom, rgb(1 33 112) 0%,rgb(2 38 139) 100%)!important;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e3eaef', endColorstr='#c7d5e0',GradientType=0 );
+    width: 306px;
+    color: #007fff !important;
+    font-size: 12px;
+    overflow: hidden;
+    box-shadow: 0 0 12px #000000;
+    text-shadow: 1px 1px 3px black !important;
+}
+
+.store_tooltip {
+	background: linear-gradient(to bottom, rgb(1 33 112) 0%,rgb(2 38 139) 100%)!important;
+	color: #fff !important;
+	font-size: 11px;
+	border-radius: 3px;
+	padding: 5px;
+	max-width: 275px;
+	white-space: normal;
+	box-shadow: 0 0 3px #000000;
+	word-wrap: break-word;
+}
+
+.game_hover_box h4.hover_title {
+    color: #ffffff !important;
+    font-weight: normal;
+    font-size: 15px;
+    font-family: "Motiva Sans", Sans-serif;
+    font-weight: normal;
+    text-transform: unset;
+    letter-spacing: 0px;
+    margin-top: -4px;
+    line-height: 17px;
+    margin-bottom: 4px;
+    font-weight:600 !important;
+}
+
+.hover_body .hover_review_summary {
+    margin-bottom: 10px;
+    border-radius: 2px;
+    padding: 4px;
+    color: #fff !important;
+    background-color: rgb(0 0 0 / 20%)!important;
+}
+
+.hover_details_block, .hover_details_block_full {
+    display: block;
+    border-radius: 2px;
+    margin-right: 3px;
+    background-color: #0034f1 !important;
+    padding: 4px;
+    line-height: 20px;
+    height: 20px;
+}
+
+.hover_details_block_full.ellipsis {
+    background-color: #003eca75 !important;
+    color: white !important;
+}
+
+
+.game_description_column .block .block_header .right a {
+    float: right;
+    background-color: rgb(0 83 235 / 20%) !important;
+    
+    color: #ffffff !important;
+    font-size: 13px;
+    border: 1px solid transparent !important;
+    border-radius: 3px !important;
+    padding: 2px 4px;
+}
+
+.game_description_column .block .block_header .right a:hover {
+	color:#fff !important;    
+	background: #1837ab !important;
+}
+
+.block .block_title {
+    font-size: 16px !important;
+    color: #2297ff !important;
+    margin-bottom: 2px;
+}
+
+.block.recommendation_reasons .similar_recent_apps_container > a {
+    display: block;
+    color: #ffffff !important;
+    font-size: 12px;
+}
+
+.block.recommendation_reasons hr {
+    height: 1px;
+    margin: 10px 0;
+    border: none;
+    background-color: #112f9e5c !important;
+}
+
+.game_area_sys_req strong, .album_metadata_chunk_name {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 10px;
+    color: #ffffff !important;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-right: 4px;
+}
+
+.small_cap .discount_block > .discount_prices {
+    display: inline-block;
+    padding: 0 3px;
+    background-color: rgb(23 44 143 / 8%)!important;
+    border-radius: 1px;
+}
+
+#app_agegate .preferences {
+    margin-top: 20px;
+    font-size: 14px;
+    padding-top: 20px;
+    color: #0569ff !important;
+}
+
+.agegate_text_container .note {
+    font-family: "Motiva Sans", Sans-serif;
+    font-weight: 300;
+    font-size: 11px;
+    margin-bottom: 20px;
+    color: #0569ff !important;
+}
+
+a.communitylink_achievement.communitylink_achivement_plusmore {
+    background-color: var(--ButtonMidBlue)!important;
+    border-radius: 1px;
+    font-size: 13px;
+    font-family: "Motiva Sans", Sans-serif;
+    font-weight: normal;
+    color: #ffffff !important;
+    text-align: center;
+    height: 64px;
+    padding: 0 4px;
+    margin-right: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    line-height: 14px;
+}
+
+a.communitylink_achievement.communitylink_achivement_plusmore:hover {
+    color: #ffffff !important;
+    text-decoration: none;
+    background: var(--ButtonMidBlueHover)!important;
+   
+}
+
+/* Daily Deal Bar BG */
+.carousel_container.spotlight .carousel_items > * .store_capsule.daily_deal {
+    background: -webkit-linear-gradient( top, #ffffff 5%, #abdaf4 95%);
+    background: linear-gradient(rgb(9, 23, 124) 55%) , rgb(0, 21, 68) 95%) !important;
+}
+
+/* Daily Deal Text */
+.dailydeal_desc {
+    text-align: right;
+    color: #ffffff !important;
+    font-size: 14px;
+}
+
+.spotlight_content {
+    background-image: linear-gradient(rgb(9, 23, 124) 5%, rgb(0, 21, 68) 95%) !important;
+    margin: 0px;
+    min-height: 23px;
+    background-size: cover;
+}
+
+/* Age Check Page */
+.main_content_ctn {
+    border: 1px solid rgb(0 31 255 / 0%) !important;
+    border-radius: 5px;
+}
+
+.agegate_birthday_selector {
+    background: rgb(0 0 0 / 9%) !important;
+    border-radius: 5px;
+    text-align: center;
+    max-width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    padding: 12px;
+}
+
+select {
+    padding: 2px 3px;
+    height: 22px;
+    color: #ffffff !important;
+    background-color: rgb(0 90 255 / 28%) !important;
+    border-radius: 2px;
+    border: none;
+    vertical-align: top;
+    min-width: 30px !important;
+
+}
+
+select option {
+    background-color: #001c6b !important;
+    color: #fff !important;
+    min-width: 30px !important;
+}
+
+.agegate_birthday_desc {
+    font-size: 18px !important;
+    text-shadow: 1px 1px 3px #005aff !important;
+    padding-bottom: 10px;
+    color: white !important;
+}
+
+div.agegate_text_container > h2 {
+    color: #fff;
+    font-weight: 600 !important;
+}
+
+/* Group Page Stuff */
+/* BG for the tiled members in group */
+.grouppage_membertiles_overlay{background:#00327c73!important}
+/* Line Under Tabs*/
+.grouppage_header{border-bottom:5px solid #0046ae!important}
+/* Steam Group Text Label */
+.grouppage_header_label{background-color:rgba(0, 0, 0, 0.6)!important;color:#00c4ff!important;}
+/* Group Abbreviation */
+.grouppage_header_abbrev{color:#0095ff!important;}
+/* Friends in group BG */
+.grouppage_friendsingroup{background-color:rgba(0, 0, 0, 0.6)!important;}
+
+/* Friends In Group Bottom Part of Label */
+.grouppage_friendsingroup_title{font-size:13px!important;color:#00c4ff!important;}
+
+/* Group Tabs */
+.group_tab{color:#fff!important;background-color:rgb(0 0 0 / 68%)!important}
+.group_tab.active{background:linear-gradient( to bottom, #0046ae 5%, #0046ae 95%)!important;}
+.group_tab.active > span{background:radial-gradient(ellipse farthest-corner at 50% 30%, #0046ae 0%, #0046ae 50%, #0046ae 100%)!important;}
+a.group_tab:hover{background-color:#2880ff!important;}
+
+/* Group Content Line */
+.group_content_rule{height:2px!important;background:#0046ae!important;}
+
+/* Discussion hover BG */
+.group_overview_discussions .forum_topic:hover{background-color:rgb(0 43 139 / 30%)!important}
+
+/* Comment Text */
+.commentthread_comment_text{color:#fff!important}
+/* Comment Hover BG */
+.detailBox .commentthread_comment:not(.hidden_post):hover, .group_comments .commentthread_comment:not(.hidden_post):hover, .profile_comment_area .commentthread_comment:not(.hidden_post):hover{background-color:rgb(0 43 139 / 30%)!important}
+
+/* About Text Label */
+.group_content_header{
+	color:#3573ff!important;
+	text-shadow: 2px 2px 2px black !important;
+	font-size: 14px !important;
+	font-weight: 550 !important;
+}
+
+.group_content_header a{color:#3573ff!important}
+.group_content_header a:hover{color:#fff!important; text-shadow:none !important}
+
+/* Comment Thread Timestamp */
+.commentthread_comment_timestamp{color:#007eff!important}
+
+/* H1 Styles */
+div.bb_h1,.bb_wysiwyg h1{color:#2aa5eb!important;}
+
+/* Group Page Text */
+.formatted_group_summary{color:#fff!important;}
+
+/* Url links */
+.formatted_group_summary a{color:#0798ff!important;}
+.formatted_group_summary a:hover{color:#fff!important;}
+
+/* Url Link Host */
+span.bb_link_host{color:#0798ff!important;}
+
+/* Removal of BG for Group Summary */
+.group_content.group_summary{background-image:none!important}
+
+/* Removal of BG for Bottom and Top of other Boxes */
+.group_content{background:transparent!important}
+
+/* Member Count Label */
+.membercount.members a{color:#fff!important}
+
+/* Ingame Label */
+.membercount.ingame{color:#8cf700!important}
+
+/* Online Label */
+.membercount.online{color:#0976fd!important}
+
+/* Right Section Lines */
+.rightbox .rule{background-color:#0046ae!important
+padding-left:4px!important;}
+
+/* BG for Enter Group Chat */
+.joinchat_bg{background:none!important}
+
+/* Number in chat */
+.joinchat_bg .joinchat_membercount{top:12px!important;color:#fff!important} 
+
+/* Enter Chat Room Button Simulation */
+.joinchat_bg .joinchat_button{border:solid 2px transparent!important;border-radius:4px!important;background-color:#044fd9!important}
+.joinchat_bg .joinchat_button:hover{background-color:#0f61f8!important}
+
+/* Group Stat */
+.groupstat{font-size:12px!important;color:#3e94ff!important}
+
+/* Group Links Right Side */
+.weblink a{color:#0798ff!important}
+.weblink a:hover{color:#fff!important}
+
+/* Read More Link */
+a.readmore_link{color:rgb(7, 152, 255)!important}
+a.readmore_link:hover{color:#fff!important}
+
+/* Admin Tools Label */
+.rightbox_list_header, .rightbox_content_header{color:#2669ff!important;font-size:14px!important}
+
+/* Breadcrumbs */
+.group_breadcrumbs{color:#0087ff!important}
+.group_breadcrumbs a{color:#fff!important}
+
+/* Forum Total Comments */
+.forum_topic_reply_count, .forum_topic_award_count{color:#fff!important}
+
+/* Base announcement Text Color */
+.announcement, .announcement_body{color:#fff!important}
+
+/* Forum Last Post Date */
+.forum_topic_lastpost{color:#44aae6!important}
+
+/* h2 titles */
+.grouppage_content_area h2, a.large_title, h2.large_title{color:#007eff!important;}
+
+/* Another Weblink thing */
+.group_body_links a{color:#007eff!important}
+.group_body_links a:hover{color:#fff!important}
+
+/* Announcement date */
+.announcement_byline{font-size:11px!important;color:#178ffc!important;}
+.announcement_byline a{color:#178ffc!important;}
+.announcement_byline a:hover{color:#fff!important;}
+
+/* Recomended Header */
+.group_curator_recommends{color:#3a84ff!important}
+
+/* Few Recent Recommend Text */
+.group_curator_recommends_recent{color:#007eff!important}
+
+.commentthread_pagelink.active{color:#4992ff!important;}
+
+/* Members BG */
+.member_block{background-color: rgb(0 71 144 / 17%)!important}
+
+/* Announcment Text */
+announcement_body{color:#fff!important}
+
+/* View All Recommend Button */
+.group_curator_more_box{color:#fff!important;background-color:rgb(0 66 253 / 26%)!important}
+.group_curator_more_box:hover{color:#fff!important;background:linear-gradient(135deg, #0138ff 0%,#0138ff 100%)!important}
+
+
+/* Recent Announcement TimeStamps */
+.group_overview_announcement_footer{color:#0095ff!important;}
+
+/* Recent Annoucements Text */
+p.group_body_links{color:#fff!important;}
+
+/* Edit / Delete Announcement Links */
+a.subtle{
+color:#fff!important;
+border-radius:3px !important;
+background:var(--ButtonMidBlue) !important;
+text-decoration:none !important;
+    padding: 7px !important;
+    border-radius: 3px !important;
+}
+
+
+a.subtle:hover{
+color:#fff!important;
+border-radius:3px !important;
+background:var(--ButtonMidBlueHover) !important;
+}
+
+/* Rate Up/Down Button Hover */
+.btn_grey_grey:not(.btn_disabled):not(:disabled):not(.btn_active):not(.active):hover{
+	color:#fff!important;
+	background:var(--ButtonMidBlueHover)!important;
+}
+
+/* Fix font color on rate buttons for announcement */
+
+.announcement_control_container .btn_grey_grey:not(.btn_disabled):not(:disabled):not(.btn_active):not(.active):hover{
+	color:#fff!important;
+	font-size:15px!important;
+	
+}
+
+/* Subscribe checkbox fix */
+.commentthread_subscribe_checkbox{border:1px solid #006dff!important;border-top-color:#006dff!important;border-left-color:#006dff!important}
+
+/* Subscribe to thread Label */
+.commentthread_subscribe_ctn, .body{color:#2276f3!important}
+
+/* Comments Label */
+.commentthread_header .commentthread_count, .body{color:#fff!important}
+
+/* Comment Entry Box */
+.commentthread_entry_quotebox{border-right:1px solid #000!important;border-bottom:1px solid #000!important}
+
+.commentthread_textarea{color:#fff!important}
+
+/* Group Paging */
+.group_paging {color:#3e8bff!important}
+
+/* Fix to placeholder text color in input */
+::placeholder {color:#fff!important;opacity:1!important;}
+
+/* Replacement of Green Submit Button */
+.btn_green_white_innerfade{color:#fff!important;background:linear-gradient( to bottom, #026bd8 5%, #095e88 100%)!important;}
+.btn_green_white_innerfade > span{background:linear-gradient( to bottom, #026bd8 5%, #095e88 100%)!important;}
+/* Hover */
+.btn_green_white_innerfade:not(.btn_disabled):not(:disabled):not(.btn_active):not(.active):hover{background:linear-gradient( to bottom, #1badf2 5%, #0c8ac5 95%)!important}
+.btn_green_white_innerfade:not > span(.btn_disabled):not(:disabled):not(.btn_active):not(.active):hover{background:linear-gradient( to bottom, #1badf2 5%, #0c8ac5 95%)!important}
+
+.btn_grey_black:not(.btn_disabled):not(:disabled):not(.btn_active):not(.active):hover{background:rgb(0 82 206 / 92%)!important}
+/* Can't change the font color due to it already being !important in web based html .css file*/
+.btn_grey_black{color:#ffffff!important;} 
+
+/* Comment Date Timestamp */
+commentthread_comment_timestamp{color:#0094ea!important}
+
+/* Comment Text Color */
+.commentthread_comment_text{color:#fff!important}
+
+/* Forum ToolTip on Hover*/
+.forum_topic_tooltip {	border: 1px solid black!important;background-color: #00348d!important;color: #fff!important;
+}
+
+.topic_hover_row {color: #57c2ff!important;
+}
+
+.topic_hover_row span.topic_hover_data {color: #fff!important;
+}
+
+.topic_hover_text {color: #fff!important;
+}
+
+/* Groups/Friends Page */
+
+/* Adjustment of pos for Right Section */
+.friends_content{margin-top:-115px!important}
+
+/* Removal of Friends Header BG */
+.friends_header_bg{background:none!important}
+
+/* Title Bar of Friends */
+.profile_friends.title_bar, .profile_groups.title_bar{background-color:#0039ba!important;}
+
+/* Title Bar Width + Height */
+.profile_friends.title_bar, .profile_groups.title_bar{width:auto!important;height:30px!important}
+
+/* Title Bar Text Size*/
+.profile_friends.title, .profile_groups.title{font-size:13px!important;}
+
+/* Button size fix */
+button#manage_friends_control{height:30px!important}
+
+/* Group Blocks */
+.group_block{background:rgb(0 30 106 / 35%)!important}
+
+/* Ingame/Online Stat */
+.memberRow{color:#fff!important}
+
+.profile_friends .state_block{color:#00a4ff!important;font-size:13px!important;}
+
+/* is Public */
+.pubGroup{color:#2964d0!important}
+
+/* Side Bar Section Header Label*/
+.friends_nav h4{color:#00a4ff!important;font-size:13px!important}
+
+/* Selected Side Tab */
+.friends_nav a.active{background-color:rgb(0 90 255 / 25%)!important}
+.friends_nav a:hover{background-color:rgb(0 90 255 / 25%)!important}
+
+/* Customised count */
+span#menu_friends_ct, span#menu_blocked_ct ,span#menu_following_ct, span#menu_groups_ct{    
+	float: right!important;
+    	font-size: 14px!important;
+    	margin-top: -4px!important;
+    	color: #ffffff!important;
+    	background: #0000009e!important;
+    	border: 4px solid transparent!important;
+    	border-radius: 6px!important;
+   	 min-width: 20px!important;
+    	text-align: center!important;
+}
+
+/* Friend Block BG */
+.friend_block_v2{background-color: rgb(33 97 255 / 6%)!important;}
+
+/* Search No Pending */
+div#search_results_empty{color:#fff!important;}
+div#search_results_sentinvites_empty{color:#fff!important;}
+
+/* Search Typing */
+input#search_text_box{color:#fff!important;}
+
+/* Ingame Color Tweak */
+.persona.in-game, a.persona.in-game, .persona.in-game a, .friend_status_in-game, .friend_status_in-game div, .friend_status_in-game a{color:#5eff1b!important}
+
+.friend_block_link_overlay.in-game{border-color:#5eff1b!important}
+
+.friend_block_v2 .friend_small_text{color:#5eff1b!important}
+
+/* Online Color Tweak */
+.persona.online, a.persona.online, .persona.online a, .friend_status_online, .friend_status_online div, .friend_status_online a{color:#2b98f5!important}
+
+.friend_block_link_overlay.online{border-color:#2b98f5!important}
+
+/* Offline Color Tweak */
+.persona, a.persona, .persona a, .friend_status_offline, .friend_status_offline div, .friend_status_offline a{color:#92acb6!important}
+
+.friend_block_link_overlay.offline{border-color:#92acb6!important}
+
+.searchBarContainer{margin:10px 0px 0 27px!important}
+ 
+/* Friends Nav positioning */
+.friends_nav {
+    min-width: 250px;
+    margin: -13px 10px 0px 10px!important;
+    display: block;}
+
+
+
+/* Search Changes */
+.friends_search_text_box, .groups_search_text_box {
+    margin: 5px 14px 5px -27px!important;
+    
+    margin-top:5px!important;
+    margin-bottom:5px!important;
+    margin-left: -27px;!important;
+    margin-right: 14px;!important;
+    float: left;
+ 
+    border-radius: 3px;
+    border: 1px solid rgba( 0, 0, 0, 0.3);
+    box-shadow: 1px 1px 0px rgba( 255, 255, 255, 0.2);
+    color: #fff;
+    outline: none;
+    height: 28px;
+    font-size: 14px;
+    min-width: 250px!important;
+    padding: 0 0 0 30px;
+}
+
+/* Default Price Size and Color */
+
+.salepreviewwidgets_StoreSalePriceBox_Wh0L8 {
+    font-size: 20px!important;
+    padding: 5px 8px;
+    align-items: center;
+    display: flex;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    white-space: nowrap;
+    color: #0088ff!important;
+}
+
+/* Offers Popup */
+
+.messagelist_MessageListPage_1N7O3 {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background:#00000000!important;
+    background-img:radial-gradient(ellipse farthest-corner at 50% 30%, var(--List1) 0%, var(--List2) 50%, var(--List3) 100%)!important;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Click for Details Button*/
+
+.image_Btn_3YohC {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-family: "Motiva Sans",Sans-serif;
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: #fff;
+    text-transform: uppercase;
+    background-color: #09389a !important;
+    border-radius: 3px;
+    font-weight: 400;
+    padding: 0px 30px 0px;
+    height: 46px;
+    width: fit-content;
+    flex-grow: 1;
+    line-height: 19px;
+    transition: box-shadow .25s ease-out,background-color .25s ease-out;
+}
+
+.image_Btn_3YohC:hover {
+    background-color: #396cfd !important;
+    box-shadow: 2px 2px 10px #000;
+    cursor: pointer;
+}
+
+
+/* DiscountBox */
+
+.salepreviewwidgets_StoreSaleDiscountBox_2fpFv {
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 30px;
+    padding: 4px 8px;
+    height: 100%;
+    box-sizing: border-box;
+    color: #fff !important;
+    display: flex;
+    align-items: center;
+    background: #22a712 !important;
+}
+
+/* Original Price small*/
+
+.salepreviewwidgets_StoreOriginalPrice_1EKGZ::before{border-bottom:2px solid #21a8fd87 !important;transform: skewY(-0deg)!important;}
+.salepreviewwidgets_StoreOriginalPrice_1EKGZ{color:#5ec1ff !important;line-height:17px !important;margin-top:-4px !important;}
+
+/* Sale Price */
+.salepreviewwidgets_Discounted_35-Ub .salepreviewwidgets_StoreSalePriceBox_Wh0L8{color:#22a712 !important}
+
+/* Store Breadcrumbs */
+.blockbg {color:#00a2ff !important;}
+.blockbg a {color:#00a2ff !important;}
+
+/* Blue Fade Buttons */
+
+.btnv6_blue_hoverfade {
+    border-radius: 2px;
+    border: none;
+    padding: 1px;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none !important;
+    color: #67c1f5 !important;
+    background: #18268a7d !important;
+}
+
+.btnv6_blue_hoverfade:not(.btn_disabled):not(:disabled):not(.btn_active):not(.active):hover {
+    text-decoration: none !important;
+    color: #fff !important;
+    background: #417a9b;
+    background: -webkit-linear-gradient( 150deg, #417a9b 5%,#67c1f5 95%);
+    background: rgb(40, 57, 173) !important;
+}
+
+/* Game Description Snippet */
+.game_description_snippet { color:#fff !important}
+
+.glance_ctn .user_reviews {
+    font-size: 12px;
+    color: #ffffff !important;
+    margin-top: 10px;
+}
+
+.glance_ctn .dev_row .subtitle, .glance_ctn .release_date .subtitle, .glance_ctn .user_reviews .title {
+    color: #ffffff !important;
+}
+
+.glance_ctn .release_date .date, .glance_ctn .responsive_reviewdesc {
+    color: #108fff !important;
+}
+
+.glance_tags_label {
+    line-height: 19px;
+    font-size: 12px;
+    color: #0097f4 !important;
+}
+
+.app_tag {
+    display: inline-block;
+    line-height: 19px;
+    padding: 0 7px;
+    color: #fff !important;
+    background-color: rgb(0 67 255 / 35%)!important;
+    box-shadow: none;
+    margin-right: 2px;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-bottom: 3px;
+    max-width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight:600 !important;
+}
+.app_tag:hover {
+    text-decoration: none;
+    color: #ffffff;
+    background: #67c1f5;
+    background: -moz-linear-gradient(-60deg, #67c1f5 0%, #417a9b 100%);
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#67c1f5), color-stop(100%,#417a9b));
+    background: -webkit-linear-gradient(-60deg, #67c1f5 0%,#417a9b 100%);
+    background: -o-linear-gradient(-60deg, #67c1f5 0%,#417a9b 100%);
+    background: -ms-linear-gradient(-60deg, #67c1f5 0%,#417a9b 100%);
+    background: linear-gradient( -60deg, #1970f2 5%,#364fff 95%)!important;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1970f2', endColorstr='#364fff',GradientType=1 );
+}
+
+.queue_btn_menu > .queue_menu_arrow {
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    border: none;
+    padding: 1px;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none !important;
+    color: #67c1f5 !important;
+    background: rgb(0 67 255 / 35%)!important;
+}
+
+.queue_btn_menu:hover > .queue_menu_arrow, .queue_btn_menu > .queue_menu_arrow:hover {
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 0px;
+    background-color: #00000000 !important;
+    background:linear-gradient( -60deg, #1970f2 5%,#364fff 95%)!important;
+}
+
+.queue_menu_flyout {
+    position: absolute;
+    display: none;
+    width: 300px;
+    padding: 0px;
+    color: #009eff;
+    line-height: 18px;
+    z-index: 10;
+    left: 0px;
+    margin-top: -4px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.75);
+    background: #002370  !important;
+}
+.queue_menu_option_label > .option_subtitle {
+    line-height: 14px;
+    color: #2881f0 !important;
+}
+
+.queue_menu_option:hover {
+    background: var(--PulseHover)!important;
+}
+
+.queue_menu_option:hover .queue_menu_option_label > .option_subtitle {
+    color: #2881f0 !important;
+}
+
+.franchise_notice {
+    display: block;
+    position: relative;
+    height: 54px;
+    color: #ffffff !important;
+    font-size: 16px;
+    font-family: "Motiva Sans", Sans-serif;
+    font-weight: 300;
+    text-shadow: 1px 1px rgb(0 0 0)!important;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    box-shadow: 0 0 5px rgb(27 149 208 / 0%)!important;
+    overflow: hidden;
+}
+
+.franchise_notice .franchise_highlight {
+    height: 54px;
+    transition: box-shadow 0.5s ease, transform 0.5s ease;
+    box-shadow: inset 0 0 10px rgb(14 82 236 / 20%)!important;
+}
+
+.franchise_notice:hover .franchise_highlight {
+    box-shadow: inset 0 0 4px rgb(0 96 195)!important;
+    }
+
+.game_area_purchase_game, .game_area_offsite_purchase {
+    position: relative;
+    background: -webkit-linear-gradient( 150deg, rgba(226,244,255,0.3) 5%,rgba(84, 107, 115, 0.3) 95%);
+    background: var(--PulseMidBlue) !important;
+    border-radius: 4px;
+    font-family: "Motiva Sans", Sans-serif;
+    font-weight: normal;
+    font-size: 13px;
+    color: #c6d4df;
+    padding: 16px;
+    padding-bottom: 26px;
+    margin-bottom: 28px;
+    z-index: 1;
+}
+
+.game_purchase_action .game_purchase_price {
+    background-color: #0045ad !important;
+    font-size: 16px !important;
+    padding-top: 8px;
+    padding-left: 12px;
+    padding-right: 12px;
+    line-height: 16px !important;
+    height: 24px;
+    color: white !important;
+}
+
+.game_area_purchase_game p.package_contents, .game_area_offsite_purchase p.package_contents {
+    color: #0087ff !important;
+}
+
+.game_purchase_discount:not(.no_discount) .bundle_base_discount {
+    font-size: 16px;
+    color: white !important;
+}
+
+.discount_block .discount_pct, .discount_pct {
+    font-family: "Motiva Sans", Sans-serif;
+    font-weight: normal;
+    font-weight: 500;
+    color: #ffffff !important;
+    background: #22a712 !important;
+    display: inline-block;
+}
+
+.discount_block .discount_prices {
+    display: flex;
+    background: #000000 !important;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+    padding-left: 4px;
+}
+
+.discount_original_price {
+    position: relative;
+    width: fit-content;
+    color: #5ec1ff !important;
+    font-size: 11px;
+    line-height: 12px;
+}
+
+.discount_original_price:before {
+    content: '';
+    left: 0px;
+    right: 0px;
+    position: absolute;
+    top: 43%;
+    border-bottom: 1.5px solid #21a8fd87 !important;
+    transform: skewY(0deg)!important;
+    box-shadow: 0 0 2px black;
+}
+
+.discount_final_price {
+    color: #22a712 !important;
+    line-height: 16px;
+    font-size: 15px;
+}
+
+.discount_block.no_discount .bundle_base_discount {
+    text-decoration: none;
+    color: #ffffff !important;
+    border-right: 1px solid #0038df !important;
+}
+
+.discount_block.game_purchase_discount.no_discount .discount_final_price.your_price {
+    line-height: 14px !important;
+}
+
+.discount_block.no_discount .discount_final_price {
+    padding: 0 6px;
+    color: #3682df !important;
+}
+
+.game_description_column h2, .recommendation_bodytext h2 {
+    line-height: 26px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #FFFFFF;
+    background-image: none !important;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    margin-bottom: 1px;
+    border-bottom: 1px solid #0043ff !important;
+}
+h2 span.note {
+    float: right;
+    background: transparent;
+    border: 1.2px solid rgb(61 96 223)!important;
+    border-radius: 2px;
+    color: #ffffff;
+    font-size: 11px;
+    padding: 2px 15px;
+    line-height: normal;
+}
+
+.game_area_dlc_row {
+    display: block;
+    color: #00a1ff !important;
+    font-size: 12px;
+    position: relative;
+    padding: 4px 14px;
+    margin-bottom: 1px;
+}
+
+.game_area_dlc_row.odd {
+
+    background: linear-gradient(135deg, rgb(0 78 255 / 30%) 0%,rgb(30 55 232 / 37%) 100%)!important;
+
+}
+
+.game_area_dlc_row.even {
+
+    background: linear-gradient(135deg, rgb(0 25 117 / 52%) 0%, rgb(8 34 128 / 62%) 100%) !important;
+    
+}
+
+.game_area_dlc_row.even:hover {
+    background-color: #003a91 !important;
+    text-decoration: none;
+    color: #ffffff !important;
+}
+
+.game_area_dlc_row.odd:hover {
+    background-color: #003a91 !important;
+    text-decoration: none;
+    color: #ffffff !important;
+}
+
+.eventrow_OtherEvents_EventCtn_17gGs {
+    display: block;
+    height: auto;
+    margin-bottom: 8px;
+    flex-grow: 1;
+    flex-basis: 0;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    min-width: 200px;
+    background-image: radial-gradient(ellipse at top left, #22449352, #0423617d)!important;
+    box-shadow: 2px 2px 10px rgb(0 0 0 / 40%)!important;
+    border-radius: 4px;
+}
+
+.eventrow_HoversEnabled_34Nxj:hover .eventrow_EventSummaryContainer_3PdWg {
+    background-color: rgb(1 4 112 / 20%)!important;
+}
+
+.DRM_notice {
+    color: #ffffff !important;
+    padding: 4px 8px;
+    line-height: 17px;
+    border-radius: 1px;
+    margin-top: 12px;
+    background: -moz-linear-gradient(-45deg, rgba(130,114,81,0.5) 0%, rgba(226,197,139,0.5) 100%);
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(130,114,81,0.5)), color-stop(100%,rgba(226,197,139,0.5)));
+    background: -webkit-linear-gradient(-45deg, rgba(130,114,81,0.5) 0%,rgba(226,197,139,0.5) 100%);
+    background: -o-linear-gradient(-45deg, rgba(130,114,81,0.5) 0%,rgba(226,197,139,0.5) 100%);
+    background: -ms-linear-gradient(-45deg, rgba(130,114,81,0.5) 0%,rgba(226,197,139,0.5) 100%);
+    background: linear-gradient(135deg, rgb(0 62 174 / 50%) 0%,#003eae80 100%)!important;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80827251', endColorstr='#80e2c58b',GradientType=1 );
+}
+
+.block.recommendation_reasons, .block.recommendation_reasons p {
+    color: #ffffff !important;
+    font-size: 14px;
+}
+
+.game_area_details_specs_ctn .label {
+    padding: 6px 8px;
+    height: 100%;
+    background: rgb(0 102 255 / 14%) !important;
+    width: 100%;
+    border-radius: 1px;
+    color: #ffffff !important;
+}
+
+.game_area_details_specs_ctn {
+    margin-bottom: 2px;
+    background-color: rgb(0 0 0 / 20%) !important;
+    display: flex;
+    align-items: center;
+}
+
+a.game_area_details_specs_ctn:hover .label {
+    text-decoration: none;
+    color: #ffffff;
+    background: #2839ad !important;
+    background: linear-gradient(135deg, #67c1f5 0%,#417a9b 100%);
+}
+
+.block a.linkbar {
+    min-height: 17px;
+    padding-top: 4px;
+    padding-left: 8px;
+    padding-bottom: 4px;
+    line-height: 17px;
+    background: rgb(0 102 255 / 14%) !important;
+    color: #fff !important;
+    border-radius: 1px;
+    display: block;
+    margin-bottom: 2px;
+}
+
+.block a.linkbar:hover {
+    text-decoration: none;
+    color: #ffffff !important;
+    background: #2839ad !important;
+
+}
+
+.game_details {
+    color: #ffffff !important;
+    line-height: 20px;
+}
+
+/* All Languages *pseudobutton */
+
+.all_languages {
+    text-decoration: none;
+    color: #ffffff !important;
+    font-size: 14px !important;
+    cursor: pointer;
+    margin-top: 5px !important;
+    line-height: 24px !important;
+    padding-left: 6px !important;
+    padding-right: 6px !important;
+    border: solid 1px transparent !important;
+    border-radius: 3px !important;
+    height: 24px !important;
+    display: inline-block;
+    background: var(--ButtonMidBlue) !important;
+}
+
+.all_languages:hover {
+    text-decoration: none;
+    color: #ffffff;
+    background: var(--ButtonMidBlueHover) !important;
+}
+
+#dlc_footer {
+    margin-top: 1px;
+    color: #ffffff !important;
+    font-size: 10px;
+    text-transform: uppercase;
+}
+
+.pulldown {
+    padding-left: 5px !important;
+    padding-right: 0px !important;
+    background-image: none !important;
+    background-position: right center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+#dlc_footer div.dlc_footer_element {
+    float: right;
+    padding: 5px 8px;
+    margin-top: 5px !important;
+}
+
+#dlc_footer #dlc_show_all_link {
+    color: #ffffff !important;
+    background: var(--ButtonMidBlue) !important;
+    margin-left: 1px !important;
+    margin-top: 4px !important;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 3px !important;
+}
+
+#dlc_footer #dlc_show_all_link:hover {
+    border-radius: 3px;
+    color: #ffffff !important;
+    background: var(--ButtonMidBlueHover)!important;
+
+}
+
+.store_header_btn_gray {
+    background-image: none !important;
+    background-color: var(--ButtonMidBlue)!important;
+    background-position: -34px 20px;
+    border-radius: 3px !important;
+}
+
+.store_header_btn_gray a:hover {
+    color: #ffffff !important;
+    border-radius: 3px !important;    
+    background: var(--ButtonMidBlueHover)!important;
+
+}
+
+.game_language_options th {
+    font-size: 12px;
+    color: #ffffff !important;
+    font-weight: normal;
+}
+
+.game_language_options tr {
+    border-bottom: 1px solid #0040ff5e !important;
+}
+
+.game_language_options td {
+    color: #ffffff !important;
+    padding: 3px 0px 3px 0px;
+    text-align: center;
+    font-size: 12px;
+}
+
+#widget {
+    border: 1px solid #0055ff !important;
+    background-color: #002b79 !important;
+    /* width: 614px; */
+    height: 146px;
+    padding: 10px 15px;
+    position: relative;
+    margin: 0 auto;
+   
+    background-repeat: no-repeat;
+    background-position-x: 99%;
+    background-position-y: 5px;
+}
+
+#widget .desc {
+    margin: 10px 10px 0 0;
+    font-size: 13px;
+    color: #ffffff !important;
+    line-height: 16px;
+    max-height: 96px;
+    overflow: hidden;
+}
+
+.newmodal {
+    font-family: "Motiva Sans", Sans-serif;
+    font-weight: normal;
+    position: absolute;
+    max-width: 900px;
+    min-width: 500px;
+    background: radial-gradient(circle at top left, rgb(0 88 228 / 40%) 0%, rgb(0 23 66 / 0%) 60%), #001a4f !important;
+}
+
+body.v6 .app_tag_modal h2 {
+    color: #00a1ff !important;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 20px;
+    margin-bottom: 6px;
+    text-transform: none;
+    letter-spacing: 0px;
+    padding: 0;
+    margin: 0;
+}
+
+.app_tag_control {
+    height: 19px;
+    line-height: 19px;
+    color: #fff !important;
+    padding: 2px;
+    background-color: #0000006e !important;
+    margin-bottom: 2px;
+}
+
+.app_tag_modal_tooltip {
+    font-size: 11px;
+    color: #00e8ff !important;
+    cursor: default;
+    margin-left: 8px;
+}
+
+.app_tag_modal p.small {
+    line-height: 14px;
+    margin-bottom: 8px;
+    font-size: 12px;
+    color: #f1f1f1 !important;
+}
+
+input.gray_bevel, textarea.gray_bevel, .gray_bevel, .commentthread_comment_edit_textarea_ctn {
+    background-color: rgba(0,0,0,0.2);
+    border-radius: 3px;
+    border: 1px solid #000000 !important;
+    box-shadow: 1px 1px 0px #00000000 !important;
+    color: #ffffff !important;
+    margin-bottom: 6px;
+    outline: none;
+    padding: 4px 6px;
+}
+
+.popup_block_new .popup_body {
+    border: 1px solid #0056ea !important;
+    position: relative;
+    background-color: #00225d !important;
+}
+
+.popup_menu .popup_menu_item {
+    padding: 5px 12px;
+    color: #ffffff !important;
+    text-transform: none;
+    font-family: Motiva Sans, Arial, Helvectica, Verdana, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: normal;
+    text-align: left;
+    cursor: pointer;
+}
+.popup_menu .popup_menu_item:hover, .popup_menu .popup_menu_item.focus {
+    color: #fff !important;
+    text-decoration: none;
+    background: var(--PulseHover)!important;
+}
+
+.btn_grey_steamui > span {
+    border-radius: 2px;
+    display: block;
+    background: #75b022;
+    background: -webkit-linear-gradient( top, #75b022 5%, #588a1b 95%);
+    background: linear-gradient( to bottom, #75b022 5%, #588a1b 95%);
+    background: linear-gradient( to right, #0f358a 5%, #1d3f8a 95%) !important;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease-out;
+}
+
+.btn_grey_steamui:not(.btn_disabled):not(:disabled):not(.btn_active):not(.active):hover > span {
+    background: #8ed629;
+    background: -webkit-linear-gradient( top, #8ed629 5%, #6aa621 95%);
+    background: linear-gradient( to bottom, #8ed629 5%, #6aa621 95%);
+    background: linear-gradient( to right, #2258ae 5%, #255aae 95%)!important;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.5);
+}
+
+#term {
+    background-color: rgb(12 86 253 / 42%)!important;
+    color: #fff;
+    border: 1px solid #000;
+    border-radius: 3px;
+    box-shadow: 1px 1px 0px rgba( 103, 193, 245, 0.00 )!important;
+    width: 300px;
+    padding: 5px;
+    max-width: calc( 100% - 80px - 2px );
+}
+
+.col.search_discount_and_price .discount_block .discount_prices {
+    flex: 100px;
+    align-items: flex-end;
+    background-color: inherit;
+    background-color: #00000000 !important;
+}
+
+.search_result_row .col.search_released {
+    width: 85px;
+    color: #43a1ff !important;
+    font-size: 11px;
+    line-height: 45px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+div.autocomplete {
+    margin: 0px;
+    padding: 0px;
+    width: 250px;
+    background: #001a62 !important;
+    border: 1px solid #0043ff !important;
+    position: absolute;
+    color: #ffffff !important;
+    z-index: 500;
+}
+
+div.autocomplete ul li.selected {
+    color: white;
+    background-color: var(--PulseHover)!important;
+}
+
+.pagesubheader {
+    font-size: 18px;
+    color: #ffffff !important;
+    font-family: "Motiva Sans", Sans-serif;
+    font-weight: 300;
+}
+
+.page_header_ctn {
+    background: none !important; 
+    padding-bottom: 64px;
+    margin-bottom: -50px!important;
+}
+
+.page_header_ctn.search {
+    padding-bottom: 70px;
+    background: none !important;
+}
+
+body.v6 .store_nav .popup_block_new .popup_body {
+    background: linear-gradient(90deg, rgb(0 42 138 / 0%) 1.89%, rgb(0 0 114 / 0%) 50%), linear-gradient(180deg, #0034ab 11.6%, #001e8d 54.73%, #00207a 100%) !important;
+    padding: 8px 5px 8px 5px;
+}
+
+.popup_menu_twocol > .popup_menu.leftborder, .popup_menu_twocol_new > .popup_menu.leftborder {
+    margin-left: 5px;
+    border-left: 1px solid #2950df !important;
+    padding-left: 5px;
+}
+
+.html5_video_overlay .progress_bar_background {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0px;
+    bottom: 0px;
+    background-color: #195cd7 !important;
+}
+
+.html5_video_overlay .progress_bar {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0px;
+    bottom: 0px;
+    background-color: #0469ff !important;
+}
+
+.html5_video_overlay .progress_bar_wrapper {
+    position: absolute;
+    bottom: 0px;
+    top: 21px;
+    left: 0px;
+    right: 0px;
+    background-color: #001769 !important;
+}
+
+.highlight_selector {
+    position: absolute;
+    background-image: linear-gradient(180deg,#0018c1 0px, #051f99 6px, #000d4b85  7px, #001e8d00 11px, #00207a00 100%), linear-gradient(90deg, #0014ff2e, #0058fa3d)!important;
+    width: 116px !important;
+    height: 72px !important;
+    z-index: 50;
+    top: -7px !important;
+   
+    pointer-events: none;
+    border: solid 2px #0023ca !important;
+    margin-top: 0px !important;
+    
+}
+
+.ds_flag.ds_owned_flag {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAKCAYAAABi8KSDAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OUNDNzBFNTUyMUM0MTFFNDk1REVFODRBNUU5RjA2MUYiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OUNDNzBFNTYyMUM0MTFFNDk1REVFODRBNUU5RjA2MUYiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo5Q0M3MEU1MzIxQzQxMUU0OTVERUU4NEE1RTlGMDYxRiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo5Q0M3MEU1NDIxQzQxMUU0OTVERUU4NEE1RTlGMDYxRiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pv3vUKAAAAAlSURBVHjaYvz//z8DsYARpFhISAivjnfv3jGSp3jUGeQ4AyDAADZHNe2nyOBrAAAAAElFTkSuQmCC) no-repeat 4px 4px #3e79ff !important;
+}
+
+.ds_flag.ds_completetheset {
+    background: #1554c9 !important;
+    top: -4px;
+    left: 18px;
+    padding: 0 8px;
+}
+
+.bundle_label {
+    cursor: default;
+    color: #3785fa !important;
+    font-size: 18px;
+    font-family: "Motiva Sans", Sans-serif;
+    font-weight: 400 !important;
+}
+
+.bundle_label .bundle_label_tooltip {
+    color: #309af9 !important;
+    font-size: 12px;
+    vertical-align: baseline;
+}
+
+.match.match_v2.hover {
+    border-top: unset;
+    color: white !important;
+background-color:red !important;
+}
+
+.match.match_v2.focus {
+    border-top: unset;
+    color: red !important;
+    background-color:red !important;
+}
+
+button#manage_friends_control {
+    background: #005aff !important;
+    border: solid 1px #00000066 !important;
+    color: white !important;
+    outline:none !important;
+    }
+
+button#manage_friends_control:hover {
+    background: #2c76ff !important;
+    border: solid 1px #00000066 !important;
+    color: white !important;
+    }
+
+span.manage_action.anage_action.btnv6_lightblue_blue.btn_medium.btn_uppercase {
+    color: white !important;
+}
+
+.groupadmin_content .rightbox_content_header {
+    background: #09317a !important;
+    color: #ffffff !important;
+}
+
+.rightbox_list_selection_background {
+    position: absolute;
+    display: none;
+    left: 0px !important;
+    top: 0px;
+    background-image: none !important;
+    background: #2528a3 !important;
+    width: 310px !important;
+    height: 37px;
+    margin-left: -20px !important;
+    padding-left: 4p;
+}
+
+.forum_op {
+    position: relative;
+    padding: 7px 12px 21px 63px;
+    margin-bottom: 8px;
+    max-width: 565px;
+    background-color: #002e7026 !important;
+    background-image: none !important;
+    background-repeat: no-repeat;
+    background-position: top left;
+    border: 1px solid #003b887d !important;
+    border-radius: 3px !important;
+    box-shadow: 0 0 2px #000 !important;
+}
+
+.forum_op .content {
+    font-size: 14px;
+    line-height: 20px;
+    color: #f7f7f7 !important;
+    word-wrap: break-word;
+    overflow: hidden;
+}
+
+.forum_topic_pinned_notice {
+    background-image: none !important;
+    color: #ffffff !important;
+    background-color: #001a63 !important;
+    font-weight: 500 !important;
+    border: solid 1px transparent;
+    border-radius: 4px !important;
+}
+
+
+.btn_grey_grey {
+    border-radius: 3px !important;
+    border: none;
+    padding: 1px;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none !important;
+    color: #ebebeb !important;
+    background: rgb(0 0 0 / 0%) !important;
+}
+
+/* Fix for Multiple uses of btn Grey */
+
+a.btn_grey_black.ico_hover.btn_medium {
+    color: white !important;
+    border-radius: 3px !important;
+    background: var(--ButtonMidBlue) !important;
+    padding: 0 0px !important;
+    padding-right: 15px !important;
+    font-size: 15px;
+    line-height: 30px;
+}
+
+a.btn_grey_black.ico_hover.btn_medium > span {
+    color: white !important;
+    padding: 0 0px !important;
+    padding-right: 0px !important;
+    font-size: 15px;
+    line-height: 30px;
+}
+
+input.btn_medium {
+    padding: 0 0px !important;
+    padding-right: 0px !important;
+    font-size: 15px;
+    line-height: 30px;
+}
+
+.ico16.comment {
+    background-position: 0px 0px;
+    opacity: 0 !important;
+}
+
+/* Fake Edit/ Delete Buttons */ 
+
+/* Font Overide for Age ask Page Buttons */
+a#view_product_page_btn {
+    color: white !important;
+}
+
+a.btnv6_blue_hoverfade.btn_medium {
+    color: white !important;
+}
+
+/* Announcement Button Fixes */
+
+span#PostAnnouncementButton {
+    color: white !important;
+	border-radius:3px !important;
+	background: var(--ButtonMidBlue) !important;
+}
+
+span#PostAnnouncementButton:hover {
+    color: white !important;
+	border-radius:3px !important;
+	background: var(--ButtonMidBlueHover) !important;
+}
+
+span#preview_button {
+    color: white !important;
+	border-radius:3px !important;
+	background: var(--ButtonMidBlue) !important;
+}
+
+span#preview_button:hover {
+    color: white !important;
+	border-radius:3px !important;
+	background: var(--ButtonMidBlueHover) !important;
+}
+
+.forum_manage_actions .btn_medium {
+    margin-left: 12px;
+    background: none !important;
+}
+
+.forum_manage_actions .btn_medium:hover {
+    
+    background: none !important;
+}
+
+a.btn_grey_white_innerfade.btn_medium{
+    color: white !important;
+	border-radius:3px !important;
+	background: var(--ButtonMidBlue) !important;
+}
+a.btn_grey_white_innerfade.btn_medium{
+    color: white !important;
+	border-radius:3px !important;
+	background: var(--ButtonMidBlueHover) !important;
+}
+
+.error_ctn {
+    margin: 60px auto;
+    max-width: 958px;
+
+    background: #00174957 !important;
+    box-shadow: 0px 0px 3px 0px rgba(20,20,20,0.75);
+}
+
+.error_ctn #BG_top{
+position: relative;
+    height: 54px;
+    text-align: left;
+    background: #012472 !important;
+    border-bottom: none !important;
+}
+
+
+.error_ctn #BG_bottom #message p.sectionText {
+    color: #ffffff !important;
+    font-size: 16px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    top: 40px !important;
+    position: absolute !important;
+    padding-top: 13.6% !important;
+    padding-left: 20% !important;
+    margin-bottom: 12px !important;
+    margin-top: 4px !important;
+}
+}
+
+#message h1 {
+    font-weight: normal;
+    font-family: "Motiva Sans", Sans-serif;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+    padding-top: 36px;
+    padding-bottom: 6px !important;
+    font-size: 32px !important;
+    color: #008fff !important;
+}
+
+h3 {
+    font-family: "Motiva Sans", Sans-serif;
+    font-weight: normal;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    color: #00a2ff !important;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.error_ctn #BG_bottom p.returnLink a.linkStandard{
+color:white!important
+}
+
+/* Gift Successfully Recieved */
+.pending_gift {
+    border: 1px solid #0e0e72 !important;
+    border-radius: 3px !important;
+    background-color: #00209791 !important;
+    background-image: none !important;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    padding: 8px;
+    margin-bottom: 32px;
+}
+
+.pending_gift .content {
+    background-color: #001852 !important;
+    padding: 18px 25px;
+    box-shadow: inset 2px 2px 8px #202020;
+    -webkit-box-shadow: inset 0 0 16px #1a1a1a00 !important;
+}
+
+.accepted_gift_info {
+    color: #ffffff !important;
+    font-size: 16px !important;
+}
+
+.accepted_gift_info a.underlined {
+    color: #3c78ff !important;
+    text-decoration: underline;
+}
+
+/* Store Page Test */
+
+.home_cluster_ctn {
+	background:none !important;
+}
+
+div#home_maincap_v7 .carousel_thumbs {
+    text-align: center;
+    min-height: 37px;
+    margin-top: 14px !important;
+    background: #14179140 !important;
+}
+
+/* Carousel Arrows */
+.carousel_container .arrow.left {
+    left: -46px;
+    background: -webkit-linear-gradient( left, rgba( 0, 0, 0, 0.3) 5%,rgba( 0, 0, 0, 0) 95%);
+    background: linear-gradient( 180deg, rgb(9 27 155), 5%,rgb(0 21 68) 95%) !important;
+}
+
+.carousel_container .arrow.left:hover {
+    background: -webkit-linear-gradient( left, rgba( 171, 218, 244, 0) 5%,rgba( 171, 218, 244, 0.3) 95%);
+    background: linear-gradient( 180deg, rgb(9 36 133) 5%,rgb(3 25 106) 95%) !important;
+}
+
+.carousel_container .arrow.right {
+    right: -46px;
+    background: -webkit-linear-gradient( left, rgba( 0, 0, 0, 0) 5%,rgba( 0, 0, 0, 0.3) 95%);
+    background: linear-gradient( 180deg, rgb(9 27 155), 5%,rgb(0 21 68) 95%) !important;
+}
+
+.carousel_container .arrow.right:hover {
+    background: -webkit-linear-gradient( left, rgba( 171, 218, 244, 0) 5%,rgba( 171, 218, 244, 0.3) 95%);
+    background: linear-gradient( 180deg, rgb(9 36 133) 5%,rgb(3 25 106) 95%) !important;
+}
+
+#home_gutter_recentlyviewed {
+    background: radial-gradient(circle at 0%, #383cc246, #383cc246) !important;
+    padding: 15px 2px 15px 4px !important;
+    width: 85%;
+    margin-top: -12px !important;
+    margin-left: 1px !important;
+}
+
+.gutter_header {
+    color: #2ea1ff !important;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: "Motiva Sans", Sans-serif;
+    font-weight: normal;
+    font-weight: bolder;
+}
+
+a.gutter_item {
+    display: block;
+    width: fit-content;
+    color: #ffffff !important;
+    font-size: 12px;
+    font-family: "Motiva Sans", Sans-serif;
+    font-weight: normal;
+    font-weight: 550;
+}
+
+a.gutter_item:hover {
+    display: block;
+    width: fit-content;
+    color: #2ea1ff !important;
+    font-size: 12px;
+    font-family: "Motiva Sans", Sans-serif;
+    font-weight: normal;
+    font-weight: 550;
+}
+
+.store_main_capsule, .store_main_capsule:hover {
+    animation: none;
+    background-image: none !important;
+    background-repeat: no-repeat;
+    background: #01217061 !important;
+    background-position: right;
+    color: #fff;
+    display: flex;
+}
+
+.carousel_container .carousel_thumbs > div {
+    display: inline-block;
+    margin: 12px 2px;
+    width: 15px;
+    height: 9px;
+    border-radius: 2px;
+    transition: background-color 0.2s;
+    background-color: hsl(224deg 100% 62% / 76%) !important;
+    cursor: pointer;
+}
+
+.carousel_container .carousel_thumbs > div.focus {
+    background-color: hsl(0deg 0% 100%) !important;
+}
+
+.carousel_container .carousel_thumbs > div:hover {
+    background-color: hsl(0deg 0% 100%) !important;
+}
+
+body.v6 .page_content_ctn.dark {
+    background-color: transparent !important;
+    padding: 25px 0;
+}
+
+body.v6 #footer {
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 16px 0 60px 0;
+    margin: 0;
+    text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    background: transparent !important;
+}
+
+.home_ctn.tab_container {
+    background: -webkit-linear-gradient( top, rgba(42,71,94,1.0) 5%, rgba(42,71,94,0.0) 70%);
+    background: transparent !important;
+    padding-top: 1px;
+    margin-top: 60px;
+}
+
+#tab_preview_container {
+    flex: 1;
+    position: relative;
+    margin-top: 39px;
+    background: -webkit-linear-gradient( left, #95bbd4 5%,#859bac 95%);
+    background: linear-gradient( to right, #05257f 5%,#05257f 95%) !important;
+    margin-bottom: 5px;
+}
+
+.home_tab .tab_content {
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    font-size: 13px;
+    color: #ffffff !important;
+    line-height: 24px;
+    padding: 0 10px;
+    cursor: pointer;
+    vertical-align: top;
+    box-shadow: inset 0 -2px 3px 0 rgba( 0, 0, 0, 0.25 );
+}
+
+.home_tab .tab_content:hover {
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    font-size: 13px;
+    background-color: #05257f !important;
+    color: #ffffff !important;
+    line-height: 24px;
+    padding: 0 10px;
+    cursor: pointer;
+    vertical-align: top;
+    box-shadow: inset 0 -2px 3px 0 rgba( 0, 0, 0, 0.25 );
+}
+
+.home_tab.active .tab_content {
+    border: none;
+    background-color: #05257f !important;
+}
+
+body.v6 .home_rightcol .tab_preview h2 {
+    text-transform: none;
+    font-size: 21px;
+    letter-spacing: 0px;
+    color: #ffffff !important;
+    height: 30px;
+    padding-right: 8px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.tab_review_summary {
+    padding: 5px 7px;
+    margin-bottom: 10px;
+    background-color: rgb(0 17 56 / 35%) !important;
+    width: 258px;
+    border-radius: 2px;
+}
+
+.tab_item.focus {
+    background: #2c39d27d;
+    background: #2c39d27d !important;
+    margin-right: -14px;
+    padding-right: 14px;
+}
+
+.tab_item.focus .tab_item_name {
+    color: #ffffff !important;
+}
+
+.tab_item_details {
+    color: #11327d !important;
+    line-height: 20px;
+}
+
+.tab_item_top_tags {
+    height: 20px;
+    white-space: normal;
+    overflow: hidden;
+    color: #c3cce0 !important;
+    text-shadow: 1px 2px black !important;
+}
+
+.home_tabs_content .discount_block .discount_prices, .tab_content_ctn .discount_block .discount_prices {
+    background: transparent !important;
+}
+
+
+.game_area_comingsoon {
+    color: #ff0000;
+    margin-bottom: 28px;
+    background: -moz-linear-gradient(-60deg, rgba(64,120,152,0.4) 10%, rgba(102,192,244,0.4) 100%);
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(10%,rgba(64,120,152,0.4)), color-stop(100%,rgba(102,192,244,0.4)));
+    background: -webkit-linear-gradient(-60deg, rgba(64,120,152,0.4) 10%,rgba(102,192,244,0.4) 100%);
+    background: -o-linear-gradient(-60deg, rgba(64,120,152,0.4) 10%,rgba(102,192,244,0.4) 100%);
+    background: -ms-linear-gradient(-60deg, rgba(64,120,152,0.4) 10%,rgba(102,192,244,0.4) 100%);
+    background: linear-gradient(135deg, rgb(0 13 48) 10%,rgb(2 17 60) 100%) !important;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#66407898', endColorstr='#6667c1f5',GradientType=1 );
+    box-shadow: 2px 2px 15px rgba(0,0,0,0.4);
+    border-radius: 4px;
+}
+
+
+.game_area_comingsoon .not_yet {
+    outline: none !important;
+    color: #f82424 !important;
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    text-shadow: none !important;
+}
+
+.game_area_comingsoon .wishlist_add_reminder {
+    min-height: 32px;
+    padding: 16px;
+    color: #fff !important;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: -moz-linear-gradient(-60deg, rgba(15, 28, 36, 0.4) 10%, rgba(0, 0, 0, 0.4) 100%);
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(10%,rgba(15, 28, 36, 0.4)), color-stop(100%,rgba(0, 0, 0, 0.4)));
+    background: -webkit-linear-gradient(-60deg, rgba(15, 28, 36, 0.4) 10%,rgba(0, 0, 0, 0.4) 100%);
+    background: -o-linear-gradient(-60deg, rgba(15, 28, 36, 0.4) 10%,rgba(0, 0, 0, 0.4) 100%);
+    background: -ms-linear-gradient(-60deg, rgba(15, 28, 36, 0.4) 10%,rgba(0, 0, 0, 0.4) 100%);
+    background: none !important;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0f1c2466', endColorstr='#00000066',GradientType=1 );
+}
+
+
+.apppartnereventspage_AppPartnerEventsBanner_2yR2O {
+    width: 100%;
+    background-color: transparent !important;
+    background: linear-gradient(180deg, black 0px, var(--Bar2) 2px, var(--Bar3)) !important;
+    background-image: none !important;
+    background: linear-gradient(180deg, black 0px, var(--Bar2) 2px, var(--Bar3)) !important; 
+    display: flex;
+    box-shadow: 0 0 10px #000;
+    z-index: 3;
+}
+
+.apppartnereventspage_AppBannerCtn_27-Nn {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    background: linear-gradient(180deg, black 0px, var(--Bar2) 2px, var(--Bar3)) !important;
+}
+
+.apppartnereventspage_AppBannerCtn_27-Nn .apppartnereventspage_AppBannerBackground_1zB7W {
+    position: absolute;
+    width: 100%;
+    height: 20%;
+    filter: blur(60px) brightness(40%);
+    opacity: .6;
+    background: none !important;
+    background-image: none !important;
+    z-index: 1;
+}
+
+.apppartnereventspage_AppBannerGroup_1GuB8 {
+    position: relative;
+    z-index: 2;
+    max-width: 866px;
+    margin: 0px auto;
+    width: 100%;
+    height: 40px !important;
+    padding: 7px 7px;
+    box-sizing: border-box;
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: 142px 1fr;
+    grid-template-rows: 38px 28px;
+    grid-column-gap: 15px;
+}
+
+.apppartnereventspage_AppBannerGroup_1GuB8 .apppartnereventspage_AppBannerLogoCtn_3cTtP {
+    border-radius: 3px;
+    width: 0px;
+    overflow: hidden;
+    background: rgba(0,0,0,.2);
+    height: 0px;
+    box-sizing: border-box;
+    display: block;
+    grid-row-end: span 2;
+    opacity: 0 !important;
+}
+
+@media screen and (max-width: 1024px)
+.apppartnereventspage_AppBannerGroup_1GuB8 .apppartnereventspage_AppBannerTitle_3HRBh {
+    font-size: 27px;
+    line-height: 27px;
+    margin-left: -200px !important;
+}
+
+.apppartnereventspage_AppBannerGroup_1GuB8 .apppartnereventspage_AppBannerTitle_3HRBh {
+    font-size: 26px;
+    line-height: 26px !important;
+    font-weight: 100;
+    text-shadow: 1px 1px 0px rgba(0,0,0,.5);
+    color: #fff;
+    margin: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    position: absolute !important;
+    left: 25.5% !important;
+    
+}
+
+.partnereventdisplay_InLibraryView_3X6U9 .partnereventdisplay_EventDetailTitleContainer_35gM9 {
+    padding: 16px 24px 12px 24px;
+    background: #00185f !important;
+}
+
+.apppartnereventspage_PartnerEvent_lwprN {
+    max-width: 848px;
+    overflow: hidden;
+    margin: 56px auto 16px auto;
+    position: relative;
+    background-color: #25282e00 !important;
+    border-radius: 3px !important;
+    background-image: none !important;
+    box-shadow: 0 0 32px #000;
+    pointer-events: initial;
+    border: 1.4px solid rgb(0 34 85) !important;
+    font-weight: 300;
+}
+
+.partnereventdisplay_EventBackgroundBlur_eti5E {
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 68%;
+    opacity: .2;
+    position: absolute;
+    filter: blur(32px) saturate(0.9) opacity(0) !important;
+}
+
+.partnereventdisplay_LibraryEventBodyContainer_2ZgLv {
+    padding: 24px;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    min-height: 300px;
+    background: linear-gradient(180deg, #001140, #000c38) !important;
+}
+
+.discussionwidget_Container_3BVe_ {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px !important;
+    background-image: linear-gradient(180deg, var(--Bar2), var(--List1)) !important;
+}
+
+.discussionwidget_VoteContainer_1uhQY, .discussionwidget_ShareContainer_cLK_F, .discussionwidget_DiscussContainer_3tXYJ {
+    padding: 10px;
+    background-color: rgb(30 33 38 / 0%) !important;
+}
+
+.partnereventshared_Button_3P0Tm.partnereventshared_Icon_3p1Hj {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #ffffff !important;
+    transition-property: background,color,box-shadow;
+    transition-duration: .2s;
+    transition-timing-function: ease-out;
+    background: var(--ButtonMidBlue) !important;
+    padding: 6px 25px 6px 25px;
+    border-radius: 3px !important;
+    box-shadow: 2px 2px 5px rgba(0,0,0,.2);
+    position: relative;
+    outline: solid #ff000000 !important;
+}
+
+.partnereventshared_Button_3P0Tm.partnereventshared_Icon_3p1Hj:hover {
+    background: var(--ButtonMidBlueHover) !important;
+    color: #fff;
+    box-shadow: 2px 2px 15px rgba(0,0,0,.5);
+    cursor: pointer;
+}
+
+.localdateandtime_RightSideTitles_3sPON {
+    font-size: 12px;
+    font-weight: 400 !important;
+    color: #289cff !important;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 4px;
+}
+
+.localdateandtime_ShortDateAndTime_4K3Bl {
+    margin: 0px 4px;
+    text-transform: initial;
+    color: #ffffff !important;
+    letter-spacing: normal;
+}
+
+.partnereventdisplay_EventDetailsSubTitle_6k4NE {
+    font-size: 22px;
+    line-height: 25px;
+    color: #e4e4e4 !important;
+    margin-top: 4px;
+}
+
+.partnereventdisplay_EventDetailsBody_3v0cw {
+    padding-right: 24px;
+    border-right: 1px solid rgba(0,0,0,.5);
+    font-size: 14px;
+    line-height: 19px;
+    min-height: 600px;
+    color: #7baeff !important;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+    text-shadow: 1px 2px var(--List3) !important;
+    max-width: 688px;
+}
+
+.partnereventdisplay_EventDetailsBody_3v0cw a:not(.LinkButton) {
+    color: #0e6fff !important;
+    text-decoration: none;
+    font-weight: 500 !important;
+    padding-bottom: 0px;
+}
+
+.apppartnereventspage_PartnerEvent_lwprN a {
+    text-decoration: none;
+    outline: #ff000000 !important;
+}
+
+.apppartnereventspage_CloseButton_35HbM {
+    background-color: #0036b0 !important;
+    border: 1px solid #000000 !important;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    margin-bottom: 8px;
+    box-shadow: 0 3px 32px #000;
+}
+
+.apppartnereventspage_CloseButton_35HbM:hover {
+    background-color: #0646d9 !important;
+    border: 1px solid #000000 !important;
+}
+
+.apppartnereventspage_AnimIn_bIoyq:active {
+    background-color: #0646d9 !important;
+    border: 1px solid #000000 !important;
+    transition-duration: 0s;
+    box-shadow: 0 0 12px #181818;
+}
+
+.apppartnereventspage_ScrollButton_357Gu {
+    background-color: #0036b0 !important;
+    border: 1px solid #000000 !important;
+    border-radius: 3px !important;
+    cursor: pointer;
+    margin-bottom: 8px;
+    width: 48px;
+    height: 24px;
+    box-shadow: 0 3px 32px #000;
+}
+
+.apppartnereventspage_ScrollButton_357Gu:hover {
+    background-color: #0646d9 !important;
+    border: 1px solid #000000 !important;
+}
+
+.apppartnereventspage_AppBannerGroup_1GuB8 .apppartnereventspage_AppBannerTitle_3HRBh .apppartnereventspage_NewsHubSubTitle_25MMn {
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 25px;
+    display: none;
+    opacity: 0 !important;
+}
+
+.apppartnereventspage_TallBanner_2AMvD .apppartnereventspage_AppBannerGroup_1GuB8 .apppartnereventspage_AppBannerTitle_3HRBh {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 26px !important;
+    line-height: 26px !important;
+    
+    word-break: break-word;
+    white-space: normal;
+    margin-left: -110px !important;
+}
+
+.store_capsule {
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    width: 229px;
+    background: -webkit-linear-gradient( -45deg, rgba(64,121,153,1) 5%,rgba(42,62,89,1) 95%);
+    background: linear-gradient( 180deg, rgb(9 27 155) 5%,rgb(0 21 68) 95%) !important;
+}
+
+.store_capsule:hover {
+    background: -webkit-linear-gradient( left, rgba(56,107,135,1) 5%,rgba(68,130,163,1) 95%);
+    background: linear-gradient( 180deg, rgb(9 36 133) 5%,rgb(3 25 106) 95%) !important;
+    text-decoration: none;
+}
+
+body.v6 .deep_dive_tag {
+    display: inline-block;
+    line-height: 11px;
+    padding: 2px 7px 2px 7px;
+    color: #ffffff !important;
+    background-color: rgb(60 109 200 / 21%) !important;
+    box-shadow: none;
+    margin-right: 2px;
+    border-radius: 2px;
+    cursor: pointer;
+    max-width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    position: relative;
+    top: -4px;
+    margin-bottom: 2px;
+}
+
+.recommended_creators_ctn .recommended_creators_container {
+    border-top: 1px solid var(--DivLine) !important;
+    padding: 8px 7px 5px;
+    position: relative;
+    height: 20px;
+    background: -webkit-linear-gradient( left, #223b4f00 5%,#25435b00 95%) !important;
+    background: none !important;
+}
+
+.discovery_queue_ctn .begin_exploring {
+    background: -webkit-linear-gradient( top, #e8f5fc 5%, #cce9f9 95%);
+    background: linear-gradient( to bottom, var(--Bar1) 5%, var(--Bar2) 95%) !important;
+    line-height: 50px;
+    font-size: 18px;
+    padding: 0 15px;
+    width: 80%;
+    color: #fff !important;
+    font-family: "Motiva Sans", Sans-serif;
+    font-weight: 300;
+    position: relative;
+    margin-top: 8.5%;
+    margin-left: 5%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.discovery_queue_ctn .begin_exploring::after {
+    content: ' ';
+    display: block;
+    width: 36px;
+    height: 36px;
+    top: 7px;
+    right: -18px;
+    position: absolute;
+    transform: rotate(45deg) scale(1.0);
+    -webkit-backface-visibility: hidden;
+    background: -webkit-linear-gradient( 134deg, #e8f5fc 5%,#cce9f9 95%);
+    background: linear-gradient( 134deg, var(--Bar1) 5%, var(--Bar2) 95%) !important;
+}
+
+.big_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 58px;
+    font-family: "Motiva Sans", Sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    text-align: center;
+    background: linear-gradient(90deg, #001682 0%, #121f79 100%) !important;
+    border-radius: 3px;
+    box-shadow: 0 0 4px #000;
+}
+
+.big_button:hover {
+    background: linear-gradient(90deg, #011eac 0%, #1126b6 100%) !important;
+    color: #FFFFFF;
+}
+
+.home_tab.active .tab_content {
+    border: none;
+    background-color: #11327d;
+}
+
+.friends_recently_purchased .friends_container {
+    border-top: 1px solid var(--DivLine) !important;
+    padding: 8px 7px 5px;
+    position: relative;
+    background: -webkit-linear-gradient( left, #223b4f 5%,#25435b 95%);
+    background: linear-gradient( to right, #ffffff00 5%,#ffffff00 95%) !important;
+}
+
+.recently_updated .store_capsule .recently_updated_desc {
+    color: #fff !important;
+    line-height: 15px;
+    font-size: 12px;
+	min-height: 60px !important;
+}
+ 
+
+body.v6 .deep_dive_key_tags {
+    color: #fff !important;
+    line-height: 15px;
+    font-size: 12px;
+    height: 70px;
+    border-top: 1px solid var(--DivLine) !important;
+    padding: 8px;
+}
+
+.home_area_spotlight {
+    background-   height: 60px;
+    border-top: 1px solid var(--DivLine) !important;
+    padding: 8px;
+}image: none !important;
+    height: 390px;
+    box-shadow: 0 0 5px #000000;
+}
+
+.top_new_releases_background {
+    position: absolute;
+    top: -26px;
+    left: -70px;
+    width: 1080px;
+    height: 337px;
+    background-size: cover;
+    
+    -webkit-mask-image: linear-gradient( 90deg, transparent 0%, black 15%, black 85%, transparent 100%);
+    mask-image: linear-gradient( 90deg, transparent 0%, black 15%, black 85%, transparent 100%);
+    background-image: none !important;
+    opacity: 0.5;
+}
+
+.top_new_releases_banner_ctn a {
+    display: block;
+    width: 100%;
+    height: 116px;
+    box-sizing: border-box;
+    padding-top: 27px;
+    text-align: center;
+    background: linear-gradient(180deg, #001c62, #000835) !important;
+    border-radius: 2px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+
+.top_new_releases_banner_ctn a:hover {
+    background: linear-gradient(180deg, #002685, #000c50) !important;
+}
+
+
+.home_marketing_message, .home_marketing_message:hover {
+    display: block;
+    position: relative;
+    float: left;
+    color: #acdbf5;
+    font-size: 11px;
+    vertical-align: top;
+    background: -webkit-linear-gradient( 135deg, rgba(37,49,63,1) 5%,rgba(54,97,125,1) 95%);
+    background: linear-gradient( 180deg, rgb(9 27 155) 5%,rgb(0 21 68) 95%) !important;
+}
+
+.home_content_reason {
+    font-family: "Motiva Sans", Sans-serif;
+    font-weight: 300;
+    font-size: 13px;
+    margin-bottom: 5px;
+    color: white !important;
+}
+
+body.v6 h2 .header_inline {
+    color: #ffffff !important;
+    font-size: 17px;
+}
+
+.eventcalendar_SidebarContainer_1DLtr {
+    position: fixed;
+    width: 300px;
+    top: 0;
+    bottom: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row-reverse;
+    z-index: 11;
+    background-color: #285ab100 !important;
+    background: linear-gradient(180deg, #13278a , var(--List1)) !important;
+    box-shadow: 0px 0px 10px rgba(0,0,0,.5);
+    overflow: auto;
+    transition: transform .15s ease-in-out;
+    will-change: transform;
+}
+
+.eventcalendar_SidebarContainer_1DLtr .eventcalendar_Sidebar_2A05H .eventcalendar_SidebarTitle_3tbyf {
+    font-size: 32px;
+    line-height: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    color: white !important;
+    word-wrap: break-word;
+    word-break: break-word;
+}
+
+.eventcalendar_HubBanner_3FLui.eventcalendar_LargeMode_2a-qT {
+    height: 41px !important;
+}
+
+.eventcalendar_HubBanner_3FLui {
+    position: fixed;
+    z-index: 9;
+    height: 80px;
+    width: 100%;
+    background-color: #00216200 !important;
+    background-image: none !important;
+    transition: transform .15s ease-in-out;
+    will-change: transform;
+}
+
+.eventcalendar_EventCalendarContainer_3vzNv .eventcalendar_RowContainer_24NWG .eventcalendar_Rows_1TY7h .eventcalendar_PastSection_2S38Q.eventcalendar_DarkerBackground_iSooR {
+    background-color: #476ab00d !important;
+}
+
+.eventcalendartile_TileContainer_27AwJ .eventcalendartile_Tile_a0iPy {
+    position: relative;
+    border-radius: 3px;
+    background: #0d52b91f !important;
+    overflow: hidden;
+    box-shadow: 2px 2px 12px 2px rgba(0,0,0,0);
+    transition: box-shadow .24s ease-in-out;
+}
+
+.eventcalendartile_TileContainer_27AwJ.eventcalendartile_EnableHovers_1fwVU:not(.eventcalendartile_EventType12_KucHh):not(.eventcalendartile_EventType14_1jnLc):not(.eventcalendartile_TileVideoIcon_3_ckM) .eventcalendartile_Tile_a0iPy:hover {
+    background: #0037ff38 !important;
+}
+
+.eventcalendar_EventCalendarContainer_3vzNv .eventcalendar_RowContainer_24NWG .eventcalendar_Rows_1TY7h .eventcalendar_PastSection_2S38Q {
+    background-color: #00348e3b !important;
+}
+
+.eventcalendar_EventCalendarContainer_3vzNv .eventcalendar_RowContainer_24NWG .eventcalendar_Rows_1TY7h .eventcalendar_CalendarRow_uRe48.eventcalendar_GroupHeader_3ZL97 {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    height: 70px;
+    z-index: 3;
+    background-color: inherit;
+    font-size: 24px;
+    line-height: 39px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    background: #012170 !important;
+}
+
+.eventcalendar_EventCalendarContainer_3vzNv .eventcalendar_ReserveControlSpace_3cdtJ {
+    position: relative;
+    flex: 1;
+    background-color: #2d313800 !important;
+    margin-left: 36px;
+    width: 100%;
+    display: flex;
+    min-width: 0;
+}
+
+.eventcalendar_EventCalendarContainer_3vzNv .eventcalendar_RowContainer_24NWG {
+    transition: transform .15s ease-in-out;
+    min-height: 40px;
+    width: 100%;
+    margin-top: 1px !important;
+    transform: translateY(38px)!important;
+}
+
+.eventcalendar_EventCalendarContainer_3vzNv .eventcalendar_ReserveControlSpace_3cdtJ.eventcalendar_WideLeftGutter_sEEVH .eventcalendar_SteamLabsBanner_1ooep, .eventcalendar_EventCalendarContainer_3vzNv .eventcalendar_ReserveControlSpace_3cdtJ.eventcalendar_WideLeftGutter_sEEVH .eventcalendar_HubBanner_3FLui {
+    width: calc( 100% - 300px );
+    background: #ff000000 !important;
+}
+
+.eventcalendar_EventCalendarContainer_3vzNv .eventcalendar_RowContainer_24NWG .eventcalendar_Rows_1TY7h .eventcalendar_CalendarRow_uRe48.eventcalendar_GroupHeader_3ZL97 .eventcalendar_GroupHeaderLine_2dC7U {
+    margin-left: 8px;
+    margin-right: 8px;
+    border-top: 2px solid #0062ff !important;
+    flex-grow: 1;
+    margin-top: 20px;
+}
+
+.eventcalendar_EventCalendarContainer_3vzNv .eventcalendar_RowContainer_24NWG .eventcalendar_Rows_1TY7h .eventcalendar_CalendarRow_uRe48.eventcalendar_GroupHeader_3ZL97 .eventcalendar_GroupHeaderTitle_3wRHR {
+    width: 100%;
+    box-sizing: border-box;
+    max-width: 980px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    color: #ffffff !important;
+    font-size: 23px;
+    font-weight: 300;
+    text-shadow: 1px 1px #000105 !important;
+    letter-spacing: 2px;
+}
+
+.eventcalendartile_TileContainer_27AwJ .eventcalendartile_Tile_a0iPy {
+    position: relative;
+    border-radius: 3px;
+    
+    overflow: hidden;
+    box-shadow: 2px 2px 12px 2px rgba(0,0,0,0);
+    transition: box-shadow .24s ease-in-out;
+    margin-top: 12px !important;
+    margin-bottom: -40px !important;
+}
+
+.eventcalendar_NewsChannelGroup_3Zc7j .eventcalendar_NewsChannelListTitle_niYt6 {
+    color: #ffffff !important;
+    margin-bottom: 7px;
+    margin-top: 2vh;
+}
+
+.eventcalendar_NewsChannelGroup_3Zc7j {
+    margin-top: 3vh;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    margin-right: 18px !important;
+}
+
+.eventcalendar_NewsChannelGroup_3Zc7j .eventcalendar_NewsChannel_TOM8J {
+    background: #0d33a0 !important;
+    padding: 4px 16px;
+    margin-bottom: 2px;
+    height: 54px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.eventcalendar_NewsChannelGroup_3Zc7j .eventcalendar_NewsChannel_TOM8J:hover {
+    background-image: none !important;
+    background: var(--ButtonMidBlueHover) !important;
+}
+
+.eventcalendar_SidePanelGameSearch_2MujS .DialogLabel {
+    color: #ffffff !important;
+    letter-spacing: .1em;
+    margin-bottom: 7px;
+    margin-top: 2vh;
+}
+
+.storesuggest_SuggestContainer_2n5ab ._DialogLayout input {
+    font-size: 16px;
+    background: rgb(0 69 225 / 50%) !important;
+    color: #fff !important;
+}
+
+.storesuggest_SuggestContainer_2n5ab ._DialogLayout input:not(:disabled):hover {
+    font-size: 16px;
+    background: var(--ButtonMidBlueHover)!important;
+}
+
+.eventcalendar_NewsChannelGroup_3Zc7j .eventcalendar_NewsChannel_TOM8J .eventcalendar_NewsChannelSubtitle_3oo-Z {
+    text-transform: none;
+    letter-spacing: 0;
+    color: #ffffff !important;
+}
+
+.storesuggest_SuggestContainer_2n5ab .storesuggest_Results__dpvO {
+    overflow-y: auto;
+    background: #1135b6 !important;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 4px;
+    border-radius: 0px 0px 4px 4px;
+}
+
+.eventcalendar_SidebarContainer_1DLtr .eventcalendar_Sidebar_2A05H .eventcalendar_FilterLink_1-Ujk svg {
+    fill: #fff !important;
+    color: #fff !important;
+    height: 16px;
+    width: 16px;
+    margin-right: 8px;
+}
+
+.eventcalendar_SidebarContainer_1DLtr .eventcalendar_Sidebar_2A05H .eventcalendar_FilterLink_1-Ujk {
+    color: #aaa;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 4px;
+    border-radius: 3px;
+    background-color: rgb(0 69 225 / 50%) !important;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    padding: 8px;
+    margin-top: 4px;
+}
+
+.eventcalendar_SidebarContainer_1DLtr .eventcalendar_Sidebar_2A05H .eventcalendar_FilterLink_1-Ujk:hover {
+    color: #fff;
+    background: var(--ButtonMidBlueHover)!important;
+    box-shadow: 2px 2px 10px rgba(0,0,0,.4);
+}
+
+.eventcalendar_SidebarContainer_1DLtr .eventcalendar_Sidebar_2A05H .eventcalendar_FilterLink_1-Ujk {
+    color: #fff !important;
+
+}
+
+.legalfooter_LegalFooter_2YSVe {
+    box-sizing: border-box;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #0032c700 !important;
+    color: #ffffff !important;
+    text-transform: none;
+    letter-spacing: 0px;
+    font-size: 11px;
+}
+
+.legalfooter_LegalFooter_2YSVe img {
+    opacity: 0.3 !important;
+    height: 25px;
+    width: auto;
+    margin-bottom: 4px;
+    background: black !important;
+    filter: opacity(0.38) !important;
+}
+
+.eventcalendartile_TileContainer_27AwJ .eventcalendartile_TileTextCategoryType_184La.eventcalendartile_EventType28_mk_un {
+    color: #4d83ff !important;
+}
+
+.eventcalendartile_TileContainer_27AwJ .eventcalendartile_PastDateText_bg1_S {
+    color: #4d83ff !important;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    font-size: 11px;
+}
+
+.eventcalendartile_TileContainer_27AwJ .eventcalendartile_TileTextCategoryType_184La {
+    font-weight: 400;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+    font-size: 11px;
+    line-height: 16px;
+    margin-right: 6px;
+    color: #4d83ff !important;
+    border-radius: 2px;
+}
+
+.eventcalendartile_TileContainer_27AwJ.eventcalendartile_EventType12_KucHh .eventcalendartile_Tile_a0iPy .eventcalendartile_EventName_3myvq {
+    font-weight: 300;
+    font-size: 20px;
+    color: #ffffff !important;
+    margin-top: 2px;
+    margin-bottom: 0px;
+    line-height: 21px;
+}
+
+.eventcalendar_EventCalendarContainer_3vzNv .eventcalendar_RowContainer_24NWG .eventcalendar_Rows_1TY7h .eventcalendar_CalendarRow_uRe48.eventcalendar_GroupHeader_3ZL97 {
+
+    top: 0px !important;
+
+}
+
+.eventcalendar_EventCalendarContainer_3vzNv .eventcalendar_ReserveControlSpace_3cdtJ .eventcalendar_SteamLabsBanner_1ooep, .eventcalendar_EventCalendarContainer_3vzNv .eventcalendar_ReserveControlSpace_3cdtJ .eventcalendar_HubBanner_3FLui {
+    width: calc( 100% - 36px );
+    transform: translateY(-1px) !important;
+}
+
+.apppartnereventspage_CloseButton_35HbM svg line {
+    stroke-width: 16px;
+    stroke: #ffffff !important;
+}
+
+.apppartnereventspage_ScrollButton_357Gu svg polygon {
+    fill: #ffffff !important;
+}
+
+.standardtemplates_AllNotificationsTemplate_2m9JU:hover {
+    background: var(--PulseHover) !important;
+}
+
+.pagecontent {
+    margin: 0 auto;
+    max-width: max-content !important;
+}
+
+.miniprofile_backdrop {
+    background: linear-gradient( to bottom, #00000000 5%, #00000000 95% ) !important;
+}
+
+.miniprofile_backdropblur {
+    backdrop-filter: blur(1px) !important;
+    -webkit-backdrop-filter: blur(4px);
+}
+
+/* fix for button in update news */
+._6Tfttc004NhLDjbTDS9PC ._20PKe9KJTJC5SAbLi4Dy-Y ._1ddC4grHqe7uggEE2cihEv ._2T5KnJO7YB00MG9YIyfImx {
+    background: var(--Bar1) !important;
+}
+
+._6Tfttc004NhLDjbTDS9PC ._20PKe9KJTJC5SAbLi4Dy-Y ._1ddC4grHqe7uggEE2cihEv ._2T5KnJO7YB00MG9YIyfImx:hover {
+    background: var(--Bar2) !important;
+    
+}
+
+body.v6 .home_rightcol .tab_preview .tab_title {
+    font-family: "Motiva Sans", Sans-serif;
+    text-transform: none;
+    font-size: 21px;
+    letter-spacing: 0px;
+    color: #ffffff !important;
+    height: 30px;
+    padding-right: 8px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}

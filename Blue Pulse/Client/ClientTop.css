@@ -1,0 +1,84 @@
+/* System Report List BG*/
+.DesktopUI ._2TAQYpbxatDYN3Ex76KX5u .DialogBody .DialogBodyText ._7jaC6UFFrvcKq2UlJr1Pb .Cw--cBWy7v1Ey1JF0VkBN {
+    background: #00195d33;
+}
+
+/* System Info List BG */
+._3v2Gg_GCpLHpHQDLFQ7cvI.hYVp3sXyS0uYfJnzVoK-m ._3f3VJUtyLXUf_JDFE-BaQ6 {
+    background: #00195d33;
+
+}
+
+/* Menu Bar New Name */
+._39oUCO1OuizVPwcnnv88no{background-color: none;}
+
+/* ._39oUCO1OuizVPwcnnv88no{background: linear-gradient(180deg, var(--Bar1), var(--Bar2))} */
+
+/* Notification and Steam Wallet Area */
+._3cykd-VfN_xBxf3Qxriccm {
+margin-top: 1px;}
+
+/* Close Button Hover */
+.DesktopUI .title-area-icon.closeButton:hover, .friendsui-container .title-area-icon.closeButton:hover {
+    background: #e22a27;
+    transition: background .15s ease-out;
+}
+
+/* Client Top Area */
+
+._3Z7VQ1IMk4E3HsHvrkLNgo{flex:0 0 auto;width:100%;background:radial-gradient(ellipse farthest-corner at 50% 30%, var(--Top1) 0%, var(--Top2) 50%, var(--Top3) 100%);box-shadow:inset rgba(61,68,80,.75) 1px 1px 1px 0px,inset rgba(61,68,80,.25) -1px 0px 1px 0px;display:flex;flex-direction:column;user-select:none}
+
+/* Url Bar */
+
+._1bGewp3tfzqAF6fVTFFUOz .UkR3sY319PuaUNuUWks2K {background: linear-gradient(180deg, var(--Bar1), var(--Bar2));padding: 4px 4px 4px 8px;}
+
+/* Refresh + Globe */
+._1bGewp3tfzqAF6fVTFFUOz .UkR3sY319PuaUNuUWks2K ._3izqEKa-zuPIrUDSm1bRvf {
+    height: 18px;
+    color: white;
+}
+._1bGewp3tfzqAF6fVTFFUOz .UkR3sY319PuaUNuUWks2K ._3izqEKa-zuPIrUDSm1bRvf:hover {
+    height: 18px;
+    color: white;
+	background-color: var(--PulseHover);
+}
+
+/* Url Bar Text */
+._1bGewp3tfzqAF6fVTFFUOz .UkR3sY319PuaUNuUWks2K ._2m_orETo6AghzAnc0sISCt .MZPxEZcxAGtPDf1NYtouS {color: white;}
+._1bGewp3tfzqAF6fVTFFUOz .UkR3sY319PuaUNuUWks2K ._2m_orETo6AghzAnc0sISCt .MZPxEZcxAGtPDf1NYtouS:hover {color: white;}
+
+/* Url Text Hover BG */
+._1bGewp3tfzqAF6fVTFFUOz .UkR3sY319PuaUNuUWks2K ._2m_orETo6AghzAnc0sISCt:hover {
+    cursor: pointer;
+    background-color: var(--PulseHover);
+    border-radius: 16px;
+	color: white;
+}
+
+/* Fix for Screenshot open */
+._1ILFQY2sxyGFT_n-fifayy {
+    background-color: #2c3036;
+    background: #000255;
+    border: 0px solid #000;
+    box-sizing: content-box;
+    box-shadow: inset 0 0 0 6px rgba(0, 0, 0, .2);
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+/* Big Picture Mode BG Hover fix */
+._3LKQ3S_yqrebeNLF6aeiog {
+    color: var(--Online);
+    border-radius: 2px;
+	margin-bottom: 4px;
+}
+
+/* Big Picture Mode BG Hover fix */
+._3LKQ3S_yqrebeNLF6aeiog:hover {
+    background: var(--PulseHover);
+    border-radius: 2px;
+}
+

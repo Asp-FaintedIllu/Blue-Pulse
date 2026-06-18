@@ -1,0 +1,82 @@
+/* View Menu Backdrop? */
+._3pofGqV0buiKAfMPEs3_82 {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 0px !important;
+    background:radial-gradient(ellipse farthest-corner at 80% 0%, var(--List1) 0%, var(--BG1) 50%, var(--BG2) 100%);
+}
+
+ /* Can add a darker engaged menu hover */
+._3pofGqV0buiKAfMPEs3_82:hover {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 0px !important;
+    background:radial-gradient(ellipse farthest-corner at 80% 0%, var(--List1) 0%, var(--BG1) 65%, var(--BG2) 100%);
+}
+
+/* General Menu Item Hover (is overriden below) */
+._2jXHP0742MyApMUVUM8IFn._2uiDecKkKjAq7nimy3uLhG:hover {
+    background-color: var(--PulseHover);
+    color: #fff;
+}
+
+/* Active Popup for Promo to move to "PopUp Windows" section when created */
+._1N7O3VXbkpN2z55HsSDZsi {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: radial-gradient(var(--List1), var(--List2));
+}
+
+
+
+/* Games List Popup right click text */
+.DesktopUI ._1n7Wloe5jZ6fSuvV18NNWI, ._3qIuY9S_vXm3IQS-uE9SRS ._1n7Wloe5jZ6fSuvV18NNWI {
+   color:red;
+}
+
+.DesktopUI ._1n7Wloe5jZ6fSuvV18NNWI, ._3qIuY9S_vXm3IQS-uE9SRS ._1n7Wloe5jZ6fSuvV18NNWI {
+   color:var(--PulseHover);
+}
+
+/* test menus */
+.GreenEnvelopeMenu, .PP7LM0Ow1K5qkR8WElLpt {
+    opacity: 1;
+    background: radial-gradient(ellipse farthest-corner at 80% 0%, var(--List1) 0%, var(--BG1) 50%, var(--BG2) 100%) !important;
+    transition: opacity 200ms;
+    box-shadow: 0 10px 32px 0px rgba(0, 0, 0, .6705882353);
+    z-index: 1600;
+    user-select: none;
+    padding: 4px;
+}
+
+/* Menu Labels */
+.contextMenuItem {
+    color: white !important;
+}
+
+.contextMenuItem:active {
+    color: white !important;
+    background: red !important;
+}
+
+.contextMenuItem:hover {
+    color: white !important;
+    background:var(--PulseHover) !important;
+}
+
+/* until we find the actual root name (game Library */
+.DesktopUI ._1n7Wloe5jZ6fSuvV18NNWI:hover, .DesktopUI ._1n7Wloe5jZ6fSuvV18NNWI._18z-3vkWndCBO5WJgFldRK, ._3qIuY9S_vXm3IQS-uE9SRS ._1n7Wloe5jZ6fSuvV18NNWI:hover, ._3qIuY9S_vXm3IQS-uE9SRS ._1n7Wloe5jZ6fSuvV18NNWI._18z-3vkWndCBO5WJgFldRK {
+    background:var(--PulseHover) !important;
+    color: red;
+}
+
+
+
+
+
+
+
+

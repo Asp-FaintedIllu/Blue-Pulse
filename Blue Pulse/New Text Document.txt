@@ -1,0 +1,11 @@
+.ingame .nOdcT-MoOaXGePXLyPe0H {
+    color: #00d31f;
+}
+
+.ingame ._1cB0qtF0paHWWyj1XNcnbG._2Ri005Wg_uXDTa71kdRbcN, .ingame ._1cB0qtF0paHWWyj1XNcnbG._2Ri005Wg_uXDTa71kdRbcN a, .ingame ._1cB0qtF0paHWWyj1XNcnbG._2Ri005Wg_uXDTa71kdRbcN a:hover, .ingame ._1cB0qtF0paHWWyj1XNcnbG._2Ri005Wg_uXDTa71kdRbcN a:active, .ingame ._1cB0qtF0paHWWyj1XNcnbG._2Ri005Wg_uXDTa71kdRbcN a:visited, .ingame._1BbOegz8bYL7iPzgYpOgQI ._2Ri005Wg_uXDTa71kdRbcN {
+    color: #12ad00;
+}
+
+.ingame.awayOrSnooze ._2Ri005Wg_uXDTa71kdRbcN, .ingame ._2Ri005Wg_uXDTa71kdRbcN, .ingame ._2Ri005Wg_uXDTa71kdRbcN a, .ingame ._2Ri005Wg_uXDTa71kdRbcN a:hover, .ingame ._2Ri005Wg_uXDTa71kdRbcN a:active, .ingame ._2Ri005Wg_uXDTa71kdRbcN a:visited {
+    color: #268201;
+}
