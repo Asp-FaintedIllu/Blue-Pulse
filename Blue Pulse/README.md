@@ -1,13 +1,10 @@
-# Steam 2.0 Modular - to change accordingly
+# Blue Pulse Beta Preview
 
-![Steam 2.0 Modular Header](https://i.imgur.com/sCCMnkG.png)
+![Steam 2.0 Modular Header](https://i.imgur.com/lTxCO8X.png)
 
-## Description and to look at other peoples readme.md
+## Description 
+Blue Pulse is back <3
 
-Blue Pulse
-
-![Steam 2.0 Modular Header](https://i.imgur.com/4SJRBxy.png)
-![Steam 2.0 Modular Header](https://i.imgur.com/4DKpfjz.png)
 
 
 
