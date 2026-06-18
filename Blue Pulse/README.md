@@ -1,10 +1,5 @@
 # Blue Pulse Beta Preview
 
-![Blue Pulse Preview] (https://i.imgur.com/lTxCO8X.png)
+![Steam 2.0 Modular Header](https://imgur.com/a/blue-pulse-lTxCO8X)
 
-## Description 
-Blue Pulse is back <3
-
-
-
-
+## Blue Pulse is back <3
